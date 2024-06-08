@@ -9,7 +9,7 @@ public class Klijent : Korisnik
     public String napomene { get; set; }
     public int nagradniBodovi { get; set; } = 0;
 
-    public Klijent()
+    public Klijent() : base()
     {
         
     }

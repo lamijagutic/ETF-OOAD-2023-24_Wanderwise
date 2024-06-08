@@ -6,7 +6,7 @@ namespace wdws.Models;
 public class Putovanje
 {
     [Key]
-    public int putovanjeID { get; set; }
+    public int ID { get; set; }
     
     public Lokacija mjestoPolaska { get; set; }
     public Lokacija mjestoDolaska { get; set; }
@@ -23,9 +23,7 @@ public class Putovanje
     public int smjestajID { get; set; }
     public Smjestaj smjestaj;
     
-    [ForeignKey("TuristickiVodic")]
-    public int vodicID { get; set; }
-    public TuristickiVodic vodic { get; set; }
+    [ForeignKey("TuristickiVodic")] public TuristickiVodic vodic { get; set; }
     
     public Putovanje()
     {

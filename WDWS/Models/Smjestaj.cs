@@ -4,7 +4,7 @@ namespace wdws.Models;
 
 public class Smjestaj  {
     [Key]
-    public int SmjestajID {get; set;}
+    public int ID {get; set;}
 
     public String naziv {get; set; }
 

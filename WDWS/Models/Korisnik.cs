@@ -39,7 +39,7 @@ public class Korisnik : IdentityUser
 
     public Pozicije pozicija { get; set; }
     
-    public Korisnik()
+    public Korisnik() 
     {
         
     }

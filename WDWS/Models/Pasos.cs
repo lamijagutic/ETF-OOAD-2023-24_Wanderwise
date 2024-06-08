@@ -6,12 +6,10 @@ namespace wdws.Models;
 public class Pasos
 {
     [Key]
-    public int pasosID { get; set; }
-    
-    [ForeignKey("Klijent")]
-    public int KlijentID { get; set; }
-    public Klijent klijent { get; set; }
-    
+    public int ID { get; set; }
+
+    [ForeignKey("Klijent")] public Klijent klijent { get; set; }
+
     public String drzavaKojaIzdaje { get; set; }
     public String nacionalnost { get; set; }
     public DateOnly datumIsteka { get; set; }

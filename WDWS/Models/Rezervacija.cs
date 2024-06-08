@@ -22,14 +22,11 @@ public class Rezervacija
     
     public StatusRezervacije status { get; set; }
     
-    [ForeignKey("Klijent")]
-    public int klijentID { get; set; }
-    public Klijent klijent { get; set; }
+    [ForeignKey("Klijent")] public Klijent klijent { get; set; }
     public Rezervacija()
     {
         
     }
-
     public void dodajNagradneBodove()
     {
         klijent.nagradniBodovi += MilesBodovi;
