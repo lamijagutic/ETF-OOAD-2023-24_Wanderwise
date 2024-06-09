@@ -1,0 +1,54 @@
+@model wdws.Models.Rezervacija
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>Rezervacija</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.put)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.put.ID)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.brojPutnika)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.brojPutnika)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.ukupnaCijena)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.ukupnaCijena)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.MilesBodovi)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.MilesBodovi)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.smjestaj)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.smjestaj.ID)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.status)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.status)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model?.rezervacijaID">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

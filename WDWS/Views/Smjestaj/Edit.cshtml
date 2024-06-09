@@ -1,0 +1,59 @@
+@model wdws.Models.Smjestaj
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edit</h1>
+
+<h4>Smjestaj</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="ID" />
+            <div class="form-group">
+                <label asp-for="naziv" class="control-label"></label>
+                <input asp-for="naziv" class="form-control" />
+                <span asp-validation-for="naziv" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="VrstaSmjestaja" class="control-label"></label>
+                <select asp-for="VrstaSmjestaja" class="form-control"></select>
+                <span asp-validation-for="VrstaSmjestaja" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="KontaktTelefon" class="control-label"></label>
+                <input asp-for="KontaktTelefon" class="form-control" />
+                <span asp-validation-for="KontaktTelefon" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="KontaktEmail" class="control-label"></label>
+                <input asp-for="KontaktEmail" class="form-control" />
+                <span asp-validation-for="KontaktEmail" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="MaxKapacitet" class="control-label"></label>
+                <input asp-for="MaxKapacitet" class="form-control" />
+                <span asp-validation-for="MaxKapacitet" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CijenaSmjestaja" class="control-label"></label>
+                <input asp-for="CijenaSmjestaja" class="form-control" />
+                <span asp-validation-for="CijenaSmjestaja" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

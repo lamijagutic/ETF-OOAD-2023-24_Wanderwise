@@ -9,7 +9,7 @@ public class Lokacija
     [Key]
     public String postanskiBroj { get; set; }
 
-    Lokacija()
+    public Lokacija()
     {
         
     }

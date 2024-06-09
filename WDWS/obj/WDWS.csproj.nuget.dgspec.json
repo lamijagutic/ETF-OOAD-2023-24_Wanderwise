@@ -1,31 +1,26 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\lamija\\Desktop\\WDWS\\WDWS\\WDWS.csproj": {}
+    "/Users/fatima.naidakaljanac/Desktop/Wanderwise/WDWS/WDWS.csproj": {}
   },
   "projects": {
-    "C:\\Users\\lamija\\Desktop\\WDWS\\WDWS\\WDWS.csproj": {
+    "/Users/fatima.naidakaljanac/Desktop/Wanderwise/WDWS/WDWS.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\lamija\\Desktop\\WDWS\\WDWS\\WDWS.csproj",
+        "projectUniqueName": "/Users/fatima.naidakaljanac/Desktop/Wanderwise/WDWS/WDWS.csproj",
         "projectName": "WDWS",
-        "projectPath": "C:\\Users\\lamija\\Desktop\\WDWS\\WDWS\\WDWS.csproj",
-        "packagesPath": "C:\\Users\\lamija\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\lamija\\Desktop\\WDWS\\WDWS\\obj\\",
+        "projectPath": "/Users/fatima.naidakaljanac/Desktop/Wanderwise/WDWS/WDWS.csproj",
+        "packagesPath": "/Users/fatima.naidakaljanac/.nuget/packages/",
+        "outputPath": "/Users/fatima.naidakaljanac/Desktop/Wanderwise/WDWS/obj/",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\lamija\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/Users/fatima.naidakaljanac/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "/usr/local/share/dotnet/library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -38,11 +33,6 @@
           "warnAsError": [
             "NU1605"
           ]
-        },
-        "restoreAuditProperties": {
-          "enableAudit": "true",
-          "auditLevel": "low",
-          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -97,7 +87,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.301/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.300/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

@@ -1,0 +1,59 @@
+@model wdws.Models.Rezervacija
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edit</h1>
+
+<h4>Rezervacija</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="rezervacijaID" />
+            <div class="form-group">
+                <label asp-for="putovanjeID" class="control-label"></label>
+                <select asp-for="putovanjeID" class="form-control" asp-items="ViewBag.putovanjeID"></select>
+                <span asp-validation-for="putovanjeID" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="brojPutnika" class="control-label"></label>
+                <input asp-for="brojPutnika" class="form-control" />
+                <span asp-validation-for="brojPutnika" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ukupnaCijena" class="control-label"></label>
+                <input asp-for="ukupnaCijena" class="form-control" />
+                <span asp-validation-for="ukupnaCijena" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="MilesBodovi" class="control-label"></label>
+                <input asp-for="MilesBodovi" class="form-control" />
+                <span asp-validation-for="MilesBodovi" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="smjestajID" class="control-label"></label>
+                <select asp-for="smjestajID" class="form-control" asp-items="ViewBag.smjestajID"></select>
+                <span asp-validation-for="smjestajID" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="status" class="control-label"></label>
+                <select asp-for="status" class="form-control"></select>
+                <span asp-validation-for="status" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

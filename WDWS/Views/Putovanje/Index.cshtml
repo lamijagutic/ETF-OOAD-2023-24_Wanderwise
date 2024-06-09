@@ -1,0 +1,65 @@
+@model IEnumerable<wdws.Models.Putovanje>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.duzinaPutovanja)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.datumPolaska)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.datumDolaska)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.cijenaPoOsobi)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.prijevoznaSredstva)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.smjestajID)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.duzinaPutovanja)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.datumPolaska)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.datumDolaska)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.cijenaPoOsobi)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.prijevoznaSredstva)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.smjestajID)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.ID">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.ID">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.ID">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
