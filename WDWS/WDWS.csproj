@@ -67,6 +67,49 @@
       <_ContentIncludedByDefault Remove="Views\Rezervacija\Details.cshtml" />
       <_ContentIncludedByDefault Remove="Views\Rezervacija\Edit.cshtml" />
       <_ContentIncludedByDefault Remove="Views\Rezervacija\Index.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Klijent\Create.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Klijent\Delete.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Klijent\Details.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Klijent\Edit.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Klijent\Index.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Lokacija\Create.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Lokacija\Delete.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Lokacija\Details.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Lokacija\Edit.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Lokacija\Index.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Pasos\Create.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Pasos\Delete.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Pasos\Details.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Pasos\Edit.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Pasos\Index.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Putovanje\Create.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Putovanje\Delete.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Putovanje\Details.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Putovanje\Edit.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Putovanje\Index.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Recenzija\Create.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Recenzija\Delete.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Recenzija\Details.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Recenzija\Edit.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Recenzija\Index.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Soba\Create.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Soba\Delete.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Soba\Details.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Soba\Edit.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Soba\Index.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\TuristickiVodic\Create.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\TuristickiVodic\Delete.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\TuristickiVodic\Details.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\TuristickiVodic\Edit.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\TuristickiVodic\Index.cshtml" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <UpToDateCheckInput Remove="Views\Rezervacija\Create.cshtml" />
+      <UpToDateCheckInput Remove="Views\Rezervacija\Delete.cshtml" />
+      <UpToDateCheckInput Remove="Views\Rezervacija\Details.cshtml" />
+      <UpToDateCheckInput Remove="Views\Rezervacija\Edit.cshtml" />
+      <UpToDateCheckInput Remove="Views\Rezervacija\Index.cshtml" />
     </ItemGroup>
 
 </Project>

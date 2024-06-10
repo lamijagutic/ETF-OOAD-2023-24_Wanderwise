@@ -35,5 +35,5 @@ public class ApplicationDbContext : IdentityDbContext
         modelBuilder.Entity<Putovanje>().ToTable("Putovanja");
         modelBuilder.Entity<Rezervacija>().ToTable("Rezervacije");
         base.OnModelCreating(modelBuilder);
-    } 
-}
+    }
+} 

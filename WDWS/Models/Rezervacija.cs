@@ -6,7 +6,7 @@ namespace wdws.Models;
 public class Rezervacija
 {
     [Key]
-    public int rezervacijaID { get; set; }
+    public int ID { get; set; }
     
     [ForeignKey("Putovanje")]
     public int putovanjeID { get; set; }
@@ -17,12 +17,16 @@ public class Rezervacija
     public int MilesBodovi { get; set; }
     
     [ForeignKey("Smjestaj")]
-    public int smjestajID { get; set; }
-    public Smjestaj smjestaj { get; set; }
+    public int? smjestajID { get; set; }
+    public Smjestaj? smjestaj { get; set; }
+    
+    [ForeignKey("Soba")] public int? rezervisanaSobaID { get; set; }
+    public Soba? rezervisanaSoba { get; set; }
     
     public StatusRezervacije status { get; set; }
-    
-    [ForeignKey("Klijent")] public Klijent klijent { get; set; }
+
+    [ForeignKey("Klijent")] public int klijentID { get; set; }
+    public Klijent klijent { get; set; }
     public Rezervacija()
     {
         
@@ -31,4 +35,5 @@ public class Rezervacija
     {
         klijent.nagradniBodovi += MilesBodovi;
     }
+    
 }

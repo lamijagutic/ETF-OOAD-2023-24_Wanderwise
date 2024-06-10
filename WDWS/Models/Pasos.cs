@@ -8,7 +8,8 @@ public class Pasos
     [Key]
     public int ID { get; set; }
 
-    [ForeignKey("Klijent")] public Klijent klijent { get; set; }
+    [ForeignKey("Klijent")] public int klijentID { get; set; }
+    public Klijent klijent { get; set; }
 
     public String drzavaKojaIzdaje { get; set; }
     public String nacionalnost { get; set; }

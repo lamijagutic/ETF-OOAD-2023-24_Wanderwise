@@ -14,18 +14,6 @@ public class Korisnik : IdentityUser
     public String prezime { get; set; }
     
     [Required]
-    [Display(Name = "Korisničko ime")]
-    public String username { get; set; }
-    
-    [Required]
-    [Display(Name = "Email adresa")]
-    public String email { get; set; }
-    
-    [Required]
-    [Display(Name = "Broj telefona")]
-    public String telefon { get; set; }
-    
-    [Required]
     [Display(Name = "Adresa")]
     public String adresa { get; set; }
     
@@ -35,7 +23,7 @@ public class Korisnik : IdentityUser
     
     [Required]
     [Display(Name = "Datum rođenja")]
-    public DateOnly datumRodjenja { get; set; }
+    public DateTime datumRodjenja { get; set; }
 
     public Pozicije pozicija { get; set; }
     
