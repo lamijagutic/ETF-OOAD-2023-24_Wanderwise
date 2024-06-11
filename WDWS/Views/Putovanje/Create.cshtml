@@ -1,0 +1,70 @@
+@model wdws.Models.Putovanje
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create</h1>
+
+<h4>Putovanje</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="mjestoPolaskaID" class="control-label"></label>
+                <input asp-for="mjestoPolaskaID" class="form-control" />
+                <span asp-validation-for="mjestoPolaskaID" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="mjestoDolaskaID" class="control-label"></label>
+                <input asp-for="mjestoDolaskaID" class="form-control" />
+                <span asp-validation-for="mjestoDolaskaID" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="duzinaPutovanja" class="control-label"></label>
+                <input asp-for="duzinaPutovanja" class="form-control" />
+                <span asp-validation-for="duzinaPutovanja" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="datumPolaska" class="control-label"></label>
+                <input asp-for="datumPolaska" class="form-control" />
+                <span asp-validation-for="datumPolaska" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="datumDolaska" class="control-label"></label>
+                <input asp-for="datumDolaska" class="form-control" />
+                <span asp-validation-for="datumDolaska" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="cijenaPoOsobi" class="control-label"></label>
+                <input asp-for="cijenaPoOsobi" class="form-control" />
+                <span asp-validation-for="cijenaPoOsobi" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="prijevoznaSredstva" class="control-label"></label>
+                <input asp-for="prijevoznaSredstva" class="form-control" />
+                <span asp-validation-for="prijevoznaSredstva" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="smjestajID" class="control-label"></label>
+                <input asp-for="smjestajID" class="form-control" />
+                <span asp-validation-for="smjestajID" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="guideID" class="control-label"></label>
+                <input asp-for="guideID" class="form-control" />
+                <span asp-validation-for="guideID" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
