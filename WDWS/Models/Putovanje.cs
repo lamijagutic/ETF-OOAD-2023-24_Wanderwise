@@ -10,11 +10,11 @@ public class Putovanje
     
     [ForeignKey("Lokacija")] 
     public int mjestoPolaskaID { get; set; }
-    public Lokacija mjestoPolaska { get; set; }
+    //public Lokacija mjestoPolaska { get; set; }
     
     [ForeignKey("Lokacija")] 
     public int mjestoDolaskaID { get; set; }
-    public Lokacija mjestoDolaska { get; set; }
+    //public Lokacija mjestoDolaska { get; set; }
     
     public int duzinaPutovanja { get; set; }
     
@@ -32,7 +32,7 @@ public class Putovanje
     public Smjestaj smjestaj;
     
     [ForeignKey("TuristickiVodic")] 
-    public int? vodicID { get; set; }
+    public int? guideID { get; set; }
     public TuristickiVodic? vodic { get; set; }
     
     

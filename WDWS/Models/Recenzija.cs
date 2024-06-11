@@ -14,7 +14,7 @@ public class Recenzija
     public Putovanje putovanje { get; set; }
     
     [ForeignKey("Klijent")] 
-    public int klijentID { get; set; }
+    public int clientID { get; set; }
     public Klijent klijent { get; set; }
 
     public Recenzija()

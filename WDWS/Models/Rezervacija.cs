@@ -25,7 +25,7 @@ public class Rezervacija
     
     public StatusRezervacije status { get; set; }
 
-    [ForeignKey("Klijent")] public int klijentID { get; set; }
+    [ForeignKey("Klijent")] public int clientID { get; set; }
     public Klijent klijent { get; set; }
     public Rezervacija()
     {
