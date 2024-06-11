@@ -1,0 +1,75 @@
+@model wdws.Models.Putovanje
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<h1>Delete</h1>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>Putovanje</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.mjestoPolaskaID)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.mjestoPolaskaID)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.mjestoDolaskaID)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.mjestoDolaskaID)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.duzinaPutovanja)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.duzinaPutovanja)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.datumPolaska)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.datumPolaska)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.datumDolaska)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.datumDolaska)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.cijenaPoOsobi)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.cijenaPoOsobi)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.prijevoznaSredstva)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.prijevoznaSredstva)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.smjestajID)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.smjestajID)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.guideID)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.guideID)
+        </dd>
+    </dl>
+    
+    <form asp-action="Delete">
+        <input type="hidden" asp-for="putID" />
+        <input type="submit" value="Delete" class="btn btn-danger" /> |
+        <a asp-action="Index">Back to List</a>
+    </form>
+</div>

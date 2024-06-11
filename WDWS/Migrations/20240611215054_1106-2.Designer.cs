@@ -12,8 +12,8 @@ using WDWS.Data;
 namespace WDWS.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20240611211927_1106")]
-    partial class _1106
+    [Migration("20240611215054_1106-2")]
+    partial class _11062
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -285,11 +285,11 @@ namespace WDWS.Migrations
 
             modelBuilder.Entity("wdws.Models.Putovanje", b =>
                 {
-                    b.Property<int>("ID")
+                    b.Property<int>("putID")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ID"));
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("putID"));
 
                     b.Property<double>("cijenaPoOsobi")
                         .HasColumnType("float");
@@ -321,7 +321,7 @@ namespace WDWS.Migrations
                     b.Property<string>("vodicId")
                         .HasColumnType("nvarchar(450)");
 
-                    b.HasKey("ID");
+                    b.HasKey("putID");
 
                     b.HasIndex("vodicId");
 

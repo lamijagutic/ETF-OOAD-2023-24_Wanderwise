@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace WDWS.Migrations
 {
     /// <inheritdoc />
-    public partial class _1106 : Migration
+    public partial class _11062 : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -306,7 +306,7 @@ namespace WDWS.Migrations
                 name: "Putovanja",
                 columns: table => new
                 {
-                    ID = table.Column<int>(type: "int", nullable: false)
+                    putID = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
                     mjestoPolaskaID = table.Column<int>(type: "int", nullable: false),
                     mjestoDolaskaID = table.Column<int>(type: "int", nullable: false),
@@ -321,7 +321,7 @@ namespace WDWS.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Putovanja", x => x.ID);
+                    table.PrimaryKey("PK_Putovanja", x => x.putID);
                     table.ForeignKey(
                         name: "FK_Putovanja_Turisticki vodici_vodicId",
                         column: x => x.vodicId,
@@ -352,7 +352,7 @@ namespace WDWS.Migrations
                         name: "FK_Recenzije_Putovanja_putovanjeID",
                         column: x => x.putovanjeID,
                         principalTable: "Putovanja",
-                        principalColumn: "ID",
+                        principalColumn: "putID",
                         onDelete: ReferentialAction.Cascade);
                 });
 
@@ -384,7 +384,7 @@ namespace WDWS.Migrations
                         name: "FK_Rezervacije_Putovanja_putovanjeID",
                         column: x => x.putovanjeID,
                         principalTable: "Putovanja",
-                        principalColumn: "ID",
+                        principalColumn: "putID",
                         onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
                         name: "FK_Rezervacije_Smjestaji_smjestajID",
