@@ -102,9 +102,40 @@
       <_ContentIncludedByDefault Remove="Views\TuristickiVodic\Details.cshtml" />
       <_ContentIncludedByDefault Remove="Views\TuristickiVodic\Edit.cshtml" />
       <_ContentIncludedByDefault Remove="Views\TuristickiVodic\Index.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Putovanje\tsconfig.json" />
     </ItemGroup>
 
     <ItemGroup>
+      <UpToDateCheckInput Remove="Views\Rezervacija\Create.cshtml" />
+      <UpToDateCheckInput Remove="Views\Rezervacija\Delete.cshtml" />
+      <UpToDateCheckInput Remove="Views\Rezervacija\Details.cshtml" />
+      <UpToDateCheckInput Remove="Views\Rezervacija\Edit.cshtml" />
+      <UpToDateCheckInput Remove="Views\Rezervacija\Index.cshtml" />
+      <UpToDateCheckInput Remove="Views\Putovanje\Create.cshtml" />
+      <UpToDateCheckInput Remove="Views\Putovanje\Delete.cshtml" />
+      <UpToDateCheckInput Remove="Views\Putovanje\Details.cshtml" />
+      <UpToDateCheckInput Remove="Views\Putovanje\Edit.cshtml" />
+      <UpToDateCheckInput Remove="Views\Putovanje\Index.cshtml" />
+      <UpToDateCheckInput Remove="Views\Rezervacija\Create.cshtml" />
+      <UpToDateCheckInput Remove="Views\Rezervacija\Delete.cshtml" />
+      <UpToDateCheckInput Remove="Views\Rezervacija\Details.cshtml" />
+      <UpToDateCheckInput Remove="Views\Rezervacija\Edit.cshtml" />
+      <UpToDateCheckInput Remove="Views\Rezervacija\Index.cshtml" />
+      <UpToDateCheckInput Remove="Views\Rezervacija\Create.cshtml" />
+      <UpToDateCheckInput Remove="Views\Rezervacija\Delete.cshtml" />
+      <UpToDateCheckInput Remove="Views\Rezervacija\Details.cshtml" />
+      <UpToDateCheckInput Remove="Views\Rezervacija\Edit.cshtml" />
+      <UpToDateCheckInput Remove="Views\Rezervacija\Index.cshtml" />
+      <UpToDateCheckInput Remove="Views\Putovanje\Create.cshtml" />
+      <UpToDateCheckInput Remove="Views\Putovanje\Delete.cshtml" />
+      <UpToDateCheckInput Remove="Views\Putovanje\Details.cshtml" />
+      <UpToDateCheckInput Remove="Views\Putovanje\Edit.cshtml" />
+      <UpToDateCheckInput Remove="Views\Putovanje\Index.cshtml" />
+      <UpToDateCheckInput Remove="Views\Putovanje\Create.cshtml" />
+      <UpToDateCheckInput Remove="Views\Putovanje\Delete.cshtml" />
+      <UpToDateCheckInput Remove="Views\Putovanje\Details.cshtml" />
+      <UpToDateCheckInput Remove="Views\Putovanje\Edit.cshtml" />
+      <UpToDateCheckInput Remove="Views\Putovanje\Index.cshtml" />
       <UpToDateCheckInput Remove="Views\Rezervacija\Create.cshtml" />
       <UpToDateCheckInput Remove="Views\Rezervacija\Delete.cshtml" />
       <UpToDateCheckInput Remove="Views\Rezervacija\Details.cshtml" />

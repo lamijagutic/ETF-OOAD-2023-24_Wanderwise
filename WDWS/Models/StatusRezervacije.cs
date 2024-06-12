@@ -1,6 +1,21 @@
-﻿namespace wdws.Models;
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace wdws.Models;
 
 public enum StatusRezervacije
 {
-    GostOdustao, Odbijena, Prihvacena, Placena, NijePlacena
+    [Display(Name = "Gost odustao")] 
+    GostOdustao, 
+    
+    [Display(Name = "Odbijeno")] 
+    Odbijena, 
+    
+    [Display(Name = "Prihvaćena")] 
+    Prihvacena, 
+    
+    [Display(Name = "Završeno")] 
+    Placena, 
+    
+    [Display(Name = "Nije plaćeno")] 
+    NijePlacena
 }

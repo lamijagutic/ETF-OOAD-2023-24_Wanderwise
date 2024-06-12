@@ -1,6 +1,15 @@
-﻿namespace wdws.Models;
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace wdws.Models;
 
 public enum PrijevoznoSredstvo
 {
-    Avion, Autobus, Voz
+    [Display(Name = "Avion")]
+    Avion, 
+    
+    [Display(Name = "Autobus")]
+    Autobus, 
+    
+    [Display(Name = "Voz")] 
+    Voz
 }

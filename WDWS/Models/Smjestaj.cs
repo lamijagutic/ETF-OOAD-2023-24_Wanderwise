@@ -5,7 +5,7 @@ namespace wdws.Models;
 
 public class Smjestaj  {
     [Key]
-    public int ID {get; set;}
+    public int lodgingID {get; set;}
 
     public String naziv {get; set; }
 
@@ -31,8 +31,5 @@ public class Smjestaj  {
     {
        
     }
-    public Smjestaj vratiInformacijeOSmjestaju()
-    {
-        return this;
-    }
+
 }

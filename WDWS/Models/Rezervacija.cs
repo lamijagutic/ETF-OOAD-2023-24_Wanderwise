@@ -5,8 +5,7 @@ namespace wdws.Models;
 
 public class Rezervacija
 {
-    [Key]
-    public int ID { get; set; }
+    [Key] public int reservationID { get; set; } = 0;
     
     [ForeignKey("Putovanje")]
     public int putovanjeID { get; set; }
@@ -16,16 +15,17 @@ public class Rezervacija
     public double ukupnaCijena { get; set; }
     public int MilesBodovi { get; set; }
     
-    [ForeignKey("Smjestaj")]
-    public int? smjestajID { get; set; }
-    public Smjestaj? smjestaj { get; set; }
+    /*[ForeignKey("Smjestaj")]
+    public int smjestajID { get; set; }
+    public Smjestaj Smjestaj { get; set; }*/ //<- ovo vec imamo u putovanju
     
-    [ForeignKey("Soba")] public int? rezervisanaSobaID { get; set; }
-    public Soba? rezervisanaSoba { get; set; }
+    [ForeignKey("Soba")] public int rezervisanaSobaID { get; set; }
+    //public Soba soba { get; set; }
     
-    public StatusRezervacije status { get; set; }
+    [EnumDataType(typeof(StatusRezervacije))] public StatusRezervacije status { get; set; }
 
-    [ForeignKey("Klijent")] public int clientID { get; set; }
+    [ForeignKey("Klijent")] 
+    public String clientID { get; set; }
     public Klijent klijent { get; set; }
     public Rezervacija()
     {
@@ -35,5 +35,13 @@ public class Rezervacija
     {
         klijent.nagradniBodovi += MilesBodovi;
     }
-    
+    public void GenerišiID()
+    {
+        Random generator = new Random();
+        for (int i = 0; i < 10; i++)
+        {
+            reservationID += (int)Math.Pow(10, i) * generator.Next(0, 9);
+        }
+    }
+
 }

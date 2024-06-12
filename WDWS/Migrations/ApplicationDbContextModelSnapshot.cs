@@ -282,11 +282,11 @@ namespace WDWS.Migrations
 
             modelBuilder.Entity("wdws.Models.Putovanje", b =>
                 {
-                    b.Property<int>("ID")
+                    b.Property<int>("travelId")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ID"));
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("travelId"));
 
                     b.Property<double>("cijenaPoOsobi")
                         .HasColumnType("float");
@@ -300,8 +300,9 @@ namespace WDWS.Migrations
                     b.Property<int>("duzinaPutovanja")
                         .HasColumnType("int");
 
-                    b.Property<int?>("guideID")
-                        .HasColumnType("int");
+                    b.Property<string>("guideID")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(450)");
 
                     b.Property<int>("mjestoDolaskaID")
                         .HasColumnType("int");
@@ -309,59 +310,59 @@ namespace WDWS.Migrations
                     b.Property<int>("mjestoPolaskaID")
                         .HasColumnType("int");
 
-                    b.Property<string>("prijevoznaSredstva")
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<int>("prijevoz")
+                        .HasColumnType("int");
 
                     b.Property<int>("smjestajID")
                         .HasColumnType("int");
 
-                    b.Property<string>("vodicId")
-                        .HasColumnType("nvarchar(450)");
+                    b.HasKey("travelId");
 
-                    b.HasKey("ID");
+                    b.HasIndex("guideID");
 
-                    b.HasIndex("vodicId");
+                    b.HasIndex("smjestajID");
 
                     b.ToTable("Putovanja", (string)null);
                 });
 
             modelBuilder.Entity("wdws.Models.Recenzija", b =>
                 {
-                    b.Property<int>("ID")
+                    b.Property<int>("reviewID")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ID"));
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("reviewID"));
 
-                    b.Property<int>("clientID")
-                        .HasColumnType("int");
+                    b.Property<string>("clientID")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("klijentId")
                         .HasColumnType("nvarchar(450)");
 
-                    b.Property<int>("putovanjeID")
+                    b.Property<int>("putID")
                         .HasColumnType("int");
 
                     b.Property<string>("tekstRecenzije")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.HasKey("ID");
+                    b.HasKey("reviewID");
 
                     b.HasIndex("klijentId");
 
-                    b.HasIndex("putovanjeID");
+                    b.HasIndex("putID");
 
                     b.ToTable("Recenzije", (string)null);
                 });
 
             modelBuilder.Entity("wdws.Models.Rezervacija", b =>
                 {
-                    b.Property<int>("ID")
+                    b.Property<int>("reservationID")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ID"));
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("reservationID"));
 
                     b.Property<int>("MilesBodovi")
                         .HasColumnType("int");
@@ -369,8 +370,9 @@ namespace WDWS.Migrations
                     b.Property<int>("brojPutnika")
                         .HasColumnType("int");
 
-                    b.Property<int>("clientID")
-                        .HasColumnType("int");
+                    b.Property<string>("clientID")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("klijentId")
                         .HasColumnType("nvarchar(450)");
@@ -378,10 +380,7 @@ namespace WDWS.Migrations
                     b.Property<int>("putovanjeID")
                         .HasColumnType("int");
 
-                    b.Property<int?>("rezervisanaSobaID")
-                        .HasColumnType("int");
-
-                    b.Property<int?>("smjestajID")
+                    b.Property<int>("rezervisanaSobaID")
                         .HasColumnType("int");
 
                     b.Property<int>("status")
@@ -390,26 +389,22 @@ namespace WDWS.Migrations
                     b.Property<double>("ukupnaCijena")
                         .HasColumnType("float");
 
-                    b.HasKey("ID");
+                    b.HasKey("reservationID");
 
                     b.HasIndex("klijentId");
 
                     b.HasIndex("putovanjeID");
-
-                    b.HasIndex("rezervisanaSobaID");
-
-                    b.HasIndex("smjestajID");
 
                     b.ToTable("Rezervacije", (string)null);
                 });
 
             modelBuilder.Entity("wdws.Models.Smjestaj", b =>
                 {
-                    b.Property<int>("ID")
+                    b.Property<int>("lodgingID")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ID"));
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("lodgingID"));
 
                     b.Property<double>("CijenaSmjestaja")
                         .HasColumnType("float");
@@ -439,7 +434,7 @@ namespace WDWS.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.HasKey("ID");
+                    b.HasKey("lodgingID");
 
                     b.HasIndex("lokacijapostanskiBroj");
 
@@ -448,11 +443,11 @@ namespace WDWS.Migrations
 
             modelBuilder.Entity("wdws.Models.Soba", b =>
                 {
-                    b.Property<int>("ID")
+                    b.Property<int>("roomID")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ID"));
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("roomID"));
 
                     b.Property<double>("cijena")
                         .HasColumnType("float");
@@ -466,7 +461,7 @@ namespace WDWS.Migrations
                     b.Property<int>("tipSobe")
                         .HasColumnType("int");
 
-                    b.HasKey("ID");
+                    b.HasKey("roomID");
 
                     b.HasIndex("smjestajID");
 
@@ -596,11 +591,21 @@ namespace WDWS.Migrations
 
             modelBuilder.Entity("wdws.Models.Putovanje", b =>
                 {
-                    b.HasOne("wdws.Models.TuristickiVodic", "vodic")
+                    b.HasOne("wdws.Models.TuristickiVodic", "TuristickiVodic")
                         .WithMany()
-                        .HasForeignKey("vodicId");
+                        .HasForeignKey("guideID")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
-                    b.Navigation("vodic");
+                    b.HasOne("wdws.Models.Smjestaj", "Smjestaj")
+                        .WithMany()
+                        .HasForeignKey("smjestajID")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Smjestaj");
+
+                    b.Navigation("TuristickiVodic");
                 });
 
             modelBuilder.Entity("wdws.Models.Recenzija", b =>
@@ -609,15 +614,15 @@ namespace WDWS.Migrations
                         .WithMany()
                         .HasForeignKey("klijentId");
 
-                    b.HasOne("wdws.Models.Putovanje", "putovanje")
+                    b.HasOne("wdws.Models.Putovanje", "Putovanje")
                         .WithMany("recenzije")
-                        .HasForeignKey("putovanjeID")
+                        .HasForeignKey("putID")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.Navigation("klijent");
+                    b.Navigation("Putovanje");
 
-                    b.Navigation("putovanje");
+                    b.Navigation("klijent");
                 });
 
             modelBuilder.Entity("wdws.Models.Rezervacija", b =>
@@ -632,21 +637,9 @@ namespace WDWS.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("wdws.Models.Soba", "rezervisanaSoba")
-                        .WithMany()
-                        .HasForeignKey("rezervisanaSobaID");
-
-                    b.HasOne("wdws.Models.Smjestaj", "smjestaj")
-                        .WithMany()
-                        .HasForeignKey("smjestajID");
-
                     b.Navigation("klijent");
 
                     b.Navigation("put");
-
-                    b.Navigation("rezervisanaSoba");
-
-                    b.Navigation("smjestaj");
                 });
 
             modelBuilder.Entity("wdws.Models.Smjestaj", b =>
@@ -662,13 +655,13 @@ namespace WDWS.Migrations
 
             modelBuilder.Entity("wdws.Models.Soba", b =>
                 {
-                    b.HasOne("wdws.Models.Smjestaj", "smjestaj")
+                    b.HasOne("wdws.Models.Smjestaj", "Smjestaj")
                         .WithMany()
                         .HasForeignKey("smjestajID")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.Navigation("smjestaj");
+                    b.Navigation("Smjestaj");
                 });
 
             modelBuilder.Entity("wdws.Models.Korisnik", b =>

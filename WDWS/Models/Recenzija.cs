@@ -5,16 +5,16 @@ namespace wdws.Models;
 public class Recenzija
 {
     [Key]
-    public int ID { get; set; }
+    public int reviewID { get; set; }
     
     public String tekstRecenzije { get; set; }
     
     [ForeignKey("Putovanje")] 
-    public int putovanjeID { get; set; }
-    public Putovanje putovanje { get; set; }
+    public int putID { get; set; }
+    public Putovanje Putovanje { get; set; }
     
     [ForeignKey("Klijent")] 
-    public int clientID { get; set; }
+    public String clientID { get; set; }
     public Klijent klijent { get; set; }
 
     public Recenzija()

@@ -6,7 +6,7 @@ namespace wdws.Models;
 public class Putovanje
 {
     [Key]
-    public int ID { get; set; }
+    public int travelId { get; set; }
     
     [ForeignKey("Lokacija")] 
     public int mjestoPolaskaID { get; set; }
@@ -23,17 +23,17 @@ public class Putovanje
     
     public double cijenaPoOsobi { get; set; }
 
-    public List<PrijevoznoSredstvo>? prijevoznaSredstva { get; set; }
+    [EnumDataType(typeof(PrijevoznoSredstvo))] public PrijevoznoSredstvo prijevoz { get; set; }
     
     public List<Recenzija>? recenzije { get; set; }
     
     [ForeignKey("Smjestaj")] 
     public int smjestajID { get; set; }
-    public Smjestaj smjestaj;
+    public Smjestaj Smjestaj { get; set; }
     
     [ForeignKey("TuristickiVodic")] 
-    public int? guideID { get; set; }
-    public TuristickiVodic? vodic { get; set; }
+    public String guideID { get; set; }
+    public TuristickiVodic TuristickiVodic { get; set; }
     
     
     public Putovanje()
