@@ -282,11 +282,11 @@ namespace WDWS.Migrations
 
             modelBuilder.Entity("wdws.Models.Putovanje", b =>
                 {
-                    b.Property<int>("putID")
+                    b.Property<int>("ID")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("putID"));
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ID"));
 
                     b.Property<double>("cijenaPoOsobi")
                         .HasColumnType("float");
@@ -318,7 +318,7 @@ namespace WDWS.Migrations
                     b.Property<string>("vodicId")
                         .HasColumnType("nvarchar(450)");
 
-                    b.HasKey("putID");
+                    b.HasKey("ID");
 
                     b.HasIndex("vodicId");
 
