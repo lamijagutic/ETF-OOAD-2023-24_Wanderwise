@@ -1,0 +1,77 @@
+﻿/* Section 1 Styles */
+.section1 {
+    background-image: url("css/images/home.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    padding-top: 60px; /* To make space for the navbar */
+    padding-left: 15%;
+    color: white;
+}
+
+.section1-content{
+    max-width: 500px;
+}
+
+.section1 h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.section1 p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.section1 input {
+    padding: 10px;
+    width: 100%;
+    max-width: 400px; /* Limit the width of the input for scalability */
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.section1 .buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.section1 .buttons button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.section1 .buttons .start {
+    background-color: #007bff;
+    color: white;
+}
+
+.section1 .buttons .learn-more {
+    background-color: #f8f9fa;
+    color: #007bff;
+}
+
+.section2 {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: white;
+}
+.section2 h1 {
+    margin-bottom: 20px;
+}
+
+.section3 {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #e0e8d0; /* Sage green */
+}
+.section3 h1 {
+    margin-bottom: 20px;
+}
