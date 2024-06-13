@@ -46,6 +46,7 @@ namespace WDWS.Controllers
         // GET: Lokacija/Create
         public IActionResult Create()
         {
+            ViewBag.Drzave = new SelectList(GetDrzave());
             return View();
         }
 
@@ -62,6 +63,7 @@ namespace WDWS.Controllers
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
+            ViewBag.Drzave = new SelectList(GetDrzave());
             return View(lokacija);
         }
 
@@ -153,5 +155,70 @@ namespace WDWS.Controllers
         {
             return _context.Lokacije.Any(e => e.postanskiBroj == id);
         }
+        private List<string> GetDrzave(){
+            return new List<string> 
+            {
+                "Afganistan",
+                "Albanija",
+                "Alžir",
+                "Argentina",
+                "Australija",
+                "Austrija",
+                "Belgija",
+                "Bosna i Hercegovina",
+                "Brazil",
+                "Bugarska",
+                "Kanada",
+                "Kina",
+                "Kolumbija",
+                "Hrvatska",
+                "Češka",
+                "Danska",
+                "Egipat",
+                "Finska",
+                "Francuska",
+                "Njemačka",
+                "Grčka",
+                "Mađarska",
+                "Island",
+                "Indija",
+                "Indonezija",
+                "Iran",
+                "Irska",
+                "Italija",
+                "Japan",
+                "Jordan",
+                "Kazahstan",
+                "Kenija",
+                "Južna Koreja",
+                "Meksiko",
+                "Nizozemska",
+                "Novi Zeland",
+                "Norveška",
+                "Pakistan",
+                "Peru",
+                "Poljska",
+                "Portugal",
+                "Rumunija",
+                "Rusija",
+                "Saudijska Arabija",
+                "Srbija",
+                "Slovačka",
+                "Slovenija",
+                "Južnoafrička Republika",
+                "Španija",
+                "Švedska",
+                "Švicarska",
+                "Turska",
+                "Ukrajina",
+                "Ujedinjeno Kraljevstvo",
+                "Ujedinjeni Arapski Emirati",
+                "Sjedinjene Američke Države",
+                "Vijetnam",
+                "Zambija",
+                "Zimbabve"
+            };
+        }
+        
     }
 }

@@ -46,6 +46,7 @@ namespace WDWS.Controllers
         // GET: Klijent/Create
         public IActionResult Create()
         {
+            ViewBag.Spol = new SelectList(GetSpol());
             return View();
         }
 
@@ -62,6 +63,7 @@ namespace WDWS.Controllers
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
+            ViewBag.Spol = new SelectList(GetSpol());
             return View(klijent);
         }
 
@@ -152,6 +154,14 @@ namespace WDWS.Controllers
         private bool KlijentExists(string id)
         {
             return _context.Klijenti.Any(e => e.Id == id);
+        }
+        
+        private List<string> GetSpol(){
+            return new List<string> 
+            {
+                "Muški",
+                "Ženski"
+            };
         }
     }
 }

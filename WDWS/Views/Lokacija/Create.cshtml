@@ -13,17 +13,17 @@
         <form asp-action="Create">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group">
-                <label asp-for="nazivMjesta" class="control-label"></label>
+                <label asp-for="nazivMjesta" class="control-label">Naziv mjesta: </label>
                 <input asp-for="nazivMjesta" class="form-control" />
                 <span asp-validation-for="nazivMjesta" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="drzava" class="control-label"></label>
-                <input asp-for="drzava" class="form-control" />
+                <label asp-for="drzava" class="control-label">Država: </label>
+                <select asp-for="drzava" class="form-control" asp-items="ViewBag.Drzave"></select>
                 <span asp-validation-for="drzava" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="postanskiBroj" class="control-label"></label>
+                <label asp-for="postanskiBroj" class="control-label">Poštanski broj: </label>
                 <input asp-for="postanskiBroj" class="form-control" />
                 <span asp-validation-for="postanskiBroj" class="text-danger"></span>
             </div>

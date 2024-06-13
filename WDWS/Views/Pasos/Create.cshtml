@@ -11,7 +11,7 @@
 <div class="row">
     <div class="col-md-4">
         <form asp-action="Create">
-            <div asp-validation-summary="ModelOnly" class="text-danger">ID Putnika: </div>
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group">
                 <label asp-for="clientID" class="control-label"></label>
                 <input asp-for="clientID" class="form-control" />
@@ -24,8 +24,8 @@
             </div>
             
             <div class="form-group">
-                <label asp-for="nacionalnost" class="control-label"></label>
-                <input asp-for="nacionalnost" class="form-control" />
+                <label asp-for="nacionalnost" class="control-label">Nacionalnost: </label>
+                <select asp-for="nacionalnost" class="form-control" asp-items="ViewBag.Drzave" multiple="multiple"></select>
                 <span asp-validation-for="nacionalnost" class="text-danger"></span>
             </div> 
             
