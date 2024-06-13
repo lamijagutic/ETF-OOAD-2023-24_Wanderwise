@@ -1,0 +1,83 @@
+@model IEnumerable<wdws.Models.Putovanje>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.mjestoPolaskaID)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.mjestoDolaskaID)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.duzinaPutovanja)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.datumPolaska)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.datumDolaska)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.cijenaPoOsobi)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.prijevoz)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Smjestaj)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TuristickiVodic)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.mjestoPolaskaID)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.mjestoDolaskaID)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.duzinaPutovanja)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.datumPolaska)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.datumDolaska)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.cijenaPoOsobi)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.prijevoz)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Smjestaj.lodgingID)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TuristickiVodic.Id)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.travelId">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.travelId">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.travelId">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

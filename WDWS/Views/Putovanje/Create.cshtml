@@ -1,0 +1,88 @@
+@using wdws.Models
+@model wdws.Models.Putovanje
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create</h1>
+
+<h4>Putovanje</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <!-- <div class="form-group">
+                <label asp-for="mjestoPolaskaID" class="control-label"></label>
+                <input asp-for="mjestoPolaskaID" class="form-control" />
+                <span asp-validation-for="mjestoPolaskaID" class="text-danger"></span>
+            </div>-->
+            
+            <div class="form-group">
+                <label asp-for="mjestoPolaskaID" class="control-label">Mjesto polaska</label>
+                <select asp-for="mjestoPolaskaID" class="form-control" asp-items="ViewBag.Lokacije"></select>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="mjestoDolaskaID" class="control-label">Mjesto dolaska</label>
+                <select asp-for="mjestoDolaskaID" class="form-control" asp-items="ViewBag.Lokacije"></select>
+            </div>
+            <!--
+            <div class="form-group">
+                <label asp-for="mjestoDolaskaID" class="control-label"></label>
+                <input asp-for="mjestoDolaskaID" class="form-control" />
+                <span asp-validation-for="mjestoDolaskaID" class="text-danger"></span>
+            </div> -->
+            <div class="form-group">
+                <label asp-for="duzinaPutovanja" class="control-label"></label>
+                <input asp-for="duzinaPutovanja" class="form-control" />
+                <span asp-validation-for="duzinaPutovanja" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="datumPolaska" class="control-label"></label>
+                <input asp-for="datumPolaska" class="form-control" />
+                <span asp-validation-for="datumPolaska" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="datumDolaska" class="control-label"></label>
+                <input asp-for="datumDolaska" class="form-control" />
+                <span asp-validation-for="datumDolaska" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="cijenaPoOsobi" class="control-label"></label>
+                <input asp-for="cijenaPoOsobi" class="form-control" />
+                <span asp-validation-for="cijenaPoOsobi" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="prijevoz" class="control-label">Prijevozno sredstvo</label>
+                <select asp-for="prijevoz" class="form-control"
+                        asp-items="Html.GetEnumSelectList<PrijevoznoSredstvo>()"></select>
+                <span asp-validation-for="prijevoz" class="text-danger"></span>
+            </div>
+            
+            <div class="form-group">
+                <label asp-for="smjestajID" class="control-label"></label>
+                <select asp-for="smjestajID" class ="form-control" 
+                        asp-items="ViewBag.smjestajID"></select>
+            </div>
+            <div class="form-group">
+                <label asp-for="guideID" class="control-label"></label>
+                <select asp-for="guideID" class ="form-control" 
+                        asp-items="ViewBag.guideID"></select>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
