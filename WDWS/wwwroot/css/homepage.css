@@ -1,6 +1,6 @@
 ﻿/* Section 1 Styles */
 .section1 {
-    background-image: url("css/images/home.jpg");
+    background-image: url("../css/images/home.jpg");
     background-size: cover;
     background-position: center;
     height: 100vh;
