@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "4ubqjds5rsdYLSkzQRH58i0kZRu7+sPnupqmJOO8P/M=",
+  "Hash": "oouZH2JKC8WuoYX590+dd5emsreCz4+3U6pbVyTDBE0=",
   "Source": "WDWS",
   "BasePath": "_content/WDWS",
   "Mode": "Default",
@@ -1231,6 +1231,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\images\\home.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\Gutić\\Desktop\\wanderwise\\WDWS\\wwwroot\\css\\images\\login.jpg",
+      "SourceId": "WDWS",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Gutić\\Desktop\\wanderwise\\WDWS\\wwwroot\\",
+      "BasePath": "_content/WDWS",
+      "RelativePath": "css/images/login.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\images\\login.jpg"
     },
     {
       "Identity": "C:\\Users\\Gutić\\Desktop\\wanderwise\\WDWS\\wwwroot\\css\\images\\logo.png",
