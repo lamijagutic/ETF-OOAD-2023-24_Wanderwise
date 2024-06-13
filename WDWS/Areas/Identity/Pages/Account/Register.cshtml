@@ -4,64 +4,144 @@
     ViewData["Title"] = "Register";
 }
 
-<h1>@ViewData["Title"]</h1>
+<div class="registration-container">
+    <h2>Registracija korisničkog računa</h2>
+    <form id="registerForm" method="post">
+        <div class="text-danger" role="alert"></div>
 
-<div class="row">
-    <div class="col-md-4">
-        <form id="registerForm" asp-route-returnUrl="@Model.ReturnUrl" method="post">
-            <h2>Create a new account.</h2>
-            <hr />
-            <div asp-validation-summary="ModelOnly" class="text-danger" role="alert"></div>
-            <div class="form-floating mb-3">
-                <input asp-for="Input.Email" class="form-control" autocomplete="username" aria-required="true" placeholder="name@example.com" />
-                <label asp-for="Input.Email">Email</label>
-                <span asp-validation-for="Input.Email" class="text-danger"></span>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="form-floating mb-3">
+                    <input type="text" id="ime" name="ime" class="form-control" placeholder="Ime" />
+                    <label for="ime">Ime</label>
+                    <span class="text-danger"></span>
+                </div>
             </div>
-            <div class="form-floating mb-3">
-                <input asp-for="Input.Password" class="form-control" autocomplete="new-password" aria-required="true" placeholder="password" />
-                <label asp-for="Input.Password">Password</label>
-                <span asp-validation-for="Input.Password" class="text-danger"></span>
+            <div class="col-md-6">
+                <div class="form-floating mb-3">
+                    <input type="text" id="prezime" name="prezime" class="form-control" placeholder="Prezime" />
+                    <label for="prezime">Prezime</label>
+                    <span class="text-danger"></span>
+                </div>
             </div>
-            <div class="form-floating mb-3">
-                <input asp-for="Input.ConfirmPassword" class="form-control" autocomplete="new-password" aria-required="true" placeholder="password" />
-                <label asp-for="Input.ConfirmPassword">Confirm Password</label>
-                <span asp-validation-for="Input.ConfirmPassword" class="text-danger"></span>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6">
+                <div class="form-floating mb-3">
+                    <input type="text" id="ulica" name="ulica" class="form-control" placeholder="Ulica" />
+                    <label for="ulica">Ulica</label>
+                    <span class="text-danger"></span>
+                </div>
             </div>
-            <button id="registerSubmit" type="submit" class="w-100 btn btn-lg btn-primary">Register</button>
-        </form>
-    </div>
-    <div class="col-md-6 col-md-offset-2">
-        <section>
-            <h3>Use another service to register.</h3>
-            <hr />
-            @{
-                if ((Model.ExternalLogins?.Count ?? 0) == 0)
-                {
-                    <div>
-                        <p>
-                            There are no external authentication services configured. See this <a href="https://go.microsoft.com/fwlink/?LinkID=532715">article
-                            about setting up this ASP.NET application to support logging in via external services</a>.
-                        </p>
-                    </div>
-                }
-                else
-                {
-                    <form id="external-account" asp-page="./ExternalLogin" asp-route-returnUrl="@Model.ReturnUrl" method="post" class="form-horizontal">
-                        <div>
-                            <p>
-                                @foreach (var provider in Model.ExternalLogins!)
-                                {
-                                    <button type="submit" class="btn btn-primary" name="provider" value="@provider.Name" title="Log in using your @provider.DisplayName account">@provider.DisplayName</button>
-                                }
-                            </p>
-                        </div>
-                    </form>
-                }
-            }
-        </section>
-    </div>
+            <div class="col-md-6">
+                <div class="form-floating mb-3">
+                    <input type="text" id="broj" name="broj" class="form-control" placeholder="Broj" />
+                    <label for="broj">Broj</label>
+                    <span class="text-danger"></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6">
+                <div class="form-floating mb-3">
+                    <input type="text" id="grad" name="grad" class="form-control" placeholder="Grad" />
+                    <label for="grad">Grad</label>
+                    <span class="text-danger"></span>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-floating mb-3">
+                    <input type="text" id="postanski_broj" name="postanski_broj" class="form-control" placeholder="Poštanski broj" />
+                    <label for="postanski_broj">Poštanski broj</label>
+                    <span class="text-danger"></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6">
+                <div class="form-floating mb-3">
+                    <input asp-for="Input.Email" class="form-control" placeholder="Email" />
+                    <label asp-for="Input.Email">Email</label>
+                    <span asp-validation-for="Input.Email" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-floating mb-3">
+                    <input type="text" id="telefon" name="telefon" class="form-control" placeholder="Broj telefona" />
+                    <label for="telefon">Broj telefona</label>
+                    <span class="text-danger"></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="form-floating mb-3">
+            <input asp-for="Input.Password" class="form-control" placeholder="Lozinka" />
+            <label asp-for="Input.Password">Lozinka</label>
+            <span asp-validation-for="Input.Password" class="text-danger"></span>
+            <small class="form-text text-muted">Lozinka mora imati najmanje 10 znakova i sadržati veliko slovo, malo slovo i karaktere.</small>
+        </div>
+
+        <div class="form-floating mb-3">
+            <input asp-for="Input.ConfirmPassword" class="form-control" placeholder="Potvrdite lozinku" />
+            <label asp-for="Input.ConfirmPassword">Potvrdite lozinku</label>
+            <span asp-validation-for="Input.ConfirmPassword" class="text-danger"></span>
+        </div>
+
+        <button id="registerSubmit" type="submit" class="w-100 btn btn-lg btn-primary">Registrirajte se</button>
+
+        <small class="form-text align-items-center">
+            Registracijom na wanderwise.ba pristajete na
+            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" style="color: rgb(1, 210, 210);">Uslove korištenja</a> i
+            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" style="color: rgb(1, 210, 210);">Politiku privatnosti</a> korištenja podataka.
+        </small>
+    </form>
 </div>
 
+
+
+<style>
+    body {
+        font-family: 'Arial', sans-serif;
+        background: linear-gradient(to bottom right, #e09201,#e4330c, #c62676, #771390, #1a4f90); /* Orange to pink to blue gradient */
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 60px;
+    }
+
+    .registration-container {
+        width: 90%;
+        max-width: 600px;
+        max-height: 800px;
+        padding: 20px;
+        background-color: rgba(255, 255, 255, 0.45); /* Semi-transparent white background */
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        margin: 2% auto 0 auto;
+    }
+    .registration-container h2 {
+        text-align: center;
+        margin-bottom: 20px;
+        color: #fefafa; /* Dark text color */
+        font-weight: bold;
+    }
+    .form-group {
+        margin-bottom: auto;
+    }
+    .form-control {
+        border-radius: 5px;
+    }
+    .btn-register {
+        background-color: #FFA500; /* Yellow button */
+        color: white;
+        border: none;
+        border-radius: 5px;
+        width: 100%;
+    }
+</style>
 @section Scripts {
     <partial name="_ValidationScriptsPartial" />
 }

@@ -46,6 +46,7 @@ body {
 
 .navbar-logo img {
   height: 40px; /* Adjust the height of the logo image */
+  margin-bottom: auto;
 }
 
 .navbar-menu {
@@ -68,16 +69,24 @@ body {
 .nav-link:hover {
   color: #007bff;
 }
-
+.button-container {
+  display: flex;
+  gap: 5px; /* Adjust the gap between buttons as needed */
+}
 /* Button styling */
 .btn-warning {
-  background-color: #ffc107; /* Yellow background */
-  color: #343a40; /* Dark gray text */
+  background-color: rgba(7, 152, 255, 0.92); /* Yellow background */
+  color: #ffffff; /* Dark gray text */
   border: none;
   padding: 8px 15px;
   border-radius: 5px;
   text-decoration: none;
   transition: background-color 0.3s ease, color 0.3s ease;
+}
+.btn-secondary{
+  background-color: #ffc107; /* Yellow background */
+  color: #ffffff; /* Dark gray text */
+  border: none;
 }
 
 .btn-warning:hover {

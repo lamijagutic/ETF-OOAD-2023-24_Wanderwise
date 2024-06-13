@@ -1,0 +1,85 @@
+﻿body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to bottom, #242498, #008080); /* Dark blue to teal */
+    /*height: 100vh;*/
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.login-container {
+    display: flex;
+    width: 90%;
+    max-width: 1000px;
+    height: 60%;
+    margin-top: 0;
+    background-color: rgba(255, 255, 255, 0.2); /* Transparent white background */
+    border-radius: 10px;
+    /*overflow: hidden;*/
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.login-image {
+    flex: 1;
+    background: url('https://andaluciaexclusiva.com/wp-content/uploads/2022/05/espectaculo-luces-setas-sevilla.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+.login-form {
+    flex: 1;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white; /* White text */
+}
+
+.login-form h2 {
+    margin-bottom: 20px;
+    font-size: 26px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.login-form .form-group {
+    margin-bottom: 15px;
+}
+
+.login-form input {
+    background-color: rgba(255, 255, 255, 0.2); /* Transparent input background */
+    color: white; /* White text */
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.login-form input::placeholder {
+    color: white; /* Placeholder text color */
+}
+
+.login-form button {
+    margin-top: 20px;
+    background-color: #0072ff; /* Button color */
+    border: none;
+}
+
+.login-form .register-link {
+    margin-top: 20px; /* Increased margin top */
+    text-align: center;
+}
+
+.login-form .register-link a {
+    background-color: #f3b706; /* Yellow background */
+    color: white !important; /* White text */
+    font-weight: 300;
+    border: none;
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.login-form .register-link a:hover {
+    text-decoration: underline;
+}
+

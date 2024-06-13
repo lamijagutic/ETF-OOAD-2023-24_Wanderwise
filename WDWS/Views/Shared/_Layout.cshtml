@@ -9,6 +9,7 @@
     <!-- <link rel="stylesheet" href="~/WDWS.styles.css" asp-append-version="true"/> -->
     <link rel="stylesheet" href="~/css/homepage.css" asp-append-version="true"/>
     <link rel="stylesheet" href="~/css/kontakt.css" asp-append-version="true"/>
+    <link rel="stylesheet" href="~/css/login.css" asp-append-version="true"/>
 </head>
 <body>
 <header>
@@ -38,7 +39,10 @@
             </li>
         </ul>
         <!-- Login Button -->
-        <a class="btn btn-warning" asp-area="" asp-controller="" asp-action="">Login</a>
+        <div class="button-container">
+        <a class="btn btn-warning" asp-area="Identity" asp-page="/Account/Login"> Login</a>
+        <a class="btn btn-secondary" asp-area="Identity" asp-page="/Account/Register"> Register </a> </div>
+
     </nav>
 </header>
 <div class="container-fluid">
