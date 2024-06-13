@@ -1,5 +1,7 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using Microsoft.AspNetCore.Authorization;
+
 namespace wdws.Models;
 public class ValidateDates : ValidationAttribute
 {
@@ -20,6 +22,7 @@ public class ValidateDate : ValidationAttribute
         return (((DateTime)date > DateTime.Now) ? ValidationResult.Success : new ValidationResult("Ne možete kreirati putovanje u prošlosti!"))!;
     } }
 
+[Authorize]
 public class Putovanje
 {
     [Key]
