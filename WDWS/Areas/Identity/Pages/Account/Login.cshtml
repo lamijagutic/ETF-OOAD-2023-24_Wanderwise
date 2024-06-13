@@ -1,146 +1,64 @@
 ﻿@page
 @model LoginModel
-
 @{
     ViewData["Title"] = "Log in";
+    <!-- Layout = "_Layout"; // Assuming _Layout.cshtml includes the header and footer -->
 }
 
-<div class="login-container">
-    <div class="login-image"></div>
-    <div class="login-form">
-        <h1>@ViewData["Title"]</h1>
-        <div class="row">
-            <div class="col-md-4">
-                <section>
-                    <form id="account" method="post">
-                        <h2>Use a local account to log in.</h2>
-                        <hr />
-                        <div asp-validation-summary="ModelOnly" class="text-danger" role="alert"></div>
-                        <div class="form-group">
-                            <input asp-for="Input.Email" class="form-control" autocomplete="username" aria-required="true" placeholder="Email" />
-                            <span asp-validation-for="Input.Email" class="text-danger"></span>
-                        </div>
-                        <div class="form-group">
-                            <input asp-for="Input.Password" class="form-control" autocomplete="current-password" aria-required="true" placeholder="Password" />
-                            <span asp-validation-for="Input.Password" class="text-danger"></span>
-                        </div>
-                        <div class="checkbox mb-3">
-                            <label asp-for="Input.RememberMe" class="form-label">
-                                <input class="form-check-input" asp-for="Input.RememberMe" />
-                                @Html.DisplayNameFor(m => m.Input.RememberMe)
-                            </label>
-                        </div>
-                        <div>
-                            <button id="login-submit" type="submit" class="w-100 btn btn-lg btn-primary">Log in</button>
-                        </div>
-                        <div>
-                            <p>
-                                <a id="forgot-password" asp-page="./ForgotPassword">Forgot your password?</a>
-                            </p>
-                            <p>
-                                <a asp-page="./Register" asp-route-returnUrl="@Model.ReturnUrl">Register as a new user</a>
-                            </p>
-                            <p>
-                                <a id="resend-confirmation" asp-page="./ResendEmailConfirmation">Resend email confirmation</a>
-                            </p>
-                        </div>
-                    </form>
-                </section>
-            </div>
-            <div class="col-md-6 col-md-offset-2">
-                <section>
-                    <h3>Use another service to log in.</h3>
-                    <hr />
-                    @{
-                    if ((Model.ExternalLogins?.Count ?? 0) == 0)
-                    {
-                    <div>
-                        <p>
-                            There are no external authentication services configured. See this <a href="https://go.microsoft.com/fwlink/?LinkID=532715">article
-                                about setting up this ASP.NET application to support logging in via external services</a>.
-                        </p>
+<div class="container-fluid d-flex flex-column min-vh-100">
+    <!-- Main Content -->
+    <div class="flex-grow-1 d-flex align-items-center justify-content-center">
+        <div class="login-container">
+            <div class="login-image"></div>
+            <div class="login-form">
+                <h1>@ViewData["Title"]</h1>
+                <div class="row">
+                    <div class="col-md-12">
+                        <section>
+                            <form id="account" method="post">
+                                <hr />
+                                <div asp-validation-summary="ModelOnly" class="text-danger" role="alert"></div>
+                                <div class="form-group">
+                                    <input asp-for="Input.Email" class="form-control" autocomplete="username" aria-required="true" placeholder="Email" />
+                                    <span asp-validation-for="Input.Email" class="text-danger"></span>
+                                </div>
+                                <div class="form-group">
+                                    <input asp-for="Input.Password" class="form-control" autocomplete="current-password" aria-required="true" placeholder="Password" />
+                                    <span asp-validation-for="Input.Password" class="text-danger"></span>
+                                </div>
+                                <div class="checkbox mb-3">
+                                    <label asp-for="Input.RememberMe" class="form-label">
+                                        <input class="form-check-input" asp-for="Input.RememberMe" />
+                                        @Html.DisplayNameFor(m => m.Input.RememberMe)
+                                    </label>
+                                </div>
+                                <div>
+                                    <button id="login-submit" type="submit" class="w-100 btn btn-lg btn-primary">Log in</button>
+                                </div>
+                                <div>
+                                    <p>
+                                        <a id="forgot-password" asp-page="./ForgotPassword">Forgot your password?</a>
+                                    </p>
+                                    <p>
+                                        <a asp-page="./Register" asp-route-returnUrl="@Model.ReturnUrl">Register as a new user</a>
+                                    </p>
+                                    <p>
+                                        <a id="resend-confirmation" asp-page="./ResendEmailConfirmation">Resend email confirmation</a>
+                                    </p>
+                                </div>
+                            </form>
+                        </section>
                     </div>
-                    }
-                    else
-                    {
-                    <form id="external-account" asp-page="./ExternalLogin" asp-route-returnUrl="@Model.ReturnUrl" method="post" class="form-horizontal">
-                        <div>
-                            <p>
-                                @foreach (var provider in Model.ExternalLogins!)
-                                {
-                                <button type="submit" class="btn btn-primary" name="provider" value="@provider.Name" title="Log in using your @provider.DisplayName account">@provider.DisplayName</button>
-                                }
-                            </p>
-                        </div>
-                    </form>
-                    }
-                    }
-                </section>
+
+                </div>
             </div>
         </div>
     </div>
 </div>
-<!-- Dodan stil -->
-<style>
-    body {
-        font-family: 'Arial', sans-serif;
-        background: linear-gradient(to bottom, #242498, #008080); /* Dark blue to teal */
-        height: 100vh;
-        margin: 0;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-    .login-container {
-        display: flex;
-        width: 90%;
-        max-width: 1000px;
-        height: 70%;
-        background-color: rgba(255, 255, 255, 0.2); /* Transparent white background */
-        border-radius: 10px;
-        overflow: hidden;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    }
-    .login-image {
-        flex: 1;
-        background: url('https://andaluciaexclusiva.com/wp-content/uploads/2022/05/espectaculo-luces-setas-sevilla.jpg') no-repeat center center;
-        background-size: cover;
-    }
-    .login-form {
-        flex: 1;
-        padding: 50px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        color: white; /* White text */
-    }
-    .login-form h2 {
-        margin-bottom: 20px;
-        font-size: 26px;
-        font-weight: bold;
-        text-align: center;
-    }
-    .login-form .form-group {
-        margin-bottom: 10px;
-    }
-    .login-form input {
-        background-color: rgba(255, 255, 255, 0.2); /* Transparent input background */
-        color: white; /* White text */
-        border: none;
-        border-radius: 5px;
-    }
-    .login-form input::placeholder {
-        color: white; /* Placeholder text color */
-    }
-    .login-form button {
-        margin-top: 10px;
-        background-color: #0072ff; /* Button color */
-        border: none;
-        color: white;
-    }
 
-</style>
+
 
 @section Scripts {
     <partial name="_ValidationScriptsPartial" />
 }
+
