@@ -103,6 +103,7 @@
       <_ContentIncludedByDefault Remove="Views\TuristickiVodic\Edit.cshtml" />
       <_ContentIncludedByDefault Remove="Views\TuristickiVodic\Index.cshtml" />
       <_ContentIncludedByDefault Remove="Views\Putovanje\tsconfig.json" />
+      <_ContentIncludedByDefault Remove="Views\Kontakt\Index.cshtml" />
     </ItemGroup>
 
     <ItemGroup>
