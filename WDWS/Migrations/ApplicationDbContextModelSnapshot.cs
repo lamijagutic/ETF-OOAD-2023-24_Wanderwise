@@ -259,18 +259,15 @@ namespace WDWS.Migrations
                         .HasColumnType("date");
 
                     b.Property<string>("drzavaKojaIzdaje")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("klijentId")
                         .HasColumnType("nvarchar(450)");
 
                     b.Property<string>("nacionalnost")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("napomene")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("ID");
@@ -301,7 +298,6 @@ namespace WDWS.Migrations
                         .HasColumnType("int");
 
                     b.Property<string>("guideID")
-                        .IsRequired()
                         .HasColumnType("nvarchar(450)");
 
                     b.Property<int>("mjestoDolaskaID")
@@ -313,7 +309,7 @@ namespace WDWS.Migrations
                     b.Property<int>("prijevoz")
                         .HasColumnType("int");
 
-                    b.Property<int>("smjestajID")
+                    b.Property<int?>("smjestajID")
                         .HasColumnType("int");
 
                     b.HasKey("travelId");
@@ -427,7 +423,6 @@ namespace WDWS.Migrations
                         .HasColumnType("int");
 
                     b.Property<string>("lokacijapostanskiBroj")
-                        .IsRequired()
                         .HasColumnType("nvarchar(450)");
 
                     b.Property<string>("naziv")
@@ -593,15 +588,11 @@ namespace WDWS.Migrations
                 {
                     b.HasOne("wdws.Models.TuristickiVodic", "TuristickiVodic")
                         .WithMany()
-                        .HasForeignKey("guideID")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .HasForeignKey("guideID");
 
                     b.HasOne("wdws.Models.Smjestaj", "Smjestaj")
                         .WithMany()
-                        .HasForeignKey("smjestajID")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .HasForeignKey("smjestajID");
 
                     b.Navigation("Smjestaj");
 
@@ -646,9 +637,7 @@ namespace WDWS.Migrations
                 {
                     b.HasOne("wdws.Models.Lokacija", "lokacija")
                         .WithMany()
-                        .HasForeignKey("lokacijapostanskiBroj")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .HasForeignKey("lokacijapostanskiBroj");
 
                     b.Navigation("lokacija");
                 });

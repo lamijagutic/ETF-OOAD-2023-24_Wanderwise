@@ -1,6 +1,13 @@
-﻿namespace wdws.Models;
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace wdws.Models;
 
 public enum VrstaSmjestaja
 {
-    Hotel, Apartman, Resort
+    [Display(Name = "Hotel")] 
+    Hotel, 
+    [Display(Name = "Apartman")] 
+    Apartman, 
+    [Display(Name = "Resort")] 
+    Resort
 }

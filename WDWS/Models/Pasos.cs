@@ -7,15 +7,13 @@ public class Pasos
 {
     [Key]
     public int ID { get; set; }
-
     [ForeignKey("Klijent")] public int clientID { get; set; }
     public Klijent klijent { get; set; }
 
-    public String drzavaKojaIzdaje { get; set; }
-    public String nacionalnost { get; set; }
+    public String? drzavaKojaIzdaje { get; set; }
+    public String? nacionalnost { get; set; }
     public DateOnly datumIsteka { get; set; }
-    public String napomene { get; set; }
-
+    public String? napomene { get; set; }
     public Pasos()
     {
         

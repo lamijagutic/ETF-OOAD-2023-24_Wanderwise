@@ -1,6 +1,17 @@
-﻿namespace wdws.Models;
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace wdws.Models;
 
 public enum TipSobe
 {
-    Single, Double, Triple, Family, Suite
+    [Display(Name = "Single")]
+    Single, 
+    [Display(Name = "Double")]
+    Double, 
+    [Display(Name = "Triple")]
+    Triple, 
+    [Display(Name = "Family")]
+    Family, 
+    [Display(Name = "Suite")]
+    Suite
 }

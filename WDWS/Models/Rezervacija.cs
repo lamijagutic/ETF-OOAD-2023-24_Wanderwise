@@ -23,13 +23,13 @@ public class Rezervacija
     //public Soba soba { get; set; }
     
     [EnumDataType(typeof(StatusRezervacije))] public StatusRezervacije status { get; set; }
-
+    
     [ForeignKey("Klijent")] 
     public String clientID { get; set; }
-    public Klijent klijent { get; set; }
+    public Klijent? klijent { get; set; }
     public Rezervacija()
     {
-        
+        status = StatusRezervacije.NijePlacena;
     }
     public void dodajNagradneBodove()
     {

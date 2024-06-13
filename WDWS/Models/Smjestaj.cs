@@ -9,24 +9,21 @@ public class Smjestaj  {
 
     public String naziv {get; set; }
 
-    public VrstaSmjestaja VrstaSmjestaja { get; set; }
+    [EnumDataType(typeof(VrstaSmjestaja))]  public VrstaSmjestaja VrstaSmjestaja { get; set; }
 
     [ForeignKey("Lokacija")] public int lokacijaID { get; set; }
-    public Lokacija lokacija { get; set; }
+    public Lokacija? lokacija { get; set; }
     
     public String KontaktTelefon { get; set; }
+    [EmailAddress(ErrorMessage = "Unesite validnu email adresu!")]
     public String KontaktEmail { get; set; }
+    [Range(0, double.MaxValue, ErrorMessage = "Unesite validan kapacitet smještaja!")]
     public int MaxKapacitet { get; set; }
     
     public List<Soba>? SobeUPonudi;
     
+    [Range(0, double.MaxValue, ErrorMessage = "Unesite validnu cijenu smještaja!")]
     public double CijenaSmjestaja { get; set; }
-    /*
-     ovaj atribut je sada u klasi Rezervacija.
-    [ForeignKey("Soba")] public int? rezervisanaSobaID { get; set; }
-    public Soba? rezervisanaSoba { get; set; }
-    */
-
     public Smjestaj()
     {
        

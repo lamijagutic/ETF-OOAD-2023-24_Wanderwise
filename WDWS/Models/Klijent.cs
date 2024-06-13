@@ -11,6 +11,7 @@ public class Klijent : Korisnik
 
     public Klijent() : base()
     {
+        pozicija = Pozicije.Klijent; 
         
     }
     

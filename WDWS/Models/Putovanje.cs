@@ -1,6 +1,5 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-
 namespace wdws.Models;
 
 public class Putovanje
@@ -16,11 +15,13 @@ public class Putovanje
     public int mjestoDolaskaID { get; set; }
     //public Lokacija mjestoDolaska { get; set; }
     
+    [Range(0, double.MaxValue, ErrorMessage = "Unesite ispravan broj dana.")]
     public int duzinaPutovanja { get; set; }
     
     public DateTime datumPolaska { get; set; }
     public DateTime datumDolaska { get; set; }
     
+    [Range(0, double.MaxValue, ErrorMessage = "Cijena mora biti veća ili jednaka 0.")]
     public double cijenaPoOsobi { get; set; }
 
     [EnumDataType(typeof(PrijevoznoSredstvo))] public PrijevoznoSredstvo prijevoz { get; set; }
@@ -28,14 +29,12 @@ public class Putovanje
     public List<Recenzija>? recenzije { get; set; }
     
     [ForeignKey("Smjestaj")] 
-    public int smjestajID { get; set; }
-    public Smjestaj Smjestaj { get; set; }
+    public int? smjestajID { get; set; }
+    public Smjestaj? Smjestaj { get; set; }
     
     [ForeignKey("TuristickiVodic")] 
-    public String guideID { get; set; }
-    public TuristickiVodic TuristickiVodic { get; set; }
-    
-    
+    public String? guideID { get; set; }
+    public TuristickiVodic? TuristickiVodic { get; set; }
     public Putovanje()
     {
 
