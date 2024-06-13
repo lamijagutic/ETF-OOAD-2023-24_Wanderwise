@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "9bjZWMH9ntA8n8BIbmFFgopyAb12R9RaiOoQ5iEezDU=",
+  "Hash": "h6bwT0HOQrwDvOkEYsPoEGHnw0eBQW7mL4w0+dlIj30=",
   "Source": "WDWS",
   "BasePath": "_content/WDWS",
   "Mode": "Default",
@@ -1250,6 +1250,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\images\\logo.png"
+    },
+    {
+      "Identity": "C:\\Users\\38761\\OneDrive\\Documents\\Wanderwise\\WDWS\\wwwroot\\css\\kontakt.css",
+      "SourceId": "WDWS",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\38761\\OneDrive\\Documents\\Wanderwise\\WDWS\\wwwroot\\",
+      "BasePath": "_content/WDWS",
+      "RelativePath": "css/kontakt.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\kontakt.css"
     },
     {
       "Identity": "C:\\Users\\38761\\OneDrive\\Documents\\Wanderwise\\WDWS\\wwwroot\\css\\site.css",

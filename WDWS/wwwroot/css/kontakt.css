@@ -1,0 +1,30 @@
+﻿
+.kontakt-right {
+    background-color: #e0f7fa; /* Light blue background */
+    padding: 20px;
+    border-radius: 5px;
+}
+h3.text-muted {
+    font-size: 14px;
+    color: #6c757d; /* Darkish gray color */
+}
+.list-unstyled {
+    padding-left: 0;
+    list-style: none; /* Remove dots from list items */
+    font-size: medium;
+}
+.form-group {
+    margin-bottom: 15px;
+}
+.form-control {
+    width: 100%;
+}
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+.btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #004085;
+}

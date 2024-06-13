@@ -1,0 +1,64 @@
+﻿@{
+ViewData["Title"] = "Kontakt";
+Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container pt-3">
+    <div class="row">
+        <!-- Left Side: Google Map -->
+        <div class="col-md-6 mb-4">
+            <div id="map" style="height: 500px; width: 100%;"></div>
+        </div>
+
+        <!-- Right Side -->
+        <div class="col-md-6 kontakt-right">
+            <h2 class="mb-4">Kontaktirajte Nas</h2>
+            <h3 class="text-muted mb-3">Odgovor na Vaše pitanje ćete dobiti u najkraćem mogućem roku.</h3>
+            <div>
+                <ul class="list-unstyled">
+                    <li>Turistička agencija Wanderwise</li>
+                    <li>Zmaja od Bosne bb</li>
+                    <li>71000 Sarajevo</li>
+                    <li>Bosna i Hercegovina</li>
+                    <li><br/></li>
+                    <li>info@wanderwise.ba</li>
+                    <li>+387 33 654 789</li>
+                </ul>
+            </div>
+            <form>
+                <div class="row">
+                    <div class="col-md-6">
+                        <input type="text" class="form-control" id="name" placeholder="Ime">
+                    </div>
+                    <div class="col-md-6">
+                        <input type="email" class="form-control" id="email" placeholder="Email">
+                    </div>
+                </div>
+                <br/>
+                <div class="form-group">
+                    <textarea class="form-control" id="question" rows="3" placeholder="Vaša poruka..."></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+<!-- Google Maps JavaScript API -->
+<script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap" async defer></script>
+<script>
+    function initMap() {
+        var businessLocation = { lat: 40.7128, lng: -74.0060 }; // Replace with your business's latitude and longitude
+        var map = new google.maps.Map(document.getElementById('map'), {
+            zoom: 15,
+            center: businessLocation
+        });
+        var marker = new google.maps.Marker({
+            position: businessLocation,
+            map: map
+        });
+    }
+</script>
+
+
