@@ -9,7 +9,7 @@ public interface IBuilder
     void DodajStatusRezervacije(StatusRezervacije status);
     void DodajUkupnuCijenu(double UkupnaCijena);
     void DodajMilesBodove(int MilesBodovi);
-    void DodajKlijenta(Klijent lijentID);
+    //void DodajKlijenta(Klijent lijentID);
     Rezervacija Build();
     
 }

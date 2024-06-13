@@ -22,7 +22,7 @@ namespace WDWS.Controllers
         // GET: Rezervacija
         public async Task<IActionResult> Index()
         {
-            var applicationDbContext = _context.Rezervacije.Include(r => r.put);
+            var applicationDbContext = _context.Rezervacije.Include(r => r.Putovanje);
             return View(await applicationDbContext.ToListAsync());
         }
 
@@ -35,7 +35,7 @@ namespace WDWS.Controllers
             }
 
             var rezervacija = await _context.Rezervacije
-                .Include(r => r.put)
+                .Include(r => r.Putovanje)
                 .FirstOrDefaultAsync(m => m.reservationID == id);
             if (rezervacija == null)
             {
@@ -131,7 +131,7 @@ namespace WDWS.Controllers
             }
 
             var rezervacija = await _context.Rezervacije
-                .Include(r => r.put)
+                .Include(r => r.Putovanje)
                 .FirstOrDefaultAsync(m => m.reservationID == id);
             if (rezervacija == null)
             {

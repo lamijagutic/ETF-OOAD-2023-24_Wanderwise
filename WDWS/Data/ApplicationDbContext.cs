@@ -5,13 +5,12 @@ using wdws.Models;
 
 namespace WDWS.Data;
 
-public class ApplicationDbContext : IdentityDbContext
+public class ApplicationDbContext : IdentityDbContext<Korisnik, IdentityRole<String>, String>
 {
     public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
         : base(options)
     {
     }
-    public DbSet<Korisnik> Korisnici { get; set; }
     public DbSet<Klijent> Klijenti { get; set; }
     public DbSet<Putovanje> Putovanja { get; set; }
     public DbSet<Rezervacija> Rezervacije { get; set; }
@@ -24,7 +23,6 @@ public class ApplicationDbContext : IdentityDbContext
     
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
-        modelBuilder.Entity<Korisnik>().ToTable("Korisnici");
         modelBuilder.Entity<Klijent>().ToTable("Klijenti");
         modelBuilder.Entity<Lokacija>().ToTable("Lokacije");
         modelBuilder.Entity<Soba>().ToTable("Sobe");

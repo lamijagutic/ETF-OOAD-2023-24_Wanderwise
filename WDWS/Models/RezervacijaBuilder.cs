@@ -31,10 +31,10 @@ public class RezervacijaBuilder : IBuilder
         r.MilesBodovi = MilesBodovi;
     }
 
-    public void DodajKlijenta(Klijent klijentID)
+    /*public void DodajKlijenta(Klijent klijentID)
     {
-        r.klijent = klijentID;
-    }
+        r.Klijent = klijentID;
+    }*/
     
     public Rezervacija Build()
     {
