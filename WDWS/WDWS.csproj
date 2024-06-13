@@ -142,6 +142,16 @@
       <UpToDateCheckInput Remove="Views\Rezervacija\Details.cshtml" />
       <UpToDateCheckInput Remove="Views\Rezervacija\Edit.cshtml" />
       <UpToDateCheckInput Remove="Views\Rezervacija\Index.cshtml" />
+      <UpToDateCheckInput Remove="Views\Putovanje\Create.cshtml" />
+      <UpToDateCheckInput Remove="Views\Putovanje\Delete.cshtml" />
+      <UpToDateCheckInput Remove="Views\Putovanje\Details.cshtml" />
+      <UpToDateCheckInput Remove="Views\Putovanje\Edit.cshtml" />
+      <UpToDateCheckInput Remove="Views\Putovanje\Index.cshtml" />
+      <UpToDateCheckInput Remove="Views\Pasos\Create.cshtml" />
+      <UpToDateCheckInput Remove="Views\Pasos\Delete.cshtml" />
+      <UpToDateCheckInput Remove="Views\Pasos\Details.cshtml" />
+      <UpToDateCheckInput Remove="Views\Pasos\Edit.cshtml" />
+      <UpToDateCheckInput Remove="Views\Pasos\Index.cshtml" />
     </ItemGroup>
 
 </Project>

@@ -18,24 +18,22 @@
                 <span asp-validation-for="clientID" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="drzavaKojaIzdaje" class="control-label">Država koja izdaje pasoš: </label>
+                <label asp-for="drzavaKojaIzdaje" class="control-label"></label>
                 <select asp-for="drzavaKojaIzdaje" class="form-control" asp-items="ViewBag.Drzave" multiple="multiple"></select>
                 <span asp-validation-for="drzavaKojaIzdaje" class="text-danger"></span>
             </div>
-            
             <div class="form-group">
-                <label asp-for="nacionalnost" class="control-label">Nacionalnost: </label>
-                <select asp-for="nacionalnost" class="form-control" asp-items="ViewBag.Drzave" multiple="multiple"></select>
+                <label asp-for="nacionalnost" class="control-label"></label>
+                <<select asp-for="nacionalnost" class="form-control" asp-items="ViewBag.Drzave" multiple="multiple"></select>
                 <span asp-validation-for="nacionalnost" class="text-danger"></span>
-            </div> 
-            
+            </div>
             <div class="form-group">
-                <label asp-for="datumIsteka" class="control-label">Datum isteka pasoša: </label>
+                <label asp-for="datumIsteka" class="control-label"></label>
                 <input asp-for="datumIsteka" class="form-control" />
                 <span asp-validation-for="datumIsteka" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="napomene" class="control-label">Napomene: </label>
+                <label asp-for="napomene" class="control-label"></label>
                 <input asp-for="napomene" class="form-control" />
                 <span asp-validation-for="napomene" class="text-danger"></span>
             </div>
@@ -50,6 +48,3 @@
     <a asp-action="Index">Back to List</a>
 </div>
 
-@section Scripts {
-    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
-}

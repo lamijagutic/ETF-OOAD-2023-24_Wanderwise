@@ -7,7 +7,7 @@ public class Pasos
 {
     [Key]
     public int ID { get; set; }
-    [ForeignKey("Klijent")] public int clientID { get; set; }
+    [ForeignKey("Klijent")] public String clientID { get; set; }
     public Klijent klijent { get; set; }
 
     public String? drzavaKojaIzdaje { get; set; }

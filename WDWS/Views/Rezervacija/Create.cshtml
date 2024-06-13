@@ -1,4 +1,3 @@
-@using Microsoft.AspNetCore.Mvc.TagHelpers
 @using wdws.Models
 @model wdws.Models.Rezervacija
 
@@ -24,29 +23,34 @@
                 <span asp-validation-for="brojPutnika" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="ukupnaCijena" class="control-label">Ukupna cijena:</label>
+                <label asp-for="ukupnaCijena" class="control-label"></label>
                 <input asp-for="ukupnaCijena" class="form-control" />
                 <span asp-validation-for="ukupnaCijena" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="MilesBodovi" class="control-label">Miles bodovi: </label>
+                <label asp-for="MilesBodovi" class="control-label"></label>
                 <input asp-for="MilesBodovi" class="form-control" />
                 <span asp-validation-for="MilesBodovi" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="rezervisanaSobaID" class="control-label">ID Rezervisane sobe: </label>
+                <label asp-for="rezervisanaSobaID" class="control-label"></label>
                 <input asp-for="rezervisanaSobaID" class="form-control" />
                 <span asp-validation-for="rezervisanaSobaID" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="status" class="control-label">Status rezervacije: </label>
-                <select asp-for="status" class="form-control" asp-items="Html.GetEnumSelectList<StatusRezervacije>()"></select>
+                <label asp-for="status" class="control-label"></label>
+                <select asp-for="status" class="form-control" asp-items="Html.GetEnumSelectList<StatusRezervacije>()" multiple="multiple"></select>
                 <span asp-validation-for="status" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="clientID" class="control-label">ID putnika: </label>
+                <label asp-for="clientID" class="control-label"></label>
                 <input asp-for="clientID" class="form-control" />
                 <span asp-validation-for="clientID" class="text-danger"></span>
+            </div>
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="VodicUkljucen" /> @Html.DisplayNameFor(model => model.VodicUkljucen)
+                </label>
             </div>
             <div class="form-group">
                 <input type="submit" value="Create" class="btn btn-primary" />
@@ -59,6 +63,3 @@
     <a asp-action="Index">Back to List</a>
 </div>
 
-@section Scripts {
-    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
-}

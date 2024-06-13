@@ -155,7 +155,6 @@ namespace WDWS.Controllers
         {
             return _context.Pasosi.Any(e => e.ID == id);
         }
-        
         private List<string> GetDrzave(){
             return new List<string> 
             {
@@ -220,7 +219,5 @@ namespace WDWS.Controllers
                 "Zimbabve"
             };
         }
-
-        
     }
 }

@@ -57,7 +57,7 @@ namespace WDWS.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("reservationID,putovanjeID,brojPutnika,ukupnaCijena,MilesBodovi,rezervisanaSobaID,status,clientID")] Rezervacija rezervacija)
+        public async Task<IActionResult> Create([Bind("reservationID,putovanjeID,brojPutnika,ukupnaCijena,MilesBodovi,rezervisanaSobaID,status,clientID,VodicUkljucen")] Rezervacija rezervacija)
         {
             if (ModelState.IsValid)
             {
@@ -91,7 +91,7 @@ namespace WDWS.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("reservationID,putovanjeID,brojPutnika,ukupnaCijena,MilesBodovi,rezervisanaSobaID,status,clientID")] Rezervacija rezervacija)
+        public async Task<IActionResult> Edit(int id, [Bind("reservationID,putovanjeID,brojPutnika,ukupnaCijena,MilesBodovi,rezervisanaSobaID,status,clientID,VodicUkljucen")] Rezervacija rezervacija)
         {
             if (id != rezervacija.reservationID)
             {

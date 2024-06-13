@@ -12,8 +12,8 @@ using WDWS.Data;
 namespace WDWS.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20240613093347_newNullableAttributes2")]
-    partial class newNullableAttributes2
+    [Migration("20240613151053_PromijenjenAtributClientID")]
+    partial class PromijenjenAtributClientID
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -235,7 +235,6 @@ namespace WDWS.Migrations
                         .HasColumnType("nvarchar(450)");
 
                     b.Property<string>("drzava")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("nazivMjesta")
@@ -255,8 +254,9 @@ namespace WDWS.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ID"));
 
-                    b.Property<int>("clientID")
-                        .HasColumnType("int");
+                    b.Property<string>("clientID")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<DateOnly>("datumIsteka")
                         .HasColumnType("date");
@@ -287,6 +287,15 @@ namespace WDWS.Migrations
                         .HasColumnType("int");
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("travelId"));
+
+                    b.Property<string>("ImageURL")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("OpisPutovanja")
+                        .IsRequired()
+                        .HasMaxLength(300)
+                        .HasColumnType("nvarchar(300)");
 
                     b.Property<double>("cijenaPoOsobi")
                         .HasColumnType("float");
@@ -366,6 +375,9 @@ namespace WDWS.Migrations
                     b.Property<int>("MilesBodovi")
                         .HasColumnType("int");
 
+                    b.Property<bool>("VodicUkljucen")
+                        .HasColumnType("bit");
+
                     b.Property<int>("brojPutnika")
                         .HasColumnType("int");
 
@@ -430,7 +442,8 @@ namespace WDWS.Migrations
 
                     b.Property<string>("naziv")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)");
 
                     b.HasKey("lodgingID");
 

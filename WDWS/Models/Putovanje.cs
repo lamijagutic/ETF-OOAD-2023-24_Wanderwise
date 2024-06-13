@@ -35,6 +35,10 @@ public class Putovanje
     [ForeignKey("TuristickiVodic")] 
     public String? guideID { get; set; }
     public TuristickiVodic? TuristickiVodic { get; set; }
+    
+    public String ImageURL { get; set; }
+    [StringLength(maximumLength: 300, MinimumLength = 20, ErrorMessage = "Opis putovanja smije imati između 20 i 300 karaktera!")] 
+    public String OpisPutovanja { get; set; }
     public Putovanje()
     {
 

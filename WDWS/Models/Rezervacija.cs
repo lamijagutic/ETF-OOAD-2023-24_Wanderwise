@@ -27,6 +27,8 @@ public class Rezervacija
     [ForeignKey("Klijent")] 
     public String clientID { get; set; }
     public Klijent? klijent { get; set; }
+    
+    public Boolean VodicUkljucen { get; set; }
     public Rezervacija()
     {
         status = StatusRezervacije.NijePlacena;

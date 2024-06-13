@@ -39,6 +39,12 @@
             <th>
                 @Html.DisplayNameFor(model => model.TuristickiVodic)
             </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ImageURL)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.OpisPutovanja)
+            </th>
             <th></th>
         </tr>
     </thead>
@@ -67,10 +73,16 @@
                 @Html.DisplayFor(modelItem => item.prijevoz)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Smjestaj.lodgingID)
+                @Html.DisplayFor(modelItem => item.Smjestaj.KontaktEmail)
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.TuristickiVodic.Id)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ImageURL)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.OpisPutovanja)
             </td>
             <td>
                 <a asp-action="Edit" asp-route-id="@item.travelId">Edit</a> |

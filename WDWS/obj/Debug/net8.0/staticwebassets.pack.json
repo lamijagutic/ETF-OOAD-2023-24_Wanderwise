@@ -17,6 +17,10 @@
       "PackagePath": "staticwebassets\\css\\images\\logo.png"
     },
     {
+      "Id": "C:\\Users\\Gutić\\Desktop\\wanderwise\\WDWS\\wwwroot\\css\\kontakt.css",
+      "PackagePath": "staticwebassets\\css\\kontakt.css"
+    },
+    {
       "Id": "C:\\Users\\Gutić\\Desktop\\wanderwise\\WDWS\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
