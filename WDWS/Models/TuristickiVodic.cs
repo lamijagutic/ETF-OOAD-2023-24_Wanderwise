@@ -9,6 +9,6 @@ public class TuristickiVodic : Korisnik
 
     public TuristickiVodic()
     {
-        pozicija = Pozicije.TuristickiVodic; 
+        
     }
 }

@@ -25,7 +25,7 @@ public class ApplicationDbContext : IdentityDbContext<Korisnik, IdentityRole<Str
     
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
-        modelBuilder.Entity<Korisnik>().ToTable("Korisnici");
+        //modelBuilder.Entity<Korisnik>().ToTable("Korisnici");
         modelBuilder.Entity<Klijent>().ToTable("Klijenti");
         modelBuilder.Entity<Lokacija>().ToTable("Lokacije");
         modelBuilder.Entity<Soba>().ToTable("Sobe");

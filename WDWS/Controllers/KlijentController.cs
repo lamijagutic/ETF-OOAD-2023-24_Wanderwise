@@ -159,8 +159,8 @@ namespace WDWS.Controllers
         private List<string> GetSpol(){
             return new List<string> 
             {
-                "Muški",
-                "Ženski"
+                "M",
+                "Ž"
             };
         }
     }

@@ -3,7 +3,7 @@ using Microsoft.AspNetCore.Identity;
 
 namespace wdws.Models;
 
-public abstract class Korisnik : IdentityUser<String>
+public abstract class  Korisnik : IdentityUser
 {
 
     [Key]
@@ -24,12 +24,12 @@ public abstract class Korisnik : IdentityUser<String>
     [Display(Name = "Spol")]
     public char spol { get; set; }
     
-    public Pozicije pozicija { get; set; }
+
 
     [Display(Name = "Datum rođenja")]
     public DateTime datumRodjenja { get; set; }
 
-    public String UserName { get; set; }
+    override public String UserName { get; set; }
     
     public Korisnik() 
     {
