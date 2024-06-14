@@ -176,16 +176,24 @@ namespace WDWS.Controllers
             return _context.Putovanja.Any(e => e.travelId == id);
         }
         
-        // Filtriranje na osnovu vrste prijevoza
-        //potrebne su dvije funkcije: jedna za bus i jedna za avion
-        public async Task<IActionResult> FilteredByPrijevoz(int a)
+        // Filtriranje na osnovu vrste prijevoza (FilteredByPrijevoz podijeljena na slj dvije metode)
+        
+        public async Task<IActionResult> BusPutovanja(int a)
+        {
+            var filteredTrips = await _context.Putovanja
+                .Where(p => p.prijevoz==PrijevoznoSredstvo.Autobus)
+                .ToListAsync();
+            return View("Index", filteredTrips);
+        }
+        public async Task<IActionResult> AvioPutovanja(int a)
         {
             var filteredTrips = await _context.Putovanja
                 .Include(p => p.Smjestaj)
                 .Include(p => p.TuristickiVodic)
-                // ovdje ide uslov provjera tip prijevoza
+                .Where(p => p.prijevoz==PrijevoznoSredstvo.Avion)
                 .ToListAsync();
             return View("Index", filteredTrips);
         }
+
     }
 }
