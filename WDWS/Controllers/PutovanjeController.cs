@@ -26,7 +26,7 @@ namespace WDWS.Controllers
             return View(await applicationDbContext.ToListAsync());
         }
 
-        // GET: Putovanje/Details/5
+        // GET: PutovanjeHelp/Details/5
         public async Task<IActionResult> Details(int? id)
         {
             if (id == null)
@@ -46,20 +46,22 @@ namespace WDWS.Controllers
             return View(putovanje);
         }
 
-        // GET: Putovanje/Create
+        // GET: PutovanjeHelp/Create
         public IActionResult Create()
         {
+            ViewBag.Lokacije = new SelectList(_context.Lokacije, "postanskiBroj", "nazivMjesta");
+            ViewBag.Smjestaji = new SelectList(_context.Smjestaji, "lodgingID", "naziv");
             ViewData["smjestajID"] = new SelectList(_context.Smjestaji, "lodgingID", "KontaktEmail");
             ViewData["guideID"] = new SelectList(_context.TuristickiVodici, "Id", "Id");
             return View();
         }
 
-        // POST: Putovanje/Create
+        // POST: PutovanjeHelp/Create
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("travelId,mjestoPolaskaID,mjestoDolaskaID,duzinaPutovanja,datumPolaska,datumDolaska,cijenaPoOsobi,prijevoz,smjestajID,guideID,ImageURL,OpisPutovanja")] Putovanje putovanje)
+        public async Task<IActionResult> Create([Bind("travelId,mjestoPolaskaID,mjestoDolaskaID,duzinaPutovanja,nazivPutovanja,datumPolaska,datumDolaska,cijenaPoOsobi,prijevoz,smjestajID,guideID,ImageURL,OpisPutovanja")] Putovanje putovanje)
         {
             if (ModelState.IsValid)
             {
@@ -67,12 +69,15 @@ namespace WDWS.Controllers
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
+            ViewBag.Lokacije = new SelectList(_context.Lokacije, "postanskiBroj", "nazivMjesta");
+            ViewBag.Smjestaji = new SelectList(_context.Smjestaji, "lodgingID", "naziv");
+
             ViewData["smjestajID"] = new SelectList(_context.Smjestaji, "lodgingID", "KontaktEmail", putovanje.smjestajID);
             ViewData["guideID"] = new SelectList(_context.TuristickiVodici, "Id", "Id", putovanje.guideID);
             return View(putovanje);
         }
 
-        // GET: Putovanje/Edit/5
+        // GET: PutovanjeHelp/Edit/5
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null)
@@ -85,17 +90,19 @@ namespace WDWS.Controllers
             {
                 return NotFound();
             }
+            ViewBag.Lokacije = new SelectList(_context.Lokacije, "postanskiBroj", "nazivMjesta");
+            ViewBag.Smjestaji = new SelectList(_context.Smjestaji, "lodgingID", "naziv");
             ViewData["smjestajID"] = new SelectList(_context.Smjestaji, "lodgingID", "KontaktEmail", putovanje.smjestajID);
             ViewData["guideID"] = new SelectList(_context.TuristickiVodici, "Id", "Id", putovanje.guideID);
             return View(putovanje);
         }
 
-        // POST: Putovanje/Edit/5
+        // POST: PutovanjeHelp/Edit/5
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("travelId,mjestoPolaskaID,mjestoDolaskaID,duzinaPutovanja,datumPolaska,datumDolaska,cijenaPoOsobi,prijevoz,smjestajID,guideID,ImageURL,OpisPutovanja")] Putovanje putovanje)
+        public async Task<IActionResult> Edit(int id, [Bind("travelId,mjestoPolaskaID,mjestoDolaskaID,duzinaPutovanja,nazivPutovanja,datumPolaska,datumDolaska,cijenaPoOsobi,prijevoz,smjestajID,guideID,ImageURL,OpisPutovanja")] Putovanje putovanje)
         {
             if (id != putovanje.travelId)
             {
@@ -122,12 +129,14 @@ namespace WDWS.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
+            ViewBag.Lokacije = new SelectList(_context.Lokacije, "postanskiBroj", "nazivMjesta");
+            ViewBag.Smjestaji = new SelectList(_context.Smjestaji, "lodgingID", "naziv");
             ViewData["smjestajID"] = new SelectList(_context.Smjestaji, "lodgingID", "KontaktEmail", putovanje.smjestajID);
             ViewData["guideID"] = new SelectList(_context.TuristickiVodici, "Id", "Id", putovanje.guideID);
             return View(putovanje);
         }
 
-        // GET: Putovanje/Delete/5
+        // GET: PutovanjeHelp/Delete/5
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null)
@@ -147,7 +156,7 @@ namespace WDWS.Controllers
             return View(putovanje);
         }
 
-        // POST: Putovanje/Delete/5
+        // POST: PutovanjeHelp/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
