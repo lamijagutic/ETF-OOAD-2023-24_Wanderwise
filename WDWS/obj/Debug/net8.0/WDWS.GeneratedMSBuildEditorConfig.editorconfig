@@ -17,383 +17,383 @@ build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = WDWS
 build_property.RootNamespace = WDWS
-build_property.ProjectDir = /Users/fatima.naidakaljanac/Desktop/NasProjkeatWanderwise/WDWS/
+build_property.ProjectDir = C:\Users\Gutić\Desktop\wanderwise\WDWS\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = /Users/fatima.naidakaljanac/Desktop/NasProjkeatWanderwise/WDWS
+build_property.MSBuildProjectDirectory = C:\Users\Gutić\Desktop\wanderwise\WDWS
 build_property._RazorSourceGeneratorDebug = 
 
-[/Users/fatima.naidakaljanac/Desktop/NasProjkeatWanderwise/WDWS/Areas/Identity/Pages/Account/AccessDenied.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXMvSWRlbnRpdHkvUGFnZXMvQWNjb3VudC9BY2Nlc3NEZW5pZWQuY3NodG1s
+[C:/Users/Gutić/Desktop/wanderwise/WDWS/Areas/Identity/Pages/Account/AccessDenied.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxBY2Nlc3NEZW5pZWQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/fatima.naidakaljanac/Desktop/NasProjkeatWanderwise/WDWS/Areas/Identity/Pages/Account/ConfirmEmail.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXMvSWRlbnRpdHkvUGFnZXMvQWNjb3VudC9Db25maXJtRW1haWwuY3NodG1s
+[C:/Users/Gutić/Desktop/wanderwise/WDWS/Areas/Identity/Pages/Account/ConfirmEmail.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxDb25maXJtRW1haWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/fatima.naidakaljanac/Desktop/NasProjkeatWanderwise/WDWS/Areas/Identity/Pages/Account/ConfirmEmailChange.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXMvSWRlbnRpdHkvUGFnZXMvQWNjb3VudC9Db25maXJtRW1haWxDaGFuZ2UuY3NodG1s
+[C:/Users/Gutić/Desktop/wanderwise/WDWS/Areas/Identity/Pages/Account/ConfirmEmailChange.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxDb25maXJtRW1haWxDaGFuZ2UuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/fatima.naidakaljanac/Desktop/NasProjkeatWanderwise/WDWS/Areas/Identity/Pages/Account/ExternalLogin.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXMvSWRlbnRpdHkvUGFnZXMvQWNjb3VudC9FeHRlcm5hbExvZ2luLmNzaHRtbA==
+[C:/Users/Gutić/Desktop/wanderwise/WDWS/Areas/Identity/Pages/Account/ExternalLogin.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxFeHRlcm5hbExvZ2luLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/fatima.naidakaljanac/Desktop/NasProjkeatWanderwise/WDWS/Areas/Identity/Pages/Account/ForgotPassword.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXMvSWRlbnRpdHkvUGFnZXMvQWNjb3VudC9Gb3Jnb3RQYXNzd29yZC5jc2h0bWw=
+[C:/Users/Gutić/Desktop/wanderwise/WDWS/Areas/Identity/Pages/Account/ForgotPassword.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxGb3Jnb3RQYXNzd29yZC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/fatima.naidakaljanac/Desktop/NasProjkeatWanderwise/WDWS/Areas/Identity/Pages/Account/ForgotPasswordConfirmation.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXMvSWRlbnRpdHkvUGFnZXMvQWNjb3VudC9Gb3Jnb3RQYXNzd29yZENvbmZpcm1hdGlvbi5jc2h0bWw=
+[C:/Users/Gutić/Desktop/wanderwise/WDWS/Areas/Identity/Pages/Account/ForgotPasswordConfirmation.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxGb3Jnb3RQYXNzd29yZENvbmZpcm1hdGlvbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/fatima.naidakaljanac/Desktop/NasProjkeatWanderwise/WDWS/Areas/Identity/Pages/Account/Lockout.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXMvSWRlbnRpdHkvUGFnZXMvQWNjb3VudC9Mb2Nrb3V0LmNzaHRtbA==
+[C:/Users/Gutić/Desktop/wanderwise/WDWS/Areas/Identity/Pages/Account/Lockout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxMb2Nrb3V0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/fatima.naidakaljanac/Desktop/NasProjkeatWanderwise/WDWS/Areas/Identity/Pages/Account/Login.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXMvSWRlbnRpdHkvUGFnZXMvQWNjb3VudC9Mb2dpbi5jc2h0bWw=
+[C:/Users/Gutić/Desktop/wanderwise/WDWS/Areas/Identity/Pages/Account/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxMb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/fatima.naidakaljanac/Desktop/NasProjkeatWanderwise/WDWS/Areas/Identity/Pages/Account/LoginWithRecoveryCode.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXMvSWRlbnRpdHkvUGFnZXMvQWNjb3VudC9Mb2dpbldpdGhSZWNvdmVyeUNvZGUuY3NodG1s
+[C:/Users/Gutić/Desktop/wanderwise/WDWS/Areas/Identity/Pages/Account/LoginWithRecoveryCode.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxMb2dpbldpdGhSZWNvdmVyeUNvZGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/fatima.naidakaljanac/Desktop/NasProjkeatWanderwise/WDWS/Areas/Identity/Pages/Account/Logout.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXMvSWRlbnRpdHkvUGFnZXMvQWNjb3VudC9Mb2dvdXQuY3NodG1s
+[C:/Users/Gutić/Desktop/wanderwise/WDWS/Areas/Identity/Pages/Account/Logout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxMb2dvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/fatima.naidakaljanac/Desktop/NasProjkeatWanderwise/WDWS/Areas/Identity/Pages/Account/Manage/ChangePassword.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXMvSWRlbnRpdHkvUGFnZXMvQWNjb3VudC9NYW5hZ2UvQ2hhbmdlUGFzc3dvcmQuY3NodG1s
+[C:/Users/Gutić/Desktop/wanderwise/WDWS/Areas/Identity/Pages/Account/Manage/ChangePassword.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcQ2hhbmdlUGFzc3dvcmQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/fatima.naidakaljanac/Desktop/NasProjkeatWanderwise/WDWS/Areas/Identity/Pages/Account/Manage/DeletePersonalData.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXMvSWRlbnRpdHkvUGFnZXMvQWNjb3VudC9NYW5hZ2UvRGVsZXRlUGVyc29uYWxEYXRhLmNzaHRtbA==
+[C:/Users/Gutić/Desktop/wanderwise/WDWS/Areas/Identity/Pages/Account/Manage/DeletePersonalData.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcRGVsZXRlUGVyc29uYWxEYXRhLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/fatima.naidakaljanac/Desktop/NasProjkeatWanderwise/WDWS/Areas/Identity/Pages/Account/Manage/Disable2fa.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXMvSWRlbnRpdHkvUGFnZXMvQWNjb3VudC9NYW5hZ2UvRGlzYWJsZTJmYS5jc2h0bWw=
+[C:/Users/Gutić/Desktop/wanderwise/WDWS/Areas/Identity/Pages/Account/Manage/Disable2fa.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcRGlzYWJsZTJmYS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/fatima.naidakaljanac/Desktop/NasProjkeatWanderwise/WDWS/Areas/Identity/Pages/Account/Manage/DownloadPersonalData.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXMvSWRlbnRpdHkvUGFnZXMvQWNjb3VudC9NYW5hZ2UvRG93bmxvYWRQZXJzb25hbERhdGEuY3NodG1s
+[C:/Users/Gutić/Desktop/wanderwise/WDWS/Areas/Identity/Pages/Account/Manage/DownloadPersonalData.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcRG93bmxvYWRQZXJzb25hbERhdGEuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/fatima.naidakaljanac/Desktop/NasProjkeatWanderwise/WDWS/Areas/Identity/Pages/Account/Manage/Email.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXMvSWRlbnRpdHkvUGFnZXMvQWNjb3VudC9NYW5hZ2UvRW1haWwuY3NodG1s
+[C:/Users/Gutić/Desktop/wanderwise/WDWS/Areas/Identity/Pages/Account/Manage/Email.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcRW1haWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/fatima.naidakaljanac/Desktop/NasProjkeatWanderwise/WDWS/Areas/Identity/Pages/Account/Manage/EnableAuthenticator.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXMvSWRlbnRpdHkvUGFnZXMvQWNjb3VudC9NYW5hZ2UvRW5hYmxlQXV0aGVudGljYXRvci5jc2h0bWw=
+[C:/Users/Gutić/Desktop/wanderwise/WDWS/Areas/Identity/Pages/Account/Manage/EnableAuthenticator.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcRW5hYmxlQXV0aGVudGljYXRvci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/fatima.naidakaljanac/Desktop/NasProjkeatWanderwise/WDWS/Areas/Identity/Pages/Account/Manage/ExternalLogins.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXMvSWRlbnRpdHkvUGFnZXMvQWNjb3VudC9NYW5hZ2UvRXh0ZXJuYWxMb2dpbnMuY3NodG1s
+[C:/Users/Gutić/Desktop/wanderwise/WDWS/Areas/Identity/Pages/Account/Manage/ExternalLogins.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcRXh0ZXJuYWxMb2dpbnMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/fatima.naidakaljanac/Desktop/NasProjkeatWanderwise/WDWS/Areas/Identity/Pages/Account/Manage/GenerateRecoveryCodes.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXMvSWRlbnRpdHkvUGFnZXMvQWNjb3VudC9NYW5hZ2UvR2VuZXJhdGVSZWNvdmVyeUNvZGVzLmNzaHRtbA==
+[C:/Users/Gutić/Desktop/wanderwise/WDWS/Areas/Identity/Pages/Account/Manage/GenerateRecoveryCodes.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcR2VuZXJhdGVSZWNvdmVyeUNvZGVzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/fatima.naidakaljanac/Desktop/NasProjkeatWanderwise/WDWS/Areas/Identity/Pages/Account/Manage/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXMvSWRlbnRpdHkvUGFnZXMvQWNjb3VudC9NYW5hZ2UvSW5kZXguY3NodG1s
+[C:/Users/Gutić/Desktop/wanderwise/WDWS/Areas/Identity/Pages/Account/Manage/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/fatima.naidakaljanac/Desktop/NasProjkeatWanderwise/WDWS/Areas/Identity/Pages/Account/Manage/PersonalData.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXMvSWRlbnRpdHkvUGFnZXMvQWNjb3VudC9NYW5hZ2UvUGVyc29uYWxEYXRhLmNzaHRtbA==
+[C:/Users/Gutić/Desktop/wanderwise/WDWS/Areas/Identity/Pages/Account/Manage/PersonalData.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcUGVyc29uYWxEYXRhLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/fatima.naidakaljanac/Desktop/NasProjkeatWanderwise/WDWS/Areas/Identity/Pages/Account/Manage/ResetAuthenticator.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXMvSWRlbnRpdHkvUGFnZXMvQWNjb3VudC9NYW5hZ2UvUmVzZXRBdXRoZW50aWNhdG9yLmNzaHRtbA==
+[C:/Users/Gutić/Desktop/wanderwise/WDWS/Areas/Identity/Pages/Account/Manage/ResetAuthenticator.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcUmVzZXRBdXRoZW50aWNhdG9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/fatima.naidakaljanac/Desktop/NasProjkeatWanderwise/WDWS/Areas/Identity/Pages/Account/Manage/SetPassword.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXMvSWRlbnRpdHkvUGFnZXMvQWNjb3VudC9NYW5hZ2UvU2V0UGFzc3dvcmQuY3NodG1s
+[C:/Users/Gutić/Desktop/wanderwise/WDWS/Areas/Identity/Pages/Account/Manage/SetPassword.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcU2V0UGFzc3dvcmQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/fatima.naidakaljanac/Desktop/NasProjkeatWanderwise/WDWS/Areas/Identity/Pages/Account/Manage/ShowRecoveryCodes.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXMvSWRlbnRpdHkvUGFnZXMvQWNjb3VudC9NYW5hZ2UvU2hvd1JlY292ZXJ5Q29kZXMuY3NodG1s
+[C:/Users/Gutić/Desktop/wanderwise/WDWS/Areas/Identity/Pages/Account/Manage/ShowRecoveryCodes.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcU2hvd1JlY292ZXJ5Q29kZXMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/fatima.naidakaljanac/Desktop/NasProjkeatWanderwise/WDWS/Areas/Identity/Pages/Account/Manage/TwoFactorAuthentication.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXMvSWRlbnRpdHkvUGFnZXMvQWNjb3VudC9NYW5hZ2UvVHdvRmFjdG9yQXV0aGVudGljYXRpb24uY3NodG1s
+[C:/Users/Gutić/Desktop/wanderwise/WDWS/Areas/Identity/Pages/Account/Manage/TwoFactorAuthentication.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcVHdvRmFjdG9yQXV0aGVudGljYXRpb24uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/fatima.naidakaljanac/Desktop/NasProjkeatWanderwise/WDWS/Areas/Identity/Pages/Account/Manage/_Layout.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXMvSWRlbnRpdHkvUGFnZXMvQWNjb3VudC9NYW5hZ2UvX0xheW91dC5jc2h0bWw=
+[C:/Users/Gutić/Desktop/wanderwise/WDWS/Areas/Identity/Pages/Account/Manage/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcX0xheW91dC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/fatima.naidakaljanac/Desktop/NasProjkeatWanderwise/WDWS/Areas/Identity/Pages/Account/Manage/_ManageNav.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXMvSWRlbnRpdHkvUGFnZXMvQWNjb3VudC9NYW5hZ2UvX01hbmFnZU5hdi5jc2h0bWw=
+[C:/Users/Gutić/Desktop/wanderwise/WDWS/Areas/Identity/Pages/Account/Manage/_ManageNav.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcX01hbmFnZU5hdi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/fatima.naidakaljanac/Desktop/NasProjkeatWanderwise/WDWS/Areas/Identity/Pages/Account/Manage/_StatusMessage.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXMvSWRlbnRpdHkvUGFnZXMvQWNjb3VudC9NYW5hZ2UvX1N0YXR1c01lc3NhZ2UuY3NodG1s
+[C:/Users/Gutić/Desktop/wanderwise/WDWS/Areas/Identity/Pages/Account/Manage/_StatusMessage.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcX1N0YXR1c01lc3NhZ2UuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/fatima.naidakaljanac/Desktop/NasProjkeatWanderwise/WDWS/Areas/Identity/Pages/Account/Manage/_ViewImports.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXMvSWRlbnRpdHkvUGFnZXMvQWNjb3VudC9NYW5hZ2UvX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+[C:/Users/Gutić/Desktop/wanderwise/WDWS/Areas/Identity/Pages/Account/Manage/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/fatima.naidakaljanac/Desktop/NasProjkeatWanderwise/WDWS/Areas/Identity/Pages/Account/Register.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXMvSWRlbnRpdHkvUGFnZXMvQWNjb3VudC9SZWdpc3Rlci5jc2h0bWw=
+[C:/Users/Gutić/Desktop/wanderwise/WDWS/Areas/Identity/Pages/Account/Register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxSZWdpc3Rlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/fatima.naidakaljanac/Desktop/NasProjkeatWanderwise/WDWS/Areas/Identity/Pages/Account/RegisterConfirmation.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXMvSWRlbnRpdHkvUGFnZXMvQWNjb3VudC9SZWdpc3RlckNvbmZpcm1hdGlvbi5jc2h0bWw=
+[C:/Users/Gutić/Desktop/wanderwise/WDWS/Areas/Identity/Pages/Account/RegisterConfirmation.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxSZWdpc3RlckNvbmZpcm1hdGlvbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/fatima.naidakaljanac/Desktop/NasProjkeatWanderwise/WDWS/Areas/Identity/Pages/Account/ResendEmailConfirmation.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXMvSWRlbnRpdHkvUGFnZXMvQWNjb3VudC9SZXNlbmRFbWFpbENvbmZpcm1hdGlvbi5jc2h0bWw=
+[C:/Users/Gutić/Desktop/wanderwise/WDWS/Areas/Identity/Pages/Account/ResendEmailConfirmation.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxSZXNlbmRFbWFpbENvbmZpcm1hdGlvbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/fatima.naidakaljanac/Desktop/NasProjkeatWanderwise/WDWS/Areas/Identity/Pages/Account/ResetPassword.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXMvSWRlbnRpdHkvUGFnZXMvQWNjb3VudC9SZXNldFBhc3N3b3JkLmNzaHRtbA==
+[C:/Users/Gutić/Desktop/wanderwise/WDWS/Areas/Identity/Pages/Account/ResetPassword.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxSZXNldFBhc3N3b3JkLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/fatima.naidakaljanac/Desktop/NasProjkeatWanderwise/WDWS/Areas/Identity/Pages/Account/ResetPasswordConfirmation.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXMvSWRlbnRpdHkvUGFnZXMvQWNjb3VudC9SZXNldFBhc3N3b3JkQ29uZmlybWF0aW9uLmNzaHRtbA==
+[C:/Users/Gutić/Desktop/wanderwise/WDWS/Areas/Identity/Pages/Account/ResetPasswordConfirmation.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxSZXNldFBhc3N3b3JkQ29uZmlybWF0aW9uLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/fatima.naidakaljanac/Desktop/NasProjkeatWanderwise/WDWS/Areas/Identity/Pages/Account/_StatusMessage.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXMvSWRlbnRpdHkvUGFnZXMvQWNjb3VudC9fU3RhdHVzTWVzc2FnZS5jc2h0bWw=
+[C:/Users/Gutić/Desktop/wanderwise/WDWS/Areas/Identity/Pages/Account/_StatusMessage.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxfU3RhdHVzTWVzc2FnZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/fatima.naidakaljanac/Desktop/NasProjkeatWanderwise/WDWS/Areas/Identity/Pages/Account/_ViewImports.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXMvSWRlbnRpdHkvUGFnZXMvQWNjb3VudC9fVmlld0ltcG9ydHMuY3NodG1s
+[C:/Users/Gutić/Desktop/wanderwise/WDWS/Areas/Identity/Pages/Account/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxfVmlld0ltcG9ydHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/fatima.naidakaljanac/Desktop/NasProjkeatWanderwise/WDWS/Areas/Identity/Pages/Error.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXMvSWRlbnRpdHkvUGFnZXMvRXJyb3IuY3NodG1s
+[C:/Users/Gutić/Desktop/wanderwise/WDWS/Areas/Identity/Pages/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcRXJyb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/fatima.naidakaljanac/Desktop/NasProjkeatWanderwise/WDWS/Areas/Identity/Pages/_ValidationScriptsPartial.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXMvSWRlbnRpdHkvUGFnZXMvX1ZhbGlkYXRpb25TY3JpcHRzUGFydGlhbC5jc2h0bWw=
+[C:/Users/Gutić/Desktop/wanderwise/WDWS/Areas/Identity/Pages/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZhbGlkYXRpb25TY3JpcHRzUGFydGlhbC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/fatima.naidakaljanac/Desktop/NasProjkeatWanderwise/WDWS/Areas/Identity/Pages/_ViewImports.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXMvSWRlbnRpdHkvUGFnZXMvX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+[C:/Users/Gutić/Desktop/wanderwise/WDWS/Areas/Identity/Pages/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/fatima.naidakaljanac/Desktop/NasProjkeatWanderwise/WDWS/Areas/Identity/Pages/_ViewStart.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXMvSWRlbnRpdHkvUGFnZXMvX1ZpZXdTdGFydC5jc2h0bWw=
+[C:/Users/Gutić/Desktop/wanderwise/WDWS/Areas/Identity/Pages/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/fatima.naidakaljanac/Desktop/NasProjkeatWanderwise/WDWS/Views/Home/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9JbmRleC5jc2h0bWw=
+[C:/Users/Gutić/Desktop/wanderwise/WDWS/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/fatima.naidakaljanac/Desktop/NasProjkeatWanderwise/WDWS/Views/Home/Kontakt.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9Lb250YWt0LmNzaHRtbA==
+[C:/Users/Gutić/Desktop/wanderwise/WDWS/Views/Home/Kontakt.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxLb250YWt0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/fatima.naidakaljanac/Desktop/NasProjkeatWanderwise/WDWS/Views/Home/Privacy.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9Qcml2YWN5LmNzaHRtbA==
+[C:/Users/Gutić/Desktop/wanderwise/WDWS/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/fatima.naidakaljanac/Desktop/NasProjkeatWanderwise/WDWS/Views/Klijent/Create.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvS2xpamVudC9DcmVhdGUuY3NodG1s
+[C:/Users/Gutić/Desktop/wanderwise/WDWS/Views/Klijent/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS2xpamVudFxDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/fatima.naidakaljanac/Desktop/NasProjkeatWanderwise/WDWS/Views/Klijent/Delete.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvS2xpamVudC9EZWxldGUuY3NodG1s
+[C:/Users/Gutić/Desktop/wanderwise/WDWS/Views/Klijent/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS2xpamVudFxEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/fatima.naidakaljanac/Desktop/NasProjkeatWanderwise/WDWS/Views/Klijent/Details.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvS2xpamVudC9EZXRhaWxzLmNzaHRtbA==
+[C:/Users/Gutić/Desktop/wanderwise/WDWS/Views/Klijent/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS2xpamVudFxEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/fatima.naidakaljanac/Desktop/NasProjkeatWanderwise/WDWS/Views/Klijent/Edit.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvS2xpamVudC9FZGl0LmNzaHRtbA==
+[C:/Users/Gutić/Desktop/wanderwise/WDWS/Views/Klijent/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS2xpamVudFxFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/fatima.naidakaljanac/Desktop/NasProjkeatWanderwise/WDWS/Views/Klijent/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvS2xpamVudC9JbmRleC5jc2h0bWw=
+[C:/Users/Gutić/Desktop/wanderwise/WDWS/Views/Klijent/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS2xpamVudFxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/fatima.naidakaljanac/Desktop/NasProjkeatWanderwise/WDWS/Views/Lokacija/Create.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTG9rYWNpamEvQ3JlYXRlLmNzaHRtbA==
+[C:/Users/Gutić/Desktop/wanderwise/WDWS/Views/Lokacija/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9rYWNpamFcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/fatima.naidakaljanac/Desktop/NasProjkeatWanderwise/WDWS/Views/Lokacija/Delete.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTG9rYWNpamEvRGVsZXRlLmNzaHRtbA==
+[C:/Users/Gutić/Desktop/wanderwise/WDWS/Views/Lokacija/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9rYWNpamFcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/fatima.naidakaljanac/Desktop/NasProjkeatWanderwise/WDWS/Views/Lokacija/Details.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTG9rYWNpamEvRGV0YWlscy5jc2h0bWw=
+[C:/Users/Gutić/Desktop/wanderwise/WDWS/Views/Lokacija/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9rYWNpamFcRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/fatima.naidakaljanac/Desktop/NasProjkeatWanderwise/WDWS/Views/Lokacija/Edit.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTG9rYWNpamEvRWRpdC5jc2h0bWw=
+[C:/Users/Gutić/Desktop/wanderwise/WDWS/Views/Lokacija/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9rYWNpamFcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/fatima.naidakaljanac/Desktop/NasProjkeatWanderwise/WDWS/Views/Lokacija/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTG9rYWNpamEvSW5kZXguY3NodG1s
+[C:/Users/Gutić/Desktop/wanderwise/WDWS/Views/Lokacija/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9rYWNpamFcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/fatima.naidakaljanac/Desktop/NasProjkeatWanderwise/WDWS/Views/Pasos/Create.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUGFzb3MvQ3JlYXRlLmNzaHRtbA==
+[C:/Users/Gutić/Desktop/wanderwise/WDWS/Views/Pasos/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFzb3NcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/fatima.naidakaljanac/Desktop/NasProjkeatWanderwise/WDWS/Views/Pasos/Delete.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUGFzb3MvRGVsZXRlLmNzaHRtbA==
+[C:/Users/Gutić/Desktop/wanderwise/WDWS/Views/Pasos/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFzb3NcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/fatima.naidakaljanac/Desktop/NasProjkeatWanderwise/WDWS/Views/Pasos/Details.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUGFzb3MvRGV0YWlscy5jc2h0bWw=
+[C:/Users/Gutić/Desktop/wanderwise/WDWS/Views/Pasos/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFzb3NcRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/fatima.naidakaljanac/Desktop/NasProjkeatWanderwise/WDWS/Views/Pasos/Edit.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUGFzb3MvRWRpdC5jc2h0bWw=
+[C:/Users/Gutić/Desktop/wanderwise/WDWS/Views/Pasos/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFzb3NcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/fatima.naidakaljanac/Desktop/NasProjkeatWanderwise/WDWS/Views/Pasos/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUGFzb3MvSW5kZXguY3NodG1s
+[C:/Users/Gutić/Desktop/wanderwise/WDWS/Views/Pasos/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFzb3NcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/fatima.naidakaljanac/Desktop/NasProjkeatWanderwise/WDWS/Views/Putovanje/Create.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUHV0b3ZhbmplL0NyZWF0ZS5jc2h0bWw=
+[C:/Users/Gutić/Desktop/wanderwise/WDWS/Views/Putovanje/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHV0b3ZhbmplXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/fatima.naidakaljanac/Desktop/NasProjkeatWanderwise/WDWS/Views/Putovanje/Delete.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUHV0b3ZhbmplL0RlbGV0ZS5jc2h0bWw=
+[C:/Users/Gutić/Desktop/wanderwise/WDWS/Views/Putovanje/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHV0b3ZhbmplXERlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/fatima.naidakaljanac/Desktop/NasProjkeatWanderwise/WDWS/Views/Putovanje/Details.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUHV0b3ZhbmplL0RldGFpbHMuY3NodG1s
+[C:/Users/Gutić/Desktop/wanderwise/WDWS/Views/Putovanje/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHV0b3ZhbmplXERldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/fatima.naidakaljanac/Desktop/NasProjkeatWanderwise/WDWS/Views/Putovanje/Edit.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUHV0b3ZhbmplL0VkaXQuY3NodG1s
+[C:/Users/Gutić/Desktop/wanderwise/WDWS/Views/Putovanje/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHV0b3ZhbmplXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/fatima.naidakaljanac/Desktop/NasProjkeatWanderwise/WDWS/Views/Putovanje/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUHV0b3ZhbmplL0luZGV4LmNzaHRtbA==
+[C:/Users/Gutić/Desktop/wanderwise/WDWS/Views/Putovanje/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHV0b3ZhbmplXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/fatima.naidakaljanac/Desktop/NasProjkeatWanderwise/WDWS/Views/Recenzija/Create.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUmVjZW56aWphL0NyZWF0ZS5jc2h0bWw=
+[C:/Users/Gutić/Desktop/wanderwise/WDWS/Views/Recenzija/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVjZW56aWphXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/fatima.naidakaljanac/Desktop/NasProjkeatWanderwise/WDWS/Views/Recenzija/Delete.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUmVjZW56aWphL0RlbGV0ZS5jc2h0bWw=
+[C:/Users/Gutić/Desktop/wanderwise/WDWS/Views/Recenzija/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVjZW56aWphXERlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/fatima.naidakaljanac/Desktop/NasProjkeatWanderwise/WDWS/Views/Recenzija/Details.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUmVjZW56aWphL0RldGFpbHMuY3NodG1s
+[C:/Users/Gutić/Desktop/wanderwise/WDWS/Views/Recenzija/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVjZW56aWphXERldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/fatima.naidakaljanac/Desktop/NasProjkeatWanderwise/WDWS/Views/Recenzija/Edit.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUmVjZW56aWphL0VkaXQuY3NodG1s
+[C:/Users/Gutić/Desktop/wanderwise/WDWS/Views/Recenzija/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVjZW56aWphXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/fatima.naidakaljanac/Desktop/NasProjkeatWanderwise/WDWS/Views/Recenzija/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUmVjZW56aWphL0luZGV4LmNzaHRtbA==
+[C:/Users/Gutić/Desktop/wanderwise/WDWS/Views/Recenzija/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVjZW56aWphXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/fatima.naidakaljanac/Desktop/NasProjkeatWanderwise/WDWS/Views/Rezervacija/Create.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUmV6ZXJ2YWNpamEvQ3JlYXRlLmNzaHRtbA==
+[C:/Users/Gutić/Desktop/wanderwise/WDWS/Views/Rezervacija/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmV6ZXJ2YWNpamFcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/fatima.naidakaljanac/Desktop/NasProjkeatWanderwise/WDWS/Views/Rezervacija/Delete.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUmV6ZXJ2YWNpamEvRGVsZXRlLmNzaHRtbA==
+[C:/Users/Gutić/Desktop/wanderwise/WDWS/Views/Rezervacija/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmV6ZXJ2YWNpamFcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/fatima.naidakaljanac/Desktop/NasProjkeatWanderwise/WDWS/Views/Rezervacija/Details.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUmV6ZXJ2YWNpamEvRGV0YWlscy5jc2h0bWw=
+[C:/Users/Gutić/Desktop/wanderwise/WDWS/Views/Rezervacija/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmV6ZXJ2YWNpamFcRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/fatima.naidakaljanac/Desktop/NasProjkeatWanderwise/WDWS/Views/Rezervacija/Edit.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUmV6ZXJ2YWNpamEvRWRpdC5jc2h0bWw=
+[C:/Users/Gutić/Desktop/wanderwise/WDWS/Views/Rezervacija/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmV6ZXJ2YWNpamFcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/fatima.naidakaljanac/Desktop/NasProjkeatWanderwise/WDWS/Views/Rezervacija/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUmV6ZXJ2YWNpamEvSW5kZXguY3NodG1s
+[C:/Users/Gutić/Desktop/wanderwise/WDWS/Views/Rezervacija/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmV6ZXJ2YWNpamFcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/fatima.naidakaljanac/Desktop/NasProjkeatWanderwise/WDWS/Views/Shared/Error.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL0Vycm9yLmNzaHRtbA==
+[C:/Users/Gutić/Desktop/wanderwise/WDWS/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/fatima.naidakaljanac/Desktop/NasProjkeatWanderwise/WDWS/Views/Shared/_LoginPartial.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19Mb2dpblBhcnRpYWwuY3NodG1s
+[C:/Users/Gutić/Desktop/wanderwise/WDWS/Views/Shared/_LoginPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Mb2dpblBhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/fatima.naidakaljanac/Desktop/NasProjkeatWanderwise/WDWS/Views/Shared/_ValidationScriptsPartial.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+[C:/Users/Gutić/Desktop/wanderwise/WDWS/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/fatima.naidakaljanac/Desktop/NasProjkeatWanderwise/WDWS/Views/Smjestaj/Create.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU21qZXN0YWovQ3JlYXRlLmNzaHRtbA==
+[C:/Users/Gutić/Desktop/wanderwise/WDWS/Views/Smjestaj/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU21qZXN0YWpcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/fatima.naidakaljanac/Desktop/NasProjkeatWanderwise/WDWS/Views/Smjestaj/Delete.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU21qZXN0YWovRGVsZXRlLmNzaHRtbA==
+[C:/Users/Gutić/Desktop/wanderwise/WDWS/Views/Smjestaj/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU21qZXN0YWpcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/fatima.naidakaljanac/Desktop/NasProjkeatWanderwise/WDWS/Views/Smjestaj/Details.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU21qZXN0YWovRGV0YWlscy5jc2h0bWw=
+[C:/Users/Gutić/Desktop/wanderwise/WDWS/Views/Smjestaj/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU21qZXN0YWpcRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/fatima.naidakaljanac/Desktop/NasProjkeatWanderwise/WDWS/Views/Smjestaj/Edit.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU21qZXN0YWovRWRpdC5jc2h0bWw=
+[C:/Users/Gutić/Desktop/wanderwise/WDWS/Views/Smjestaj/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU21qZXN0YWpcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/fatima.naidakaljanac/Desktop/NasProjkeatWanderwise/WDWS/Views/Smjestaj/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU21qZXN0YWovSW5kZXguY3NodG1s
+[C:/Users/Gutić/Desktop/wanderwise/WDWS/Views/Smjestaj/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU21qZXN0YWpcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/fatima.naidakaljanac/Desktop/NasProjkeatWanderwise/WDWS/Views/Soba/Create.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU29iYS9DcmVhdGUuY3NodG1s
+[C:/Users/Gutić/Desktop/wanderwise/WDWS/Views/Soba/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU29iYVxDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/fatima.naidakaljanac/Desktop/NasProjkeatWanderwise/WDWS/Views/Soba/Delete.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU29iYS9EZWxldGUuY3NodG1s
+[C:/Users/Gutić/Desktop/wanderwise/WDWS/Views/Soba/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU29iYVxEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/fatima.naidakaljanac/Desktop/NasProjkeatWanderwise/WDWS/Views/Soba/Details.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU29iYS9EZXRhaWxzLmNzaHRtbA==
+[C:/Users/Gutić/Desktop/wanderwise/WDWS/Views/Soba/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU29iYVxEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/fatima.naidakaljanac/Desktop/NasProjkeatWanderwise/WDWS/Views/Soba/Edit.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU29iYS9FZGl0LmNzaHRtbA==
+[C:/Users/Gutić/Desktop/wanderwise/WDWS/Views/Soba/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU29iYVxFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/fatima.naidakaljanac/Desktop/NasProjkeatWanderwise/WDWS/Views/Soba/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU29iYS9JbmRleC5jc2h0bWw=
+[C:/Users/Gutić/Desktop/wanderwise/WDWS/Views/Soba/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU29iYVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/fatima.naidakaljanac/Desktop/NasProjkeatWanderwise/WDWS/Views/TuristickiVodic/Create.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVHVyaXN0aWNraVZvZGljL0NyZWF0ZS5jc2h0bWw=
+[C:/Users/Gutić/Desktop/wanderwise/WDWS/Views/TuristickiVodic/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHVyaXN0aWNraVZvZGljXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/fatima.naidakaljanac/Desktop/NasProjkeatWanderwise/WDWS/Views/TuristickiVodic/Delete.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVHVyaXN0aWNraVZvZGljL0RlbGV0ZS5jc2h0bWw=
+[C:/Users/Gutić/Desktop/wanderwise/WDWS/Views/TuristickiVodic/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHVyaXN0aWNraVZvZGljXERlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/fatima.naidakaljanac/Desktop/NasProjkeatWanderwise/WDWS/Views/TuristickiVodic/Details.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVHVyaXN0aWNraVZvZGljL0RldGFpbHMuY3NodG1s
+[C:/Users/Gutić/Desktop/wanderwise/WDWS/Views/TuristickiVodic/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHVyaXN0aWNraVZvZGljXERldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/fatima.naidakaljanac/Desktop/NasProjkeatWanderwise/WDWS/Views/TuristickiVodic/Edit.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVHVyaXN0aWNraVZvZGljL0VkaXQuY3NodG1s
+[C:/Users/Gutić/Desktop/wanderwise/WDWS/Views/TuristickiVodic/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHVyaXN0aWNraVZvZGljXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/fatima.naidakaljanac/Desktop/NasProjkeatWanderwise/WDWS/Views/TuristickiVodic/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVHVyaXN0aWNraVZvZGljL0luZGV4LmNzaHRtbA==
+[C:/Users/Gutić/Desktop/wanderwise/WDWS/Views/TuristickiVodic/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHVyaXN0aWNraVZvZGljXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/fatima.naidakaljanac/Desktop/NasProjkeatWanderwise/WDWS/Views/_ViewImports.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+[C:/Users/Gutić/Desktop/wanderwise/WDWS/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/fatima.naidakaljanac/Desktop/NasProjkeatWanderwise/WDWS/Views/_ViewStart.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdTdGFydC5jc2h0bWw=
+[C:/Users/Gutić/Desktop/wanderwise/WDWS/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/fatima.naidakaljanac/Desktop/NasProjkeatWanderwise/WDWS/Views/Shared/_Layout.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19MYXlvdXQuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = b-3pabkpidfg
+[C:/Users/Gutić/Desktop/wanderwise/WDWS/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-gxt3688p7k
