@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using WDWS.Data;
 
@@ -11,9 +12,11 @@ using WDWS.Data;
 namespace WDWS.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20240614160131_NullableKorisnik")]
+    partial class NullableKorisnik
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -172,7 +175,6 @@ namespace WDWS.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Email")
-                        .IsRequired()
                         .HasMaxLength(256)
                         .HasColumnType("nvarchar(256)");
 
@@ -214,22 +216,21 @@ namespace WDWS.Migrations
                         .HasColumnType("nvarchar(256)");
 
                     b.Property<string>("adresa")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<DateTime>("datumRodjenja")
+                    b.Property<DateTime?>("datumRodjenja")
                         .HasColumnType("datetime2");
 
                     b.Property<string>("ime")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<int?>("pozicija")
+                        .HasColumnType("int");
+
                     b.Property<string>("prezime")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("spol")
-                        .IsRequired()
                         .HasColumnType("nvarchar(1)");
 
                     b.HasKey("Id");
@@ -372,8 +373,7 @@ namespace WDWS.Migrations
 
                     b.Property<string>("tekstRecenzije")
                         .IsRequired()
-                        .HasMaxLength(2000)
-                        .HasColumnType("nvarchar(2000)");
+                        .HasColumnType("nvarchar(max)");
 
                     b.HasKey("reviewID");
 

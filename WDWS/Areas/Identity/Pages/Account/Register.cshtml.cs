@@ -24,17 +24,17 @@ namespace WDWS.Areas.Identity.Pages.Account
 {
     public class RegisterModel : PageModel
     {
-        private readonly SignInManager<Korisnik> _signInManager;
-        private readonly UserManager<Korisnik> _userManager;
-        private readonly IUserStore<Korisnik> _userStore;
-        private readonly IUserEmailStore<Korisnik> _emailStore;
+        private readonly SignInManager<IdentityUser> _signInManager;
+        private readonly UserManager<IdentityUser> _userManager;
+        private readonly IUserStore<IdentityUser> _userStore;
+        private readonly IUserEmailStore<IdentityUser> _emailStore;
         private readonly ILogger<RegisterModel> _logger;
         private readonly IEmailSender _emailSender;
 
         public RegisterModel(
-            UserManager<Korisnik> userManager,
-            IUserStore<Korisnik> userStore,
-            SignInManager<Korisnik> signInManager,
+            UserManager<IdentityUser> userManager,
+            IUserStore<IdentityUser> userStore,
+            SignInManager<IdentityUser> signInManager,
             ILogger<RegisterModel> logger,
             IEmailSender emailSender)
         {
@@ -155,11 +155,11 @@ namespace WDWS.Areas.Identity.Pages.Account
             return Page();
         }
 
-        private Korisnik CreateUser()
+        private IdentityUser CreateUser()
         {
             try
             {
-                return Activator.CreateInstance<Korisnik>();
+                return Activator.CreateInstance<IdentityUser>();
             }
             catch
             {
@@ -169,13 +169,13 @@ namespace WDWS.Areas.Identity.Pages.Account
             }
         }
 
-        private IUserEmailStore<Korisnik> GetEmailStore()
+        private IUserEmailStore<IdentityUser> GetEmailStore()
         {
             if (!_userManager.SupportsUserEmail)
             {
                 throw new NotSupportedException("The default UI requires a user store with email support.");
             }
-            return (IUserEmailStore<Korisnik>)_userStore;
+            return (IUserEmailStore<IdentityUser>)_userStore;
         }
     }
 }
