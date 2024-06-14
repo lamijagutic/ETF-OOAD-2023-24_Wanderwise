@@ -6,7 +6,7 @@ public class Recenzija
 {
     [Key]
     public int reviewID { get; set; }
-    
+    [StringLength(maximumLength: 2000, MinimumLength = 2, ErrorMessage = "Ne možete ostaviti praznu recenziju, kao ni predugu!")] 
     public String tekstRecenzije { get; set; }
     
     [ForeignKey("Putovanje")] 

@@ -18,6 +18,17 @@ namespace WDWS.Controllers
         {
             _context = context;
         }
+        /* 
+        public IActionResult AvioPutovanja()
+        {
+            var avioPutovanja = _context.Putovanja.Where(p => p.prijevoz == PrijevoznoSredstvo.Avion).ToList();
+            return View(avioPutovanja);
+        } 
+        public IActionResult BusPutovanja()
+        {
+            var busPutovanja = _context.Putovanja.Where(p => p.prijevoz == PrijevoznoSredstvo.Autobus).ToList();
+            return View(busPutovanja);
+        } */
 
         // GET: Putovanje
         public async Task<IActionResult> Index()
@@ -174,6 +185,18 @@ namespace WDWS.Controllers
         private bool PutovanjeExists(int id)
         {
             return _context.Putovanja.Any(e => e.travelId == id);
+        }
+        
+        // Filtriranje na osnovu vrste prijevoza
+        //potrebne su dvije funkcije: jedna za bus i jedna za avion
+        public async Task<IActionResult> FilteredByPrijevoz(int a)
+        {
+            var filteredTrips = await _context.Putovanja
+                .Include(p => p.Smjestaj)
+                .Include(p => p.TuristickiVodic)
+                // ovdje ide uslov provjera tip prijevoza
+                .ToListAsync();
+            return View("Index", filteredTrips);
         }
     }
 }

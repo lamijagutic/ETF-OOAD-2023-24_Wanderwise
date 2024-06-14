@@ -4,60 +4,160 @@
     ViewData["Title"] = "Create";
 }
 
-<h1>Create</h1>
-
-<h4>Rezervacija</h4>
-<hr />
-<div class="row">
-    <div class="col-md-4">
+<div class="container">
+    <div class="form-section">
+        <h1>Booking</h1>
+        <h2>Kreirajte svoje putovanje</h2>
         <form asp-action="Create">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <div class="form-group">
+
+            <div class="input-group">
                 <label asp-for="putovanjeID" class="control-label"></label>
-                <select asp-for="putovanjeID" class ="form-control" asp-items="ViewBag.putovanjeID"></select>
+                <select asp-for="putovanjeID" class ="form-control" asp-items="ViewBag.Putovanja"></select>
             </div>
-            <div class="form-group">
+
+            <div class="input-group">
                 <label asp-for="brojPutnika" class="control-label"></label>
                 <input asp-for="brojPutnika" class="form-control" />
                 <span asp-validation-for="brojPutnika" class="text-danger"></span>
             </div>
-            <div class="form-group">
+
+            <div class="input-group">
                 <label asp-for="ukupnaCijena" class="control-label"></label>
                 <input asp-for="ukupnaCijena" class="form-control" />
                 <span asp-validation-for="ukupnaCijena" class="text-danger"></span>
             </div>
-            <div class="form-group">
+
+            <div class="input-group">
                 <label asp-for="MilesBodovi" class="control-label"></label>
                 <input asp-for="MilesBodovi" class="form-control" />
                 <span asp-validation-for="MilesBodovi" class="text-danger"></span>
             </div>
-            <div class="form-group">
+
+            <div class="input-group">
                 <label asp-for="rezervisanaSobaID" class="control-label"></label>
                 <input asp-for="rezervisanaSobaID" class="form-control" />
                 <span asp-validation-for="rezervisanaSobaID" class="text-danger"></span>
             </div>
-            <div class="form-group">
+
+            <div class="input-group">
                 <label asp-for="status" class="control-label"></label>
                 <select asp-for="status" class="form-control"></select>
                 <span asp-validation-for="status" class="text-danger"></span>
             </div>
-            <div class="form-group">
+
+            <div class="input-group">
                 <label asp-for="klijentID" class="control-label"></label>
                 <select asp-for="klijentID" class ="form-control" asp-items="ViewBag.klijentID"></select>
             </div>
-            <div class="form-group form-check">
+
+            <div class="input-group form-check full-width">
                 <label class="form-check-label">
                     <input class="form-check-input" asp-for="VodicUkljucen" /> @Html.DisplayNameFor(model => model.VodicUkljucen)
                 </label>
             </div>
-            <div class="form-group">
-                <input type="submit" value="Create" class="btn btn-primary" />
-            </div>
+
+            <button type="submit" class="submit-button">Nastavi na plaćanje</button>
         </form>
+    </div>
+
+    <div class="summary-section">
+        <!-- Add summary details here if needed -->
     </div>
 </div>
 
-<div>
-    <a asp-action="Index">Back to List</a>
-</div>
+<style>
+    body {
+        background-image: url('https://static.vecteezy.com/system/resources/previews/008/786/393/non_2x/abstract-wavy-waving-billowy-and-undulating-lines-stripes-squiggly-squiggle-lines-with-twist-effect-abstract-black-and-white-monochrome-grayscale-pattern-background-backdrop-and-texture-vector.jpg');
+        background-size: cover;
+        margin: 0;
+        font-family: Arial, sans-serif;
+    }
 
+    .container {
+        display: flex;
+        justify-content: space-between;
+        padding: 20px;
+        margin: 2% auto 0 auto;
+        width: 85%;
+        background-color: rgb(231, 231, 231);
+        border-radius: 10px;
+    }
+
+    .form-section {
+        width: 70%;
+        margin-right: 5%;
+    }
+
+    .summary-section {
+        width: 25%;
+        background-color: white;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .form-section form {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .form-section form .input-group {
+        width: 45%;
+        margin: 2.5%;
+    }
+
+    .form-section form .input-group.full-width {
+        width: 100%;
+    }
+
+    .form-section form .buttons {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .form-section form .buttons button {
+        margin-right: 10px;
+    }
+
+    .form-section form input,
+    .form-section form select {
+        width: 100%;
+        padding: 10px;
+        margin-top: 10px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+    }
+
+    .input-group.full-width label {
+        font-size: medium;
+        margin-right: 2%;
+    }
+
+    .input-group label {
+        font-size: 13px;
+        margin-top: 2%;
+        display: flex;
+        width: 100%;
+    }
+
+    .form-section form button {
+        width: 10%;
+        padding: 10px;
+        margin-top: 5px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        cursor: pointer;
+        background-color: black;
+        color: white;
+        border: none;
+    }
+
+    .form-section form .submit-button {
+        width: 30%;
+        margin: 20px auto 0 auto;
+        display: block;
+        text-align: center;
+    }
+</style>

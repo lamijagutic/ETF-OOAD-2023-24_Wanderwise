@@ -48,7 +48,7 @@ namespace WDWS.Controllers
         // GET: Recenzija/Create
         public IActionResult Create()
         {
-          //  ViewBag.Putovanja = new SelectList(_context.Lokacije, "travelID", "nazivMjesta");
+            ViewBag.Putovanja = new SelectList(_context.Putovanja, "travelId", "nazivPutovanja");
             ViewData["putID"] = new SelectList(_context.Putovanja, "travelId", "travelId");
             return View();
         }
@@ -66,6 +66,7 @@ namespace WDWS.Controllers
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
+            ViewBag.Putovanja = new SelectList(_context.Putovanja, "travelId", "nazivPutovanja");
             ViewData["putID"] = new SelectList(_context.Putovanja, "travelId", "travelId", recenzija.putID);
             return View(recenzija);
         }
@@ -83,6 +84,7 @@ namespace WDWS.Controllers
             {
                 return NotFound();
             }
+            ViewBag.Putovanja = new SelectList(_context.Putovanja, "travelId", "nazivPutovanja");
             ViewData["putID"] = new SelectList(_context.Putovanja, "travelId", "travelId", recenzija.putID);
             return View(recenzija);
         }
@@ -119,6 +121,7 @@ namespace WDWS.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
+            ViewBag.Putovanja = new SelectList(_context.Putovanja, "travelId", "nazivPutovanja");
             ViewData["putID"] = new SelectList(_context.Putovanja, "travelId", "travelId", recenzija.putID);
             return View(recenzija);
         }
