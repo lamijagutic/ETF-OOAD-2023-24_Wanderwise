@@ -17,275 +17,275 @@ build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = WDWS
 build_property.RootNamespace = WDWS
-build_property.ProjectDir = C:\Users\Gutić\Desktop\wanderwise\WDWS\
+build_property.ProjectDir = C:\Users\38761\OneDrive\Documents\Wanderwise\WDWS\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\Gutić\Desktop\wanderwise\WDWS
+build_property.MSBuildProjectDirectory = C:\Users\38761\OneDrive\Documents\Wanderwise\WDWS
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/Gutić/Desktop/wanderwise/WDWS/Areas/Identity/Pages/Account/AccessDenied.cshtml]
+[C:/Users/38761/OneDrive/Documents/Wanderwise/WDWS/Areas/Identity/Pages/Account/AccessDenied.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxBY2Nlc3NEZW5pZWQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Gutić/Desktop/wanderwise/WDWS/Areas/Identity/Pages/Account/Login.cshtml]
+[C:/Users/38761/OneDrive/Documents/Wanderwise/WDWS/Areas/Identity/Pages/Account/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxMb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Gutić/Desktop/wanderwise/WDWS/Areas/Identity/Pages/Account/Register.cshtml]
+[C:/Users/38761/OneDrive/Documents/Wanderwise/WDWS/Areas/Identity/Pages/Account/Register.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxSZWdpc3Rlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Gutić/Desktop/wanderwise/WDWS/Areas/Identity/Pages/Account/_ViewImports.cshtml]
+[C:/Users/38761/OneDrive/Documents/Wanderwise/WDWS/Areas/Identity/Pages/Account/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxfVmlld0ltcG9ydHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Gutić/Desktop/wanderwise/WDWS/Areas/Identity/Pages/_ValidationScriptsPartial.cshtml]
+[C:/Users/38761/OneDrive/Documents/Wanderwise/WDWS/Areas/Identity/Pages/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZhbGlkYXRpb25TY3JpcHRzUGFydGlhbC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Gutić/Desktop/wanderwise/WDWS/Areas/Identity/Pages/_ViewImports.cshtml]
+[C:/Users/38761/OneDrive/Documents/Wanderwise/WDWS/Areas/Identity/Pages/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Gutić/Desktop/wanderwise/WDWS/Areas/Identity/Pages/_ViewStart.cshtml]
+[C:/Users/38761/OneDrive/Documents/Wanderwise/WDWS/Areas/Identity/Pages/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Gutić/Desktop/wanderwise/WDWS/Views/Home/Index.cshtml]
+[C:/Users/38761/OneDrive/Documents/Wanderwise/WDWS/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Gutić/Desktop/wanderwise/WDWS/Views/Home/Kontakt.cshtml]
+[C:/Users/38761/OneDrive/Documents/Wanderwise/WDWS/Views/Home/Kontakt.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxLb250YWt0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Gutić/Desktop/wanderwise/WDWS/Views/Home/Privacy.cshtml]
+[C:/Users/38761/OneDrive/Documents/Wanderwise/WDWS/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Gutić/Desktop/wanderwise/WDWS/Views/Klijent/Create.cshtml]
+[C:/Users/38761/OneDrive/Documents/Wanderwise/WDWS/Views/Klijent/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS2xpamVudFxDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Gutić/Desktop/wanderwise/WDWS/Views/Klijent/Delete.cshtml]
+[C:/Users/38761/OneDrive/Documents/Wanderwise/WDWS/Views/Klijent/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS2xpamVudFxEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Gutić/Desktop/wanderwise/WDWS/Views/Klijent/Details.cshtml]
+[C:/Users/38761/OneDrive/Documents/Wanderwise/WDWS/Views/Klijent/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS2xpamVudFxEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Gutić/Desktop/wanderwise/WDWS/Views/Klijent/Edit.cshtml]
+[C:/Users/38761/OneDrive/Documents/Wanderwise/WDWS/Views/Klijent/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS2xpamVudFxFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Gutić/Desktop/wanderwise/WDWS/Views/Klijent/Index.cshtml]
+[C:/Users/38761/OneDrive/Documents/Wanderwise/WDWS/Views/Klijent/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS2xpamVudFxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Gutić/Desktop/wanderwise/WDWS/Views/Korisnik/Create.cshtml]
+[C:/Users/38761/OneDrive/Documents/Wanderwise/WDWS/Views/Korisnik/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS29yaXNuaWtcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Gutić/Desktop/wanderwise/WDWS/Views/Korisnik/Delete.cshtml]
+[C:/Users/38761/OneDrive/Documents/Wanderwise/WDWS/Views/Korisnik/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS29yaXNuaWtcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Gutić/Desktop/wanderwise/WDWS/Views/Korisnik/Details.cshtml]
+[C:/Users/38761/OneDrive/Documents/Wanderwise/WDWS/Views/Korisnik/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS29yaXNuaWtcRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Gutić/Desktop/wanderwise/WDWS/Views/Korisnik/Edit.cshtml]
+[C:/Users/38761/OneDrive/Documents/Wanderwise/WDWS/Views/Korisnik/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS29yaXNuaWtcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Gutić/Desktop/wanderwise/WDWS/Views/Korisnik/Index.cshtml]
+[C:/Users/38761/OneDrive/Documents/Wanderwise/WDWS/Views/Korisnik/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS29yaXNuaWtcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Gutić/Desktop/wanderwise/WDWS/Views/Lokacija/Create.cshtml]
+[C:/Users/38761/OneDrive/Documents/Wanderwise/WDWS/Views/Lokacija/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9rYWNpamFcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Gutić/Desktop/wanderwise/WDWS/Views/Lokacija/Delete.cshtml]
+[C:/Users/38761/OneDrive/Documents/Wanderwise/WDWS/Views/Lokacija/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9rYWNpamFcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Gutić/Desktop/wanderwise/WDWS/Views/Lokacija/Details.cshtml]
+[C:/Users/38761/OneDrive/Documents/Wanderwise/WDWS/Views/Lokacija/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9rYWNpamFcRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Gutić/Desktop/wanderwise/WDWS/Views/Lokacija/Edit.cshtml]
+[C:/Users/38761/OneDrive/Documents/Wanderwise/WDWS/Views/Lokacija/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9rYWNpamFcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Gutić/Desktop/wanderwise/WDWS/Views/Lokacija/Index.cshtml]
+[C:/Users/38761/OneDrive/Documents/Wanderwise/WDWS/Views/Lokacija/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9rYWNpamFcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Gutić/Desktop/wanderwise/WDWS/Views/Pasos/Create.cshtml]
+[C:/Users/38761/OneDrive/Documents/Wanderwise/WDWS/Views/Pasos/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFzb3NcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Gutić/Desktop/wanderwise/WDWS/Views/Pasos/Delete.cshtml]
+[C:/Users/38761/OneDrive/Documents/Wanderwise/WDWS/Views/Pasos/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFzb3NcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Gutić/Desktop/wanderwise/WDWS/Views/Pasos/Details.cshtml]
+[C:/Users/38761/OneDrive/Documents/Wanderwise/WDWS/Views/Pasos/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFzb3NcRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Gutić/Desktop/wanderwise/WDWS/Views/Pasos/Edit.cshtml]
+[C:/Users/38761/OneDrive/Documents/Wanderwise/WDWS/Views/Pasos/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFzb3NcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Gutić/Desktop/wanderwise/WDWS/Views/Pasos/Index.cshtml]
+[C:/Users/38761/OneDrive/Documents/Wanderwise/WDWS/Views/Pasos/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFzb3NcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Gutić/Desktop/wanderwise/WDWS/Views/Putovanje/Create.cshtml]
+[C:/Users/38761/OneDrive/Documents/Wanderwise/WDWS/Views/Putovanje/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHV0b3ZhbmplXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Gutić/Desktop/wanderwise/WDWS/Views/Putovanje/Delete.cshtml]
+[C:/Users/38761/OneDrive/Documents/Wanderwise/WDWS/Views/Putovanje/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHV0b3ZhbmplXERlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Gutić/Desktop/wanderwise/WDWS/Views/Putovanje/Details.cshtml]
+[C:/Users/38761/OneDrive/Documents/Wanderwise/WDWS/Views/Putovanje/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHV0b3ZhbmplXERldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Gutić/Desktop/wanderwise/WDWS/Views/Putovanje/Edit.cshtml]
+[C:/Users/38761/OneDrive/Documents/Wanderwise/WDWS/Views/Putovanje/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHV0b3ZhbmplXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Gutić/Desktop/wanderwise/WDWS/Views/Putovanje/Index.cshtml]
+[C:/Users/38761/OneDrive/Documents/Wanderwise/WDWS/Views/Putovanje/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHV0b3ZhbmplXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Gutić/Desktop/wanderwise/WDWS/Views/Recenzija/Create.cshtml]
+[C:/Users/38761/OneDrive/Documents/Wanderwise/WDWS/Views/Recenzija/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVjZW56aWphXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Gutić/Desktop/wanderwise/WDWS/Views/Recenzija/Delete.cshtml]
+[C:/Users/38761/OneDrive/Documents/Wanderwise/WDWS/Views/Recenzija/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVjZW56aWphXERlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Gutić/Desktop/wanderwise/WDWS/Views/Recenzija/Details.cshtml]
+[C:/Users/38761/OneDrive/Documents/Wanderwise/WDWS/Views/Recenzija/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVjZW56aWphXERldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Gutić/Desktop/wanderwise/WDWS/Views/Recenzija/Edit.cshtml]
+[C:/Users/38761/OneDrive/Documents/Wanderwise/WDWS/Views/Recenzija/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVjZW56aWphXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Gutić/Desktop/wanderwise/WDWS/Views/Recenzija/Index.cshtml]
+[C:/Users/38761/OneDrive/Documents/Wanderwise/WDWS/Views/Recenzija/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVjZW56aWphXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Gutić/Desktop/wanderwise/WDWS/Views/Rezervacija/Create.cshtml]
+[C:/Users/38761/OneDrive/Documents/Wanderwise/WDWS/Views/Rezervacija/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmV6ZXJ2YWNpamFcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Gutić/Desktop/wanderwise/WDWS/Views/Rezervacija/Delete.cshtml]
+[C:/Users/38761/OneDrive/Documents/Wanderwise/WDWS/Views/Rezervacija/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmV6ZXJ2YWNpamFcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Gutić/Desktop/wanderwise/WDWS/Views/Rezervacija/Details.cshtml]
+[C:/Users/38761/OneDrive/Documents/Wanderwise/WDWS/Views/Rezervacija/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmV6ZXJ2YWNpamFcRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Gutić/Desktop/wanderwise/WDWS/Views/Rezervacija/Edit.cshtml]
+[C:/Users/38761/OneDrive/Documents/Wanderwise/WDWS/Views/Rezervacija/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmV6ZXJ2YWNpamFcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Gutić/Desktop/wanderwise/WDWS/Views/Rezervacija/Index.cshtml]
+[C:/Users/38761/OneDrive/Documents/Wanderwise/WDWS/Views/Rezervacija/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmV6ZXJ2YWNpamFcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Gutić/Desktop/wanderwise/WDWS/Views/Shared/Error.cshtml]
+[C:/Users/38761/OneDrive/Documents/Wanderwise/WDWS/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Gutić/Desktop/wanderwise/WDWS/Views/Shared/_LoginPartial.cshtml]
+[C:/Users/38761/OneDrive/Documents/Wanderwise/WDWS/Views/Shared/_LoginPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Mb2dpblBhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Gutić/Desktop/wanderwise/WDWS/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/38761/OneDrive/Documents/Wanderwise/WDWS/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Gutić/Desktop/wanderwise/WDWS/Views/Smjestaj/Create.cshtml]
+[C:/Users/38761/OneDrive/Documents/Wanderwise/WDWS/Views/Smjestaj/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU21qZXN0YWpcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Gutić/Desktop/wanderwise/WDWS/Views/Smjestaj/Delete.cshtml]
+[C:/Users/38761/OneDrive/Documents/Wanderwise/WDWS/Views/Smjestaj/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU21qZXN0YWpcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Gutić/Desktop/wanderwise/WDWS/Views/Smjestaj/Details.cshtml]
+[C:/Users/38761/OneDrive/Documents/Wanderwise/WDWS/Views/Smjestaj/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU21qZXN0YWpcRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Gutić/Desktop/wanderwise/WDWS/Views/Smjestaj/Edit.cshtml]
+[C:/Users/38761/OneDrive/Documents/Wanderwise/WDWS/Views/Smjestaj/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU21qZXN0YWpcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Gutić/Desktop/wanderwise/WDWS/Views/Smjestaj/Index.cshtml]
+[C:/Users/38761/OneDrive/Documents/Wanderwise/WDWS/Views/Smjestaj/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU21qZXN0YWpcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Gutić/Desktop/wanderwise/WDWS/Views/Soba/Create.cshtml]
+[C:/Users/38761/OneDrive/Documents/Wanderwise/WDWS/Views/Soba/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU29iYVxDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Gutić/Desktop/wanderwise/WDWS/Views/Soba/Delete.cshtml]
+[C:/Users/38761/OneDrive/Documents/Wanderwise/WDWS/Views/Soba/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU29iYVxEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Gutić/Desktop/wanderwise/WDWS/Views/Soba/Details.cshtml]
+[C:/Users/38761/OneDrive/Documents/Wanderwise/WDWS/Views/Soba/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU29iYVxEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Gutić/Desktop/wanderwise/WDWS/Views/Soba/Edit.cshtml]
+[C:/Users/38761/OneDrive/Documents/Wanderwise/WDWS/Views/Soba/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU29iYVxFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Gutić/Desktop/wanderwise/WDWS/Views/Soba/Index.cshtml]
+[C:/Users/38761/OneDrive/Documents/Wanderwise/WDWS/Views/Soba/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU29iYVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Gutić/Desktop/wanderwise/WDWS/Views/TuristickiVodic/Create.cshtml]
+[C:/Users/38761/OneDrive/Documents/Wanderwise/WDWS/Views/TuristickiVodic/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHVyaXN0aWNraVZvZGljXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Gutić/Desktop/wanderwise/WDWS/Views/TuristickiVodic/Delete.cshtml]
+[C:/Users/38761/OneDrive/Documents/Wanderwise/WDWS/Views/TuristickiVodic/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHVyaXN0aWNraVZvZGljXERlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Gutić/Desktop/wanderwise/WDWS/Views/TuristickiVodic/Details.cshtml]
+[C:/Users/38761/OneDrive/Documents/Wanderwise/WDWS/Views/TuristickiVodic/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHVyaXN0aWNraVZvZGljXERldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Gutić/Desktop/wanderwise/WDWS/Views/TuristickiVodic/Edit.cshtml]
+[C:/Users/38761/OneDrive/Documents/Wanderwise/WDWS/Views/TuristickiVodic/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHVyaXN0aWNraVZvZGljXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Gutić/Desktop/wanderwise/WDWS/Views/TuristickiVodic/Index.cshtml]
+[C:/Users/38761/OneDrive/Documents/Wanderwise/WDWS/Views/TuristickiVodic/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHVyaXN0aWNraVZvZGljXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Gutić/Desktop/wanderwise/WDWS/Views/_ViewImports.cshtml]
+[C:/Users/38761/OneDrive/Documents/Wanderwise/WDWS/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Gutić/Desktop/wanderwise/WDWS/Views/_ViewStart.cshtml]
+[C:/Users/38761/OneDrive/Documents/Wanderwise/WDWS/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Gutić/Desktop/wanderwise/WDWS/Views/Shared/_Layout.cshtml]
+[C:/Users/38761/OneDrive/Documents/Wanderwise/WDWS/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-gxt3688p7k

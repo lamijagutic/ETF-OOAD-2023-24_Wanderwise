@@ -3,61 +3,56 @@
 @{
     ViewData["Title"] = "Create";
 }
-
-<div class="container">
+<body>
+<div class="container-recenzija">
     <div class="form-section">
         <h1>Booking</h1>
-        <h2>Kreirajte svoje putovanje</h2>
+        <h2>Kreirajte svoje putovanje!</h2>
         <form asp-action="Create">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
 
             <div class="input-group">
-                <label asp-for="putovanjeID" class="control-label"></label>
-                <select asp-for="putovanjeID" class ="form-control" asp-items="ViewBag.Putovanja"></select>
+                <label asp-for="putovanjeID" class="control-label">Putovanje</label>
+                <select asp-for="putovanjeID" class="form-control" asp-items="ViewBag.Putovanja"></select>
             </div>
 
             <div class="input-group">
-                <label asp-for="brojPutnika" class="control-label"></label>
+                <label asp-for="brojPutnika" class="control-label">Odaberite broj putnika</label>
                 <input asp-for="brojPutnika" class="form-control" />
                 <span asp-validation-for="brojPutnika" class="text-danger"></span>
             </div>
 
             <div class="input-group">
-                <label asp-for="ukupnaCijena" class="control-label"></label>
+                <label asp-for="ukupnaCijena" class="control-label">Ukupna cijena</label>
                 <input asp-for="ukupnaCijena" class="form-control" />
                 <span asp-validation-for="ukupnaCijena" class="text-danger"></span>
             </div>
 
             <div class="input-group">
-                <label asp-for="MilesBodovi" class="control-label"></label>
+                <label asp-for="MilesBodovi" class="control-label">Bodovi</label>
                 <input asp-for="MilesBodovi" class="form-control" />
                 <span asp-validation-for="MilesBodovi" class="text-danger"></span>
             </div>
 
             <div class="input-group">
-                <label asp-for="rezervisanaSobaID" class="control-label"></label>
+                <label asp-for="rezervisanaSobaID" class="control-label">Rezervisana soba</label>
                 <input asp-for="rezervisanaSobaID" class="form-control" />
                 <span asp-validation-for="rezervisanaSobaID" class="text-danger"></span>
             </div>
 
             <div class="input-group">
-                <label asp-for="status" class="control-label"></label>
+                <label asp-for="status" class="control-label">Status</label>
                 <select asp-for="status" class="form-control"></select>
                 <span asp-validation-for="status" class="text-danger"></span>
             </div>
 
-            <div class="input-group">
-                <label asp-for="klijentID" class="control-label"></label>
-                <select asp-for="klijentID" class ="form-control" asp-items="ViewBag.klijentID"></select>
-            </div>
-
             <div class="input-group form-check full-width">
                 <label class="form-check-label">
-                    <input class="form-check-input" asp-for="VodicUkljucen" /> @Html.DisplayNameFor(model => model.VodicUkljucen)
+                    <input class="form-check-input" asp-for="VodicUkljucen" style="width: auto; margin-right: 10px;" /> @Html.DisplayNameFor(model => model.VodicUkljucen)
                 </label>
             </div>
 
-            <button type="submit" class="submit-button">Nastavi na plaćanje</button>
+            <button type="submit" class="submit-button">Rezerviši</button>
         </form>
     </div>
 
@@ -65,16 +60,20 @@
         <!-- Add summary details here if needed -->
     </div>
 </div>
-
+<br/>
+<br/>
+</body>
 <style>
     body {
         background-image: url('https://static.vecteezy.com/system/resources/previews/008/786/393/non_2x/abstract-wavy-waving-billowy-and-undulating-lines-stripes-squiggly-squiggle-lines-with-twist-effect-abstract-black-and-white-monochrome-grayscale-pattern-background-backdrop-and-texture-vector.jpg');
         background-size: cover;
         margin: 0;
         font-family: Arial, sans-serif;
+        margin-bottom: 50px;
+        height: 100vh;
     }
 
-    .container {
+    .container-recenzija {
         display: flex;
         justify-content: space-between;
         padding: 20px;
@@ -82,6 +81,8 @@
         width: 85%;
         background-color: rgb(231, 231, 231);
         border-radius: 10px;
+        max-height: 800px;
+        overflow: auto;
     }
 
     .form-section {
@@ -103,61 +104,45 @@
     }
 
     .form-section form .input-group {
-        width: 45%;
-        margin: 2.5%;
-    }
-
-    .form-section form .input-group.full-width {
-        width: 100%;
-    }
-
-    .form-section form .buttons {
+        width: 48%;
+        margin: 10px 1%;
         display: flex;
-        justify-content: flex-start;
-        align-items: center;
+        flex-direction: column;
     }
 
-    .form-section form .buttons button {
-        margin-right: 10px;
-    }
+    /*.form-section form .input-group.full-width {
+        width: 100%;
+    }*/
 
     .form-section form input,
     .form-section form select {
         width: 100%;
         padding: 10px;
-        margin-top: 10px;
+        margin-top: 5px;
         border: 1px solid #ddd;
         border-radius: 5px;
-    }
-
-    .input-group.full-width label {
-        font-size: medium;
-        margin-right: 2%;
-    }
-
-    .input-group label {
-        font-size: 13px;
-        margin-top: 2%;
-        display: flex;
-        width: 100%;
+        box-sizing: border-box;
     }
 
     .form-section form button {
-        width: 10%;
+        width: 30%;
         padding: 10px;
-        margin-top: 5px;
+        margin-top: 10px;
         border: 1px solid #ddd;
         border-radius: 5px;
         cursor: pointer;
         background-color: black;
         color: white;
         border: none;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
     }
 
-    .form-section form .submit-button {
-        width: 30%;
-        margin: 20px auto 0 auto;
-        display: block;
-        text-align: center;
+    .form-check-input {
+        width: auto;
+        margin-right: 10px;
     }
 </style>
+
+

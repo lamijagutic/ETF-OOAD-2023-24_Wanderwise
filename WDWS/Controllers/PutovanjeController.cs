@@ -18,17 +18,6 @@ namespace WDWS.Controllers
         {
             _context = context;
         }
-        /* 
-        public IActionResult AvioPutovanja()
-        {
-            var avioPutovanja = _context.Putovanja.Where(p => p.prijevoz == PrijevoznoSredstvo.Avion).ToList();
-            return View(avioPutovanja);
-        } 
-        public IActionResult BusPutovanja()
-        {
-            var busPutovanja = _context.Putovanja.Where(p => p.prijevoz == PrijevoznoSredstvo.Autobus).ToList();
-            return View(busPutovanja);
-        } */
 
         // GET: Putovanje
         public async Task<IActionResult> Index()
