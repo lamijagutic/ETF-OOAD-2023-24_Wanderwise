@@ -3,7 +3,7 @@ using Microsoft.AspNetCore.Identity;
 
 namespace wdws.Models;
 
-public abstract class Korisnik : IdentityUser
+public abstract class Korisnik : IdentityUser<String>
 {
 
     [Key]
