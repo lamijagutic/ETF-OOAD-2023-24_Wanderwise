@@ -12,8 +12,8 @@ using WDWS.Data;
 namespace WDWS.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20240614083933_Initial")]
-    partial class Initial
+    [Migration("20240614101947_BazniTip")]
+    partial class BazniTip
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

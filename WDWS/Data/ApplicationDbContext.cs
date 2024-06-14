@@ -35,6 +35,9 @@ public class ApplicationDbContext : IdentityDbContext<Korisnik, IdentityRole<Str
         modelBuilder.Entity<TuristickiVodic>().ToTable("Turisticki vodici");
         modelBuilder.Entity<Putovanje>().ToTable("Putovanja");
         modelBuilder.Entity<Rezervacija>().ToTable("Rezervacije");
+        
+        modelBuilder.Entity<Klijent>().HasBaseType<Korisnik>();
+        modelBuilder.Entity<TuristickiVodic>().HasBaseType<Korisnik>();
         base.OnModelCreating(modelBuilder);
     }
 } 
