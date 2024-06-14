@@ -1,7 +1,7 @@
 @model wdws.Models.Putovanje
 
 @{
-ViewData["Title"] = "Details";
+ViewData["Title"] = "Details"; 
 }
 
 <div class="put-container">
@@ -13,7 +13,9 @@ ViewData["Title"] = "Details";
             <p><strong>Departure:</strong> @Model.datumPolaska.ToString("dd MMM yyyy")</p>
             <p><strong>Arrival:</strong> @Model.datumDolaska.ToString("dd MMM yyyy")</p>
             <p><strong>Price:</strong> @Model.cijenaPoOsobi</p>
-            <button class="btn-rezervisi">Rezervisi</button>
+            <a asp-controller="Rezervacija" asp-action="Create">
+                <button class="btn-rezervisi">Rezervisi</button>
+            </a>
         </div>
     </div>
 </div>
