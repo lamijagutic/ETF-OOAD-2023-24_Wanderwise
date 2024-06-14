@@ -12,9 +12,9 @@
 <div class="row">
     <div class="col-md-4">
         <form asp-action="Create">
-            <div asp-validation-summary="ModelOnly" class="text-danger">Naziv smještaja: </div>
+            <div asp-validation-summary="ModelOnly" class="text-danger">Smještaj </div>
             <div class="form-group">
-                <label asp-for="naziv" class="control-label"></label>
+                <label asp-for="naziv" class="control-label">Naziv smještaja: </label>
                 <input asp-for="naziv" class="form-control" />
                 <span asp-validation-for="naziv" class="text-danger"></span>
             </div>
@@ -46,6 +46,7 @@
                 <input asp-for="MaxKapacitet" class="form-control" />
                 <span asp-validation-for="MaxKapacitet" class="text-danger"></span>
             </div>
+            
             <div class="form-group">
                 <label asp-for="CijenaSmjestaja" class="control-label">Cijena smještaja:</label>
                 <input asp-for="CijenaSmjestaja" class="form-control" />

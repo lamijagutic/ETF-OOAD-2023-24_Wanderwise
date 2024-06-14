@@ -80,6 +80,7 @@ namespace WDWS.Controllers
             {
                 return NotFound();
             }
+            ViewBag.Lokacije = new SelectList(_context.Lokacije, "postanskiBroj", "nazivMjesta");
             return View(smjestaj);
         }
 
@@ -115,6 +116,8 @@ namespace WDWS.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
+            ViewBag.Lokacije = new SelectList(_context.Lokacije, "postanskiBroj", "nazivMjesta");
+
             return View(smjestaj);
         }
 
