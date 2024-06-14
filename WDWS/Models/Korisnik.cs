@@ -31,6 +31,7 @@ public abstract class  Korisnik : IdentityUser
 
     override public String UserName { get; set; }
     
+    override public String Email { get; set; }
     public Korisnik() 
     {
         

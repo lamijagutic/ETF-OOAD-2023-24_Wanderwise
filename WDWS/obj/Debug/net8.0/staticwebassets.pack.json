@@ -21,12 +21,20 @@
       "PackagePath": "staticwebassets\\css\\images\\logo.png"
     },
     {
+      "Id": "C:\\Users\\Gutić\\Desktop\\wanderwise\\WDWS\\wwwroot\\css\\images\\rezervacija.jpg",
+      "PackagePath": "staticwebassets\\css\\images\\rezervacija.jpg"
+    },
+    {
       "Id": "C:\\Users\\Gutić\\Desktop\\wanderwise\\WDWS\\wwwroot\\css\\kontakt.css",
       "PackagePath": "staticwebassets\\css\\kontakt.css"
     },
     {
       "Id": "C:\\Users\\Gutić\\Desktop\\wanderwise\\WDWS\\wwwroot\\css\\login.css",
       "PackagePath": "staticwebassets\\css\\login.css"
+    },
+    {
+      "Id": "C:\\Users\\Gutić\\Desktop\\wanderwise\\WDWS\\wwwroot\\css\\rezervacija.css",
+      "PackagePath": "staticwebassets\\css\\rezervacija.css"
     },
     {
       "Id": "C:\\Users\\Gutić\\Desktop\\wanderwise\\WDWS\\wwwroot\\css\\site.css",
