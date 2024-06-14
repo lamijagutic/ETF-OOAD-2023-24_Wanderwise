@@ -4,6 +4,26 @@ using Microsoft.AspNetCore.Authorization;
 
 namespace wdws.Models;
 
+public class ValidateDates : ValidationAttribute
+{
+    protected override ValidationResult IsValid(object value, ValidationContext validationContext)
+    {
+        var putovanje = (Putovanje)validationContext.ObjectInstance;
+        if (putovanje.datumDolaska <= putovanje.datumPolaska)
+        {
+            return new ValidationResult("Datum dolaska ne može biti prije datuma polaska.");
+        } return ValidationResult.Success;
+    }
+}
+public class ValidateDate : ValidationAttribute
+{ 
+    protected override ValidationResult IsValid
+        (object date, ValidationContext validationContext)
+    {
+        return (((DateTime)date > DateTime.Now) ? ValidationResult.Success : new ValidationResult("Ne možete kreirati putovanje u prošlosti!"))!;
+    } 
+}
+
 [Authorize]
 public class Putovanje
 {
@@ -20,8 +40,14 @@ public class Putovanje
     
     [Range(0, double.MaxValue, ErrorMessage = "Unesite ispravan broj dana.")]
     public int duzinaPutovanja { get; set; }
-    
+
+    [ValidateDate]
+    [DataType(DataType.Date)]
     public DateTime datumPolaska { get; set; }
+
+    [ValidateDate]
+    [ValidateDates]
+    [DataType(DataType.Date)]
     public DateTime datumDolaska { get; set; }
     
     [Range(0, double.MaxValue, ErrorMessage = "Cijena mora biti veća ili jednaka 0.")]
