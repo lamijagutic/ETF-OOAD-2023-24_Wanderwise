@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
@@ -19,13 +20,16 @@ namespace WDWS.Controllers
             _context = context;
         }
 
+        
         // GET: Pasos
+        [Authorize(Roles = "Administrator")] 
         public async Task<IActionResult> Index()
         {
             return View(await _context.Pasosi.ToListAsync());
         }
 
         // GET: Pasos/Details/5
+        [Authorize(Roles = "Administrator, Klijent")] 
         public async Task<IActionResult> Details(int? id)
         {
             if (id == null)
@@ -44,6 +48,7 @@ namespace WDWS.Controllers
         }
 
         // GET: Pasos/Create
+        [Authorize(Roles = "Klijent")] 
         public IActionResult Create()
         {
             ViewBag.Drzave = new SelectList(GetDrzave());
@@ -55,7 +60,7 @@ namespace WDWS.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("ID,clientID,drzavaKojaIzdaje,nacionalnost,datumIsteka,napomene")] Pasos pasos)
+        public async Task<IActionResult> Create([Bind("ID,clientID,drzavaKojaIzdaje,nacionalnost,datumIsteka,napomene,serijskiBroj")] Pasos pasos)
         {
             if (ModelState.IsValid)
             {
@@ -88,7 +93,7 @@ namespace WDWS.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("ID,clientID,drzavaKojaIzdaje,nacionalnost,datumIsteka,napomene")] Pasos pasos)
+        public async Task<IActionResult> Edit(int id, [Bind("ID,clientID,drzavaKojaIzdaje,nacionalnost,datumIsteka,napomene,serijskiBroj")] Pasos pasos)
         {
             if (id != pasos.ID)
             {
@@ -119,6 +124,7 @@ namespace WDWS.Controllers
         }
 
         // GET: Pasos/Delete/5
+        [Authorize(Roles = "Administrator")] 
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null)

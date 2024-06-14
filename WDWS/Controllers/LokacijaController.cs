@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
@@ -19,12 +20,14 @@ namespace WDWS.Controllers
             _context = context;
         }
 
+        [Authorize(Roles = "Administrator, Vodic")] 
         // GET: Lokacija
         public async Task<IActionResult> Index()
         {
             return View(await _context.Lokacije.ToListAsync());
         }
-
+        
+        [Authorize(Roles = "Administrator, Vodic")] 
         // GET: Lokacija/Details/5
         public async Task<IActionResult> Details(string id)
         {
@@ -43,6 +46,7 @@ namespace WDWS.Controllers
             return View(lokacija);
         }
 
+        [Authorize(Roles = "Administrator, Vodic")] 
         // GET: Lokacija/Create
         public IActionResult Create()
         {
@@ -68,6 +72,7 @@ namespace WDWS.Controllers
         }
 
         // GET: Lokacija/Edit/5
+        [Authorize(Roles = "Administrator, Vodic")] 
         public async Task<IActionResult> Edit(string id)
         {
             if (id == null)
@@ -119,6 +124,7 @@ namespace WDWS.Controllers
         }
 
         // GET: Lokacija/Delete/5
+        [Authorize(Roles = "Administrator, Vodic")] 
         public async Task<IActionResult> Delete(string id)
         {
             if (id == null)
