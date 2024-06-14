@@ -230,6 +230,13 @@
       <UpToDateCheckInput Remove="Areas\Identity\Pages\_ValidationScriptsPartial.cshtml" />
       <UpToDateCheckInput Remove="Areas\Identity\Pages\_ViewImports.cshtml" />
       <UpToDateCheckInput Remove="Areas\Identity\Pages\_ViewStart.cshtml" />
+      <UpToDateCheckInput Remove="Areas\Identity\Pages\Account\AccessDenied.cshtml" />
+      <UpToDateCheckInput Remove="Areas\Identity\Pages\Account\Login.cshtml" />
+      <UpToDateCheckInput Remove="Areas\Identity\Pages\Account\Register.cshtml" />
+      <UpToDateCheckInput Remove="Areas\Identity\Pages\Account\_ViewImports.cshtml" />
+      <UpToDateCheckInput Remove="Areas\Identity\Pages\_ValidationScriptsPartial.cshtml" />
+      <UpToDateCheckInput Remove="Areas\Identity\Pages\_ViewImports.cshtml" />
+      <UpToDateCheckInput Remove="Areas\Identity\Pages\_ViewStart.cshtml" />
     </ItemGroup>
 
 </Project>

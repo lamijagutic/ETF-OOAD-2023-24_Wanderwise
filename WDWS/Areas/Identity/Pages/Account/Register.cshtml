@@ -27,7 +27,15 @@
                 <label asp-for="Input.ConfirmPassword">Confirm Password</label>
                 <span asp-validation-for="Input.ConfirmPassword" class="text-danger"></span>
             </div>
-                <button id="registerSubmit" type="submit" class="w-100 btn btn-lg btn-primary">Register</button>
+            <div class="mb-3 @if (User.IsInRole("Administrator")){@Html.Raw("visible");} else{@Html.Raw("invisible");}">
+                <select class="form-select" aria-label="Tip korisnika" asp-for="Input.Uloga">
+                    <option selected value="2">Vrsta korisnika: </option>
+                    <option value="1">Administrator</option>
+                    <option value="2">Klijent</option>
+                    <option value="3">Vodič</option>
+                </select>
+            </div>
+            <button id="registerSubmit" type="submit" class="w-100 btn btn-lg btn-primary">Register</button>
         </form>
     </div>
     <div class="col-md-6 col-md-offset-2">

@@ -14,11 +14,15 @@ builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseSqlServer(connectionString));
 
 
-builder.Services.AddDefaultIdentity<IdentityUser>(options =>
-        options.SignIn.RequireConfirmedAccount = false)
-    .AddRoles<IdentityRole<String>>()
-    .AddEntityFrameworkStores<ApplicationDbContext>();
+builder.Services.AddDefaultIdentity<Korisnik>(options =>
+        options.SignIn.RequireConfirmedAccount = false).AddRoles<IdentityRole>().AddEntityFrameworkStores<ApplicationDbContext>();
 
+builder.Services.AddAuthorization(options =>
+{
+    options.AddPolicy("Administrator", policy => policy.RequireRole("Admininistrator"));
+    options.AddPolicy("Klijent", policy => policy.RequireRole("Klijent"));
+    options.AddPolicy("Vodic", policy => policy.RequireRole("Vodic"));
+});
 
 builder.Services.AddControllersWithViews();
 builder.Services.AddAuthorization(); 

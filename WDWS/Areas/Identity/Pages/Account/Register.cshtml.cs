@@ -17,6 +17,7 @@ using Microsoft.AspNetCore.Identity.UI.Services;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.AspNetCore.WebUtilities;
+using Microsoft.Data.SqlClient;
 using Microsoft.Extensions.Logging;
 using wdws.Models;
 
@@ -24,17 +25,17 @@ namespace WDWS.Areas.Identity.Pages.Account
 {
     public class RegisterModel : PageModel
     {
-        private readonly SignInManager<IdentityUser> _signInManager;
-        private readonly UserManager<IdentityUser> _userManager;
-        private readonly IUserStore<IdentityUser> _userStore;
-        private readonly IUserEmailStore<IdentityUser> _emailStore;
+        private readonly SignInManager<Korisnik> _signInManager;
+        private readonly UserManager<Korisnik> _userManager;
+        private readonly IUserStore<Korisnik> _userStore;
+        private readonly IUserEmailStore<Korisnik> _emailStore;
         private readonly ILogger<RegisterModel> _logger;
         private readonly IEmailSender _emailSender;
 
         public RegisterModel(
-            UserManager<IdentityUser> userManager,
-            IUserStore<IdentityUser> userStore,
-            SignInManager<IdentityUser> signInManager,
+            UserManager<Korisnik> userManager,
+            IUserStore<Korisnik> userStore,
+            SignInManager<Korisnik> signInManager,
             ILogger<RegisterModel> logger,
             IEmailSender emailSender)
         {
@@ -80,6 +81,9 @@ namespace WDWS.Areas.Identity.Pages.Account
             [Display(Name = "Email")]
             public string Email { get; set; }
 
+            [Required]
+            [Display(Name = "Uloga")]
+            public int Uloga { get; set; }    
             /// <summary>
             ///     This API supports the ASP.NET Core Identity default UI infrastructure and is not intended to be used
             ///     directly from your code. This API may change or be removed in future releases.
@@ -135,6 +139,14 @@ namespace WDWS.Areas.Identity.Pages.Account
                     await _emailSender.SendEmailAsync(Input.Email, "Confirm your email",
                         $"Please confirm your account by <a href='{HtmlEncoder.Default.Encode(callbackUrl)}'>clicking here</a>.");
 
+                    SqlConnection connection = new("Data Source=sql8006.site4now.net;Initial Catalog=db_aa9aa8_wanderwise;User Id=db_aa9aa8_wanderwise_admin;Password=VVondervajs1#");
+                    String sql = "INSERT INTO AspNetUserRoles(UserId, RoleId) VALUES (@UserId, @RoleId)";
+                    SqlCommand command = new SqlCommand(sql, connection);
+                    command.Parameters.AddWithValue("@UserId", userId);
+                    command.Parameters.AddWithValue("@RoleId", Input.Uloga.ToString());
+                    connection.Open();
+                    command.ExecuteNonQuery();
+                    connection.Close();
                     if (_userManager.Options.SignIn.RequireConfirmedAccount)
                     {
                         return RedirectToPage("RegisterConfirmation", new { email = Input.Email, returnUrl = returnUrl });
@@ -155,11 +167,11 @@ namespace WDWS.Areas.Identity.Pages.Account
             return Page();
         }
 
-        private IdentityUser CreateUser()
+        private Korisnik CreateUser()
         {
             try
             {
-                return Activator.CreateInstance<IdentityUser>();
+                return Activator.CreateInstance<Korisnik>();
             }
             catch
             {
@@ -169,13 +181,13 @@ namespace WDWS.Areas.Identity.Pages.Account
             }
         }
 
-        private IUserEmailStore<IdentityUser> GetEmailStore()
+        private IUserEmailStore<Korisnik> GetEmailStore()
         {
             if (!_userManager.SupportsUserEmail)
             {
                 throw new NotSupportedException("The default UI requires a user store with email support.");
             }
-            return (IUserEmailStore<IdentityUser>)_userStore;
+            return (IUserEmailStore<Korisnik>)_userStore;
         }
     }
 }
