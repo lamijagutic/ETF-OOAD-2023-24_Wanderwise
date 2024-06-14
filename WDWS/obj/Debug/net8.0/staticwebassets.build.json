@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "o3ZtxZRKHYCa+WgIc2AFmTDGfFhdrE8CXj1SE2pCnuI=",
+  "Hash": "yBnxjwTtOSQ6HLA+QFi/6Co32OVl2+FcOwv+5/LnasU=",
   "Source": "WDWS",
   "BasePath": "_content/WDWS",
   "Mode": "Default",
@@ -1271,6 +1271,25 @@
       "OriginalItemSpec": "wwwroot\\css\\images\\logo.png"
     },
     {
+      "Identity": "C:\\Users\\38761\\OneDrive\\Documents\\Wanderwise\\WDWS\\wwwroot\\css\\images\\rezervacija.jpg",
+      "SourceId": "WDWS",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\38761\\OneDrive\\Documents\\Wanderwise\\WDWS\\wwwroot\\",
+      "BasePath": "_content/WDWS",
+      "RelativePath": "css/images/rezervacija.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\images\\rezervacija.jpg"
+    },
+    {
       "Identity": "C:\\Users\\38761\\OneDrive\\Documents\\Wanderwise\\WDWS\\wwwroot\\css\\kontakt.css",
       "SourceId": "WDWS",
       "SourceType": "Discovered",
@@ -1307,6 +1326,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\login.css"
+    },
+    {
+      "Identity": "C:\\Users\\38761\\OneDrive\\Documents\\Wanderwise\\WDWS\\wwwroot\\css\\rezervacija.css",
+      "SourceId": "WDWS",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\38761\\OneDrive\\Documents\\Wanderwise\\WDWS\\wwwroot\\",
+      "BasePath": "_content/WDWS",
+      "RelativePath": "css/rezervacija.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\rezervacija.css"
     },
     {
       "Identity": "C:\\Users\\38761\\OneDrive\\Documents\\Wanderwise\\WDWS\\wwwroot\\css\\site.css",

@@ -1,0 +1,16 @@
+﻿body {
+    background-image: url('../css/images/rezervacija.jpg');
+    background-size: cover;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.rezervacija-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    margin: 2% auto 0 auto;
+    width: 85%;
+    background-color: rgb(231, 231, 231);
+    border-radius: 10px;
+}
