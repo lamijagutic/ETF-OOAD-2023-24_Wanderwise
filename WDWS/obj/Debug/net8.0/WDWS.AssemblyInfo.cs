@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("WDWS")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d85d69f44f8e8f22b9bba848904adc0d408d392f")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a333390c532a9f859353bbe10645380a973b5f6e")]
 [assembly: System.Reflection.AssemblyProductAttribute("WDWS")]
 [assembly: System.Reflection.AssemblyTitleAttribute("WDWS")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
