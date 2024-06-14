@@ -83,7 +83,31 @@ namespace WDWS.Areas.Identity.Pages.Account
 
             [Required]
             [Display(Name = "Uloga")]
-            public int Uloga { get; set; }    
+            public int Uloga { get; set; }
+            
+            [Required]
+            [Display(Name = "Ime")]
+            public String ime { get; set; }
+            
+            [Required]
+            [Display(Name = "Prezime")]
+            public String prezime { get; set; }
+            
+            [Required]
+            [Display(Name = "Adresa")]
+            public String adresa { get; set; }
+            
+            [Required]
+            [Display(Name = "Spol")]
+            public char spol { get; set; }
+            
+            [Required]
+            [Display(Name = "Datum rođenja")]
+            public DateTime datumRodjenja { get; set; }
+            
+            [Required]
+            [Display(Name = "Broj telefona")]
+            public String PhoneNumber { get; set; }
             /// <summary>
             ///     This API supports the ASP.NET Core Identity default UI infrastructure and is not intended to be used
             ///     directly from your code. This API may change or be removed in future releases.

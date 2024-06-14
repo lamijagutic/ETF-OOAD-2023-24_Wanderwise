@@ -36,6 +36,36 @@
                             <option value="3">Vodič</option>
                         </select>
                     </div>
+                    <div class="form-group mb-3">
+                        <input asp-for="Input.ime" class="form-control" autocomplete="new-password" aria-required="true" placeholder="Ime" />
+                        <label asp-for="Input.ime" class="form-label">Ime</label>
+                        <span asp-validation-for="Input.ime" class="text-danger"></span>
+                    </div>
+                    <div class="form-group mb-3">
+                        <input asp-for="Input.prezime" class="form-control" autocomplete="new-password" aria-required="true" placeholder="Prezime" />
+                        <label asp-for="Input.prezime" class="form-label">Prezime</label>
+                        <span asp-validation-for="Input.prezime" class="text-danger"></span>
+                    </div>
+                    <div class="form-group mb-3">
+                        <input asp-for="Input.adresa" class="form-control" autocomplete="new-password" aria-required="true" placeholder="Adresa" />
+                        <label asp-for="Input.adresa" class="form-label">Adresa</label>
+                        <span asp-validation-for="Input.adresa" class="text-danger"></span>
+                    </div>
+                    <div class="form-group mb-3">
+                        <input asp-for="Input.datumRodjenja" class="form-control" autocomplete="new-password" aria-required="true" placeholder="Datum rođenja" />
+                        <label asp-for="Input.datumRodjenja" class="form-label">Datum rođenja</label>
+                        <span asp-validation-for="Input.datumRodjenja" class="text-danger"></span>
+                    </div>
+                    <div class="form-group mb-3">
+                        <input asp-for="Input.spol" class="form-control" autocomplete="new-password" aria-required="true" placeholder="Spol" />
+                        <label asp-for="Input.spol" class="form-label">Spol</label>
+                        <span asp-validation-for="Input.spol" class="text-danger"></span>
+                    </div>
+                    <div class="form-group mb-3">
+                        <input asp-for="Input.PhoneNumber" class="form-control" autocomplete="new-password" aria-required="true" placeholder="Broj Telefona" />
+                        <label asp-for="Input.PhoneNumber" class="form-label">Broj telefona</label>
+                        <span asp-validation-for="Input.PhoneNumber" class="text-danger"></span>
+                    </div>
                     <button id="registerSubmit" type="submit" class="btn btn-primary btn-block">Registrirajte se</button>
                     <div class="register-link">
                         <p>Već imate račun?</p>
