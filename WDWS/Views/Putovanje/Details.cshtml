@@ -1,90 +1,74 @@
 @model wdws.Models.Putovanje
 
 @{
-    ViewData["Title"] = "Details";
+ViewData["Title"] = "Details"; 
 }
 
-<h1>Details</h1>
+<div class="put-container">
+    <div class="trip-details">
+        <img src="@Model.ImageURL" alt="Trip Image" />
+        <div class="trip-info">
+            <h1>@Model.nazivPutovanja</h1>
+            <p><strong>Duration:</strong> @Model.duzinaPutovanja</p>
+            <p><strong>Departure:</strong> @Model.datumPolaska.ToString("dd MMM yyyy")</p>
+            <p><strong>Arrival:</strong> @Model.datumDolaska.ToString("dd MMM yyyy")</p>
+            <p><strong>Price:</strong> @Model.cijenaPoOsobi</p>
+            <a asp-controller="Rezervacija" asp-action="Create">
+                <button class="btn-rezervisi">Rezervisi</button>
+            </a>
+        </div>
+    </div>
+</div>
 
-<div>
-    <h4>Putovanje</h4>
-    <hr />
-    <dl class="row">
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.mjestoPolaskaID)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.mjestoPolaskaID)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.mjestoDolaskaID)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.mjestoDolaskaID)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.duzinaPutovanja)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.duzinaPutovanja)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.nazivPutovanja)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.nazivPutovanja)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.datumPolaska)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.datumPolaska)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.datumDolaska)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.datumDolaska)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.cijenaPoOsobi)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.cijenaPoOsobi)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.prijevoz)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.prijevoz)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Smjestaj)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Smjestaj.KontaktEmail)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.TuristickiVodic)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.TuristickiVodic.Id)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.ImageURL)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.ImageURL)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.OpisPutovanja)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.OpisPutovanja)
-        </dd>
-    </dl>
-</div>
-<div>
-    <a asp-action="Edit" asp-route-id="@Model?.travelId">Edit</a> |
-    <a asp-action="Index">Back to List</a>
-</div>
+<style>
+    .put-container {
+        margin-top: 20px;
+        margin-right: auto;
+        margin-left: auto;
+        width: 70%;
+        background-color: rgba(224, 247, 250, 0.85); /* Assuming white background for container */
+        border-radius: 10px; /* Rounded corners */
+        padding: 5px; /* Padding for inner content */
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Slight shadow effect */
+    }
+
+    .trip-details {
+        background-color: rgba(224, 247, 250, 0.85);
+        padding: 20px;
+        display: flex;
+        
+    }
+
+    .trip-details img {
+        width: 50%;
+        object-fit: cover;
+    }
+
+    .trip-info {
+        padding: 20px;
+        width: 50%;
+    }
+
+    .trip-info h1 {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+
+    .trip-info p {
+        margin: 5px 0;
+    }
+
+    .btn-rezervisi {
+        background-color: #1976D2; /* Dark blue background */
+        color: #FFFFFF; /* White text */
+        border: none; /* No border */
+        padding: 10px 20px; /* Padding */
+        font-size: 16px;
+        cursor: pointer;
+        box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2); /* Slight shadow effect */
+    }
+
+    .btn-rezervisi:hover {
+        opacity: 0.8; /* Reduce opacity on hover for visual feedback */
+    }
+</style>
