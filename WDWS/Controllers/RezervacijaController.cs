@@ -48,6 +48,9 @@ namespace WDWS.Controllers
         // GET: Rezervacija/Create
         public IActionResult Create()
         {
+            ViewBag.Lokacije = new SelectList(_context.Lokacije, "postanskiBroj", "nazivMjesta");
+            ViewBag.Smjestaji = new SelectList(_context.Smjestaji, "lodgingID", "naziv");
+
             ViewData["putovanjeID"] = new SelectList(_context.Putovanja, "travelId", "travelId");
             return View();
         }
@@ -65,6 +68,9 @@ namespace WDWS.Controllers
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
+            ViewBag.Lokacije = new SelectList(_context.Lokacije, "postanskiBroj", "nazivMjesta");
+            ViewBag.Smjestaji = new SelectList(_context.Smjestaji, "lodgingID", "naziv");
+
             ViewData["putovanjeID"] = new SelectList(_context.Putovanja, "travelId", "travelId", rezervacija.putovanjeID);
             return View(rezervacija);
         }
@@ -82,6 +88,9 @@ namespace WDWS.Controllers
             {
                 return NotFound();
             }
+            ViewBag.Lokacije = new SelectList(_context.Lokacije, "postanskiBroj", "nazivMjesta");
+            ViewBag.Smjestaji = new SelectList(_context.Smjestaji, "lodgingID", "naziv");
+
             ViewData["putovanjeID"] = new SelectList(_context.Putovanja, "travelId", "travelId", rezervacija.putovanjeID);
             return View(rezervacija);
         }
@@ -118,6 +127,9 @@ namespace WDWS.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
+            ViewBag.Lokacije = new SelectList(_context.Lokacije, "postanskiBroj", "nazivMjesta");
+            ViewBag.Smjestaji = new SelectList(_context.Smjestaji, "lodgingID", "naziv");
+
             ViewData["putovanjeID"] = new SelectList(_context.Putovanja, "travelId", "travelId", rezervacija.putovanjeID);
             return View(rezervacija);
         }

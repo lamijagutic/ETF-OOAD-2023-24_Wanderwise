@@ -14,14 +14,12 @@
         <form asp-action="Create">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group">
-                <label asp-for="mjestoPolaskaID" class="control-label"></label>
-                <input asp-for="mjestoPolaskaID" class="form-control" />
-                <span asp-validation-for="mjestoPolaskaID" class="text-danger"></span>
+                <label asp-for="mjestoPolaskaID" class="control-label">Mjesto polaska</label>
+                <select asp-for="mjestoPolaskaID" class="form-control" asp-items="ViewBag.Lokacije"></select>
             </div>
             <div class="form-group">
-                <label asp-for="mjestoDolaskaID" class="control-label"></label>
-                <input asp-for="mjestoDolaskaID" class="form-control" />
-                <span asp-validation-for="mjestoDolaskaID" class="text-danger"></span>
+                <label asp-for="mjestoDolaskaID" class="control-label">Mjesto dolaska</label>
+                <select asp-for="mjestoDolaskaID" class="form-control" asp-items="ViewBag.Lokacije"></select>
             </div>
             <div class="form-group">
                 <label asp-for="duzinaPutovanja" class="control-label"></label>
@@ -48,9 +46,14 @@
                 <select asp-for="prijevoz" class="form-control" asp-items="Html.GetEnumSelectList<PrijevoznoSredstvo>()" multiple="multiple"></select>
                 <span asp-validation-for="prijevoz" class="text-danger"></span>
             </div>
+            <!--
             <div class="form-group">
                 <label asp-for="smjestajID" class="control-label"></label>
                 <select asp-for="smjestajID" class ="form-control" asp-items="ViewBag.smjestajID"></select>
+            </div> -->
+            <div class="form-group">
+                <label asp-for="smjestajID" class="control-label">Smještaj: </label>
+                <select asp-for="smjestajID" class="form-control" asp-items="ViewBag.Smjestaji"></select>
             </div>
             <div class="form-group">
                 <label asp-for="guideID" class="control-label"></label>

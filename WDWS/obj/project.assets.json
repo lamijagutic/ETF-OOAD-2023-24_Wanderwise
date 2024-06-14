@@ -8601,26 +8601,25 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\38761\\.nuget\\packages\\": {}
+    "/Users/fatima.naidakaljanac/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\38761\\OneDrive\\Documents\\Wanderwise\\WDWS\\WDWS.csproj",
+      "projectUniqueName": "/Users/fatima.naidakaljanac/Desktop/NasProjkeatWanderwise/WDWS/WDWS.csproj",
       "projectName": "WDWS",
-      "projectPath": "C:\\Users\\38761\\OneDrive\\Documents\\Wanderwise\\WDWS\\WDWS.csproj",
-      "packagesPath": "C:\\Users\\38761\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\38761\\OneDrive\\Documents\\Wanderwise\\WDWS\\obj\\",
+      "projectPath": "/Users/fatima.naidakaljanac/Desktop/NasProjkeatWanderwise/WDWS/WDWS.csproj",
+      "packagesPath": "/Users/fatima.naidakaljanac/.nuget/packages/",
+      "outputPath": "/Users/fatima.naidakaljanac/Desktop/NasProjkeatWanderwise/WDWS/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\38761\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "/Users/fatima.naidakaljanac/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "/usr/local/share/dotnet/library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -8633,11 +8632,6 @@
         "warnAsError": [
           "NU1605"
         ]
-      },
-      "restoreAuditProperties": {
-        "enableAudit": "true",
-        "auditLevel": "low",
-        "auditMode": "direct"
       }
     },
     "frameworks": {
@@ -8692,7 +8686,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.300/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
