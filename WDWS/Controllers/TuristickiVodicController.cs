@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
@@ -20,11 +21,13 @@ namespace WDWS.Controllers
         }
 
         // GET: TuristickiVodic
+        [Authorize(Roles = "Administrator, Vodic")] 
         public async Task<IActionResult> Index()
         {
             return View(await _context.TuristickiVodici.ToListAsync());
         }
 
+        [Authorize(Roles = "Administrator, Vodic")] 
         // GET: TuristickiVodic/Details/5
         public async Task<IActionResult> Details(string id)
         {
@@ -42,7 +45,7 @@ namespace WDWS.Controllers
 
             return View(turistickiVodic);
         }
-
+        [Authorize(Roles = "Administrator")] 
         // GET: TuristickiVodic/Create
         public IActionResult Create()
         {
@@ -118,6 +121,7 @@ namespace WDWS.Controllers
             return View(turistickiVodic);
         }
 
+        [Authorize(Roles = "Administrator")] 
         // GET: TuristickiVodic/Delete/5
         public async Task<IActionResult> Delete(string id)
         {

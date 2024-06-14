@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
@@ -19,6 +20,7 @@ namespace WDWS.Controllers
             _context = context;
         }
 
+        [Authorize(Roles = "Administrator, Vodic")] 
         // GET: Soba
         public async Task<IActionResult> Index()
         {
@@ -26,6 +28,7 @@ namespace WDWS.Controllers
             return View(await applicationDbContext.ToListAsync());
         }
 
+        [Authorize(Roles = "Administrator, Vodic")] 
         // GET: Soba/Details/5
         public async Task<IActionResult> Details(int? id)
         {
@@ -45,6 +48,7 @@ namespace WDWS.Controllers
             return View(soba);
         }
 
+        [Authorize(Roles = "Administrator, Vodic")] 
         // GET: Soba/Create
         public IActionResult Create()
         {
@@ -69,6 +73,7 @@ namespace WDWS.Controllers
             return View(soba);
         }
 
+        [Authorize(Roles = "Administrator, Vodic")] 
         // GET: Soba/Edit/5
         public async Task<IActionResult> Edit(int? id)
         {
@@ -122,6 +127,7 @@ namespace WDWS.Controllers
             return View(soba);
         }
 
+        [Authorize(Roles = "Administrator, Vodic")] 
         // GET: Soba/Delete/5
         public async Task<IActionResult> Delete(int? id)
         {

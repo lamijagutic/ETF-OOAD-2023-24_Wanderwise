@@ -21,9 +21,10 @@ namespace WDWS.Areas.Identity.Pages.Account
     public class LoginModel : PageModel
     {
         private readonly SignInManager<Korisnik> _signInManager;
+        private readonly UserManager<Korisnik> _userManager;
         private readonly ILogger<LoginModel> _logger;
 
-        public LoginModel(SignInManager<Korisnik> signInManager, ILogger<LoginModel> logger)
+        public LoginModel(SignInManager<Korisnik> signInManager, UserManager<Korisnik> userManager, ILogger<LoginModel> logger)
         {
             _signInManager = signInManager;
             _logger = logger;

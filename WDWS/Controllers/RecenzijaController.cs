@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
@@ -20,6 +21,7 @@ namespace WDWS.Controllers
         }
 
         // GET: Recenzija
+        [Authorize(Roles = "Administrator, Vodic")] 
         public async Task<IActionResult> Index()
         {
             var applicationDbContext = _context.Recenzije.Include(r => r.Putovanje);
@@ -27,6 +29,7 @@ namespace WDWS.Controllers
         }
 
         // GET: Recenzija/Details/5
+        [Authorize(Roles = "Administrator, Vodic, Klijent")] 
         public async Task<IActionResult> Details(int? id)
         {
             if (id == null)
@@ -46,6 +49,7 @@ namespace WDWS.Controllers
         }
 
         // GET: Recenzija/Create
+        [Authorize(Roles = "Klijent")] 
         public IActionResult Create()
         {
             ViewBag.Putovanja = new SelectList(_context.Putovanja, "travelId", "nazivPutovanja");
@@ -72,6 +76,7 @@ namespace WDWS.Controllers
         }
 
         // GET: Recenzija/Edit/5
+        [Authorize(Roles = "Klijent")] 
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null)
@@ -127,6 +132,7 @@ namespace WDWS.Controllers
         }
 
         // GET: Recenzija/Delete/5
+        [Authorize(Roles = "Administrator, Klijent")] 
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null)

@@ -15,7 +15,7 @@ public class Pasos
     public DateOnly datumIsteka { get; set; }
     public String? napomene { get; set; }
     
-    
+    public String serijskiBroj { get; set; }
     public Pasos()
     {
         
