@@ -208,6 +208,7 @@ namespace WDWS.Migrations
                         .HasColumnType("bit");
 
                     b.Property<string>("UserName")
+                        .IsRequired()
                         .HasMaxLength(256)
                         .HasColumnType("nvarchar(256)");
 
@@ -275,16 +276,13 @@ namespace WDWS.Migrations
 
                     b.Property<string>("clientID")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasColumnType("nvarchar(450)");
 
                     b.Property<DateOnly>("datumIsteka")
                         .HasColumnType("date");
 
                     b.Property<string>("drzavaKojaIzdaje")
                         .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("klijentId")
-                        .HasColumnType("nvarchar(450)");
 
                     b.Property<string>("nacionalnost")
                         .HasColumnType("nvarchar(max)");
@@ -294,7 +292,7 @@ namespace WDWS.Migrations
 
                     b.HasKey("ID");
 
-                    b.HasIndex("klijentId");
+                    b.HasIndex("clientID");
 
                     b.ToTable("Pasosi", (string)null);
                 });
@@ -336,6 +334,10 @@ namespace WDWS.Migrations
 
                     b.Property<int>("mjestoPolaskaID")
                         .HasColumnType("int");
+
+                    b.Property<string>("nazivPutovanja")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<int>("prijevoz")
                         .HasColumnType("int");
@@ -580,11 +582,13 @@ namespace WDWS.Migrations
 
             modelBuilder.Entity("wdws.Models.Pasos", b =>
                 {
-                    b.HasOne("wdws.Models.Klijent", "klijent")
+                    b.HasOne("wdws.Models.Klijent", "Klijent")
                         .WithMany()
-                        .HasForeignKey("klijentId");
+                        .HasForeignKey("clientID")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
-                    b.Navigation("klijent");
+                    b.Navigation("Klijent");
                 });
 
             modelBuilder.Entity("wdws.Models.Putovanje", b =>

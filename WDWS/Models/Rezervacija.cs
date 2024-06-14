@@ -22,8 +22,9 @@ public class Rezervacija
     [ForeignKey("Soba")] 
     public int rezervisanaSobaID { get; set; }
     //public Soba Soba { get; set; }
-    
-    [EnumDataType(typeof(StatusRezervacije))] public StatusRezervacije status { get; set; }
+
+    [EnumDataType(typeof(StatusRezervacije))]
+    public StatusRezervacije status { get; set; } = StatusRezervacije.NijePlacena;
     
     [ForeignKey("Klijent")] 
     public String klijentID { get; set; }
@@ -31,7 +32,7 @@ public class Rezervacija
     public Boolean VodicUkljucen { get; set; }
     public Rezervacija()
     {
-        status = StatusRezervacije.NijePlacena;
+
     }
     public void dodajNagradneBodove()
     {

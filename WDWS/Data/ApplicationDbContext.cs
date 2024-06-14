@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using wdws.Models;
+using WDWS.Models;
 
 namespace WDWS.Data;
 
@@ -11,6 +12,7 @@ public class ApplicationDbContext : IdentityDbContext<Korisnik, IdentityRole<Str
         : base(options)
     {
     }
+    public DbSet<Korisnik> Korisnici { get; set; }
     public DbSet<Klijent> Klijenti { get; set; }
     public DbSet<Putovanje> Putovanja { get; set; }
     public DbSet<Rezervacija> Rezervacije { get; set; }
@@ -23,6 +25,7 @@ public class ApplicationDbContext : IdentityDbContext<Korisnik, IdentityRole<Str
     
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
+        modelBuilder.Entity<Korisnik>().ToTable("Korisnici");
         modelBuilder.Entity<Klijent>().ToTable("Klijenti");
         modelBuilder.Entity<Lokacija>().ToTable("Lokacije");
         modelBuilder.Entity<Soba>().ToTable("Sobe");

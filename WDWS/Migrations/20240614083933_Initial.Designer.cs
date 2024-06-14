@@ -12,8 +12,8 @@ using WDWS.Data;
 namespace WDWS.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20240613065857_MakeGuideIDNullable")]
-    partial class MakeGuideIDNullable
+    [Migration("20240614083933_Initial")]
+    partial class Initial
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -25,7 +25,7 @@ namespace WDWS.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
-            modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRole", b =>
+            modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRole<string>", b =>
                 {
                     b.Property<string>("Id")
                         .HasColumnType("nvarchar(450)");
@@ -75,73 +75,6 @@ namespace WDWS.Migrations
                     b.HasIndex("RoleId");
 
                     b.ToTable("AspNetRoleClaims", (string)null);
-                });
-
-            modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUser", b =>
-                {
-                    b.Property<string>("Id")
-                        .HasColumnType("nvarchar(450)");
-
-                    b.Property<int>("AccessFailedCount")
-                        .HasColumnType("int");
-
-                    b.Property<string>("ConcurrencyStamp")
-                        .IsConcurrencyToken()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Email")
-                        .HasMaxLength(256)
-                        .HasColumnType("nvarchar(256)");
-
-                    b.Property<bool>("EmailConfirmed")
-                        .HasColumnType("bit");
-
-                    b.Property<bool>("LockoutEnabled")
-                        .HasColumnType("bit");
-
-                    b.Property<DateTimeOffset?>("LockoutEnd")
-                        .HasColumnType("datetimeoffset");
-
-                    b.Property<string>("NormalizedEmail")
-                        .HasMaxLength(256)
-                        .HasColumnType("nvarchar(256)");
-
-                    b.Property<string>("NormalizedUserName")
-                        .HasMaxLength(256)
-                        .HasColumnType("nvarchar(256)");
-
-                    b.Property<string>("PasswordHash")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("PhoneNumber")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<bool>("PhoneNumberConfirmed")
-                        .HasColumnType("bit");
-
-                    b.Property<string>("SecurityStamp")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<bool>("TwoFactorEnabled")
-                        .HasColumnType("bit");
-
-                    b.Property<string>("UserName")
-                        .HasMaxLength(256)
-                        .HasColumnType("nvarchar(256)");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("NormalizedEmail")
-                        .HasDatabaseName("EmailIndex");
-
-                    b.HasIndex("NormalizedUserName")
-                        .IsUnique()
-                        .HasDatabaseName("UserNameIndex")
-                        .HasFilter("[NormalizedUserName] IS NOT NULL");
-
-                    b.ToTable("AspNetUsers", (string)null);
-
-                    b.UseTptMappingStrategy();
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserClaim<string>", b =>
@@ -229,13 +162,102 @@ namespace WDWS.Migrations
                     b.ToTable("AspNetUserTokens", (string)null);
                 });
 
+            modelBuilder.Entity("wdws.Models.Korisnik", b =>
+                {
+                    b.Property<string>("Id")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<int>("AccessFailedCount")
+                        .HasColumnType("int");
+
+                    b.Property<string>("ConcurrencyStamp")
+                        .IsConcurrencyToken()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Email")
+                        .HasMaxLength(256)
+                        .HasColumnType("nvarchar(256)");
+
+                    b.Property<bool>("EmailConfirmed")
+                        .HasColumnType("bit");
+
+                    b.Property<bool>("LockoutEnabled")
+                        .HasColumnType("bit");
+
+                    b.Property<DateTimeOffset?>("LockoutEnd")
+                        .HasColumnType("datetimeoffset");
+
+                    b.Property<string>("NormalizedEmail")
+                        .HasMaxLength(256)
+                        .HasColumnType("nvarchar(256)");
+
+                    b.Property<string>("NormalizedUserName")
+                        .HasMaxLength(256)
+                        .HasColumnType("nvarchar(256)");
+
+                    b.Property<string>("PasswordHash")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("PhoneNumber")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<bool>("PhoneNumberConfirmed")
+                        .HasColumnType("bit");
+
+                    b.Property<string>("SecurityStamp")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<bool>("TwoFactorEnabled")
+                        .HasColumnType("bit");
+
+                    b.Property<string>("UserName")
+                        .IsRequired()
+                        .HasMaxLength(256)
+                        .HasColumnType("nvarchar(256)");
+
+                    b.Property<string>("adresa")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("datumRodjenja")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("ime")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("pozicija")
+                        .HasColumnType("int");
+
+                    b.Property<string>("prezime")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("spol")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(1)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("NormalizedEmail")
+                        .HasDatabaseName("EmailIndex");
+
+                    b.HasIndex("NormalizedUserName")
+                        .IsUnique()
+                        .HasDatabaseName("UserNameIndex")
+                        .HasFilter("[NormalizedUserName] IS NOT NULL");
+
+                    b.ToTable("AspNetUsers", (string)null);
+
+                    b.UseTptMappingStrategy();
+                });
+
             modelBuilder.Entity("wdws.Models.Lokacija", b =>
                 {
                     b.Property<string>("postanskiBroj")
                         .HasColumnType("nvarchar(450)");
 
                     b.Property<string>("drzava")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("nazivMjesta")
@@ -255,30 +277,25 @@ namespace WDWS.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ID"));
 
-                    b.Property<int>("clientID")
-                        .HasColumnType("int");
+                    b.Property<string>("clientID")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(450)");
 
                     b.Property<DateOnly>("datumIsteka")
                         .HasColumnType("date");
 
                     b.Property<string>("drzavaKojaIzdaje")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("klijentId")
-                        .HasColumnType("nvarchar(450)");
-
                     b.Property<string>("nacionalnost")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("napomene")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("ID");
 
-                    b.HasIndex("klijentId");
+                    b.HasIndex("clientID");
 
                     b.ToTable("Pasosi", (string)null);
                 });
@@ -290,6 +307,15 @@ namespace WDWS.Migrations
                         .HasColumnType("int");
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("travelId"));
+
+                    b.Property<string>("ImageURL")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("OpisPutovanja")
+                        .IsRequired()
+                        .HasMaxLength(300)
+                        .HasColumnType("nvarchar(300)");
 
                     b.Property<double>("cijenaPoOsobi")
                         .HasColumnType("float");
@@ -311,6 +337,10 @@ namespace WDWS.Migrations
 
                     b.Property<int>("mjestoPolaskaID")
                         .HasColumnType("int");
+
+                    b.Property<string>("nazivPutovanja")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<int>("prijevoz")
                         .HasColumnType("int");
@@ -369,14 +399,14 @@ namespace WDWS.Migrations
                     b.Property<int>("MilesBodovi")
                         .HasColumnType("int");
 
+                    b.Property<bool>("VodicUkljucen")
+                        .HasColumnType("bit");
+
                     b.Property<int>("brojPutnika")
                         .HasColumnType("int");
 
-                    b.Property<string>("clientID")
+                    b.Property<string>("klijentID")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("klijentId")
                         .HasColumnType("nvarchar(450)");
 
                     b.Property<int>("putovanjeID")
@@ -393,7 +423,7 @@ namespace WDWS.Migrations
 
                     b.HasKey("reservationID");
 
-                    b.HasIndex("klijentId");
+                    b.HasIndex("klijentID");
 
                     b.HasIndex("putovanjeID");
 
@@ -429,12 +459,12 @@ namespace WDWS.Migrations
                         .HasColumnType("int");
 
                     b.Property<string>("lokacijapostanskiBroj")
-                        .IsRequired()
                         .HasColumnType("nvarchar(450)");
 
                     b.Property<string>("naziv")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)");
 
                     b.HasKey("lodgingID");
 
@@ -468,35 +498,6 @@ namespace WDWS.Migrations
                     b.HasIndex("smjestajID");
 
                     b.ToTable("Sobe", (string)null);
-                });
-
-            modelBuilder.Entity("wdws.Models.Korisnik", b =>
-                {
-                    b.HasBaseType("Microsoft.AspNetCore.Identity.IdentityUser");
-
-                    b.Property<string>("adresa")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<DateTime>("datumRodjenja")
-                        .HasColumnType("datetime2");
-
-                    b.Property<string>("ime")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<int>("pozicija")
-                        .HasColumnType("int");
-
-                    b.Property<string>("prezime")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("spol")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(1)");
-
-                    b.ToTable("Korisnici", (string)null);
                 });
 
             modelBuilder.Entity("wdws.Models.Klijent", b =>
@@ -533,7 +534,7 @@ namespace WDWS.Migrations
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
                 {
-                    b.HasOne("Microsoft.AspNetCore.Identity.IdentityRole", null)
+                    b.HasOne("Microsoft.AspNetCore.Identity.IdentityRole<string>", null)
                         .WithMany()
                         .HasForeignKey("RoleId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -542,7 +543,7 @@ namespace WDWS.Migrations
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserClaim<string>", b =>
                 {
-                    b.HasOne("Microsoft.AspNetCore.Identity.IdentityUser", null)
+                    b.HasOne("wdws.Models.Korisnik", null)
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -551,7 +552,7 @@ namespace WDWS.Migrations
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserLogin<string>", b =>
                 {
-                    b.HasOne("Microsoft.AspNetCore.Identity.IdentityUser", null)
+                    b.HasOne("wdws.Models.Korisnik", null)
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -560,13 +561,13 @@ namespace WDWS.Migrations
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserRole<string>", b =>
                 {
-                    b.HasOne("Microsoft.AspNetCore.Identity.IdentityRole", null)
+                    b.HasOne("Microsoft.AspNetCore.Identity.IdentityRole<string>", null)
                         .WithMany()
                         .HasForeignKey("RoleId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("Microsoft.AspNetCore.Identity.IdentityUser", null)
+                    b.HasOne("wdws.Models.Korisnik", null)
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -575,7 +576,7 @@ namespace WDWS.Migrations
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserToken<string>", b =>
                 {
-                    b.HasOne("Microsoft.AspNetCore.Identity.IdentityUser", null)
+                    b.HasOne("wdws.Models.Korisnik", null)
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -584,11 +585,13 @@ namespace WDWS.Migrations
 
             modelBuilder.Entity("wdws.Models.Pasos", b =>
                 {
-                    b.HasOne("wdws.Models.Klijent", "klijent")
+                    b.HasOne("wdws.Models.Klijent", "Klijent")
                         .WithMany()
-                        .HasForeignKey("klijentId");
+                        .HasForeignKey("clientID")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
-                    b.Navigation("klijent");
+                    b.Navigation("Klijent");
                 });
 
             modelBuilder.Entity("wdws.Models.Putovanje", b =>
@@ -625,28 +628,28 @@ namespace WDWS.Migrations
 
             modelBuilder.Entity("wdws.Models.Rezervacija", b =>
                 {
-                    b.HasOne("wdws.Models.Klijent", "klijent")
+                    b.HasOne("wdws.Models.Klijent", "Klijent")
                         .WithMany()
-                        .HasForeignKey("klijentId");
+                        .HasForeignKey("klijentID")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
-                    b.HasOne("wdws.Models.Putovanje", "put")
+                    b.HasOne("wdws.Models.Putovanje", "Putovanje")
                         .WithMany()
                         .HasForeignKey("putovanjeID")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.Navigation("klijent");
+                    b.Navigation("Klijent");
 
-                    b.Navigation("put");
+                    b.Navigation("Putovanje");
                 });
 
             modelBuilder.Entity("wdws.Models.Smjestaj", b =>
                 {
                     b.HasOne("wdws.Models.Lokacija", "lokacija")
                         .WithMany()
-                        .HasForeignKey("lokacijapostanskiBroj")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .HasForeignKey("lokacijapostanskiBroj");
 
                     b.Navigation("lokacija");
                 });
@@ -660,15 +663,6 @@ namespace WDWS.Migrations
                         .IsRequired();
 
                     b.Navigation("Smjestaj");
-                });
-
-            modelBuilder.Entity("wdws.Models.Korisnik", b =>
-                {
-                    b.HasOne("Microsoft.AspNetCore.Identity.IdentityUser", null)
-                        .WithOne()
-                        .HasForeignKey("wdws.Models.Korisnik", "Id")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
                 });
 
             modelBuilder.Entity("wdws.Models.Klijent", b =>
