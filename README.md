@@ -8,3 +8,8 @@ Naziv tima: <i>Wanderwise</i>
   <li>Lamija Gutić</li>
   <li>Fatima Kaljanac</li>
 </ol>
+
+
+![wanderwise](https://github.com/OOAD-2023-2024/Wanderwise/assets/95690215/357b1db4-5260-440b-b923-7e1a311611c6)
+
+Wanderwise je aplikacija namijenjena za olakšavanje procesa rezervacija turističkih aranžmana u okviru turističkih agencija. Klijent ima mogućnost kreirati svoj account i na njemu izvršiti kreiranje nove rezervacije. Administrator kreira putovanja koja nudi Agencija, a kasnije ta putovanja Klijent može da rezerviše. Pored toga, za svako putovanje je moguće angažovati i Turističkog vodiča koji se u okviru ovog sistema posmatra i kao zaposlenik Agencije.
