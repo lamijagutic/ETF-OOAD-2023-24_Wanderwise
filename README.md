@@ -1,4 +1,4 @@
-# ETF-OOAD-2023-24_Wanderwise
+# OOAD: Project Wanderwise
 Team project created for the Object-oriented Analysis and Design course (2023-2024) at the Faculty of Electrical Engineering, University of Sarajevo.
 
 Team members:
