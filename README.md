@@ -1,4 +1,4 @@
-<h1Welcome to our team project repository for the Object-oriented Analysis and Design course (2023-2024). </i> (2023-2024).</h1>
+<h1Welcome to our team project repository for the Object-oriented Analysis and Design course (2023-2024).</h1>
 
 Team name: <i>Wanderwise</i>
 
